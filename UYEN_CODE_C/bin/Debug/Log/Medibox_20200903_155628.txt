@@ -1,0 +1,17 @@
+[13896] 15:56:28.504 D/Program: Name:MediboxAssistant
+[13896] 15:56:28.535 D/Program: Description:Build: 24/04/2019
+[13896] 15:56:28.552 D/Program: Version:1.0.0.1
+[13896] 16:00:31.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--START
+[13896] 16:00:31.000 D/SoftUpdatePresenter: Database sql = 
+[13896] 16:00:31.000 D/SoftUpdatePresenter: Software sql = 20
+[13896] 16:00:31.000 D/SoftUpdatePresenter: BEGIN UPDATE SQL
+[13896] 16:00:31.000 D/SoftUpdatePresenter: END UPDATE SQL
+[13896] 16:00:31.000 E/SoftUpdatePresenter: System.InvalidOperationException: No transaction in progress.
+   at Npgsql.NpgsqlTransaction.Commit()
+   at Medibox.Presenter.SoftUpdatePresenter.DoUpdateDatabaseSQL() in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Presenter\SoftUpdatePresenter.cs:line 139
+[13896] 16:00:31.000 E/UtilityWebServer: StartWebServer error !
+System.Security.Cryptography.CryptographicException: Access is denied.
+
+   at System.Security.Cryptography.X509Certificates.X509Store.Open(OpenFlags flags)
+   at Medibox.Service.Net.WebHost.Start() in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Service\Net\WebHost.cs:line 124
+   at Medibox.UtilityWebServer.<StartWebServer>b__11_0() in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\UtilityWebServer.cs:line 69
