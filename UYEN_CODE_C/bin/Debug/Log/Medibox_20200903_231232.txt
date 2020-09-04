@@ -1,0 +1,3 @@
+[17088] 23:12:32.927 D/Program: Name:MediboxAssistant
+[17088] 23:12:32.954 D/Program: Description:Build: 24/04/2019
+[17088] 23:12:32.964 D/Program: Version:1.0.0.1

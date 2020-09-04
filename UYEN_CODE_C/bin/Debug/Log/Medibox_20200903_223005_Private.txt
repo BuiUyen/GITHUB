@@ -1,0 +1,296 @@
+[528] 22:30:05.766 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to 'localhost'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[528] 22:30:31.234 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:30:31.240 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:30:46.281 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:30:46.286 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:31:01.312 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:31:01.317 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:31:16.351 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:31:16.359 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:31:31.428 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:31:31.438 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:31:46.471 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:31:46.475 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:31:46.480 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:31:46.486 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[528] 22:33:42.137 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:33:42.143 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:33:57.172 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:33:57.176 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:34:12.202 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:34:12.207 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:34:27.235 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:34:27.240 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:34:42.277 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:34:42.282 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:34:57.333 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:34:57.338 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:34:57.345 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:34:57.350 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[528] 22:35:46.907 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:35:46.912 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:36:01.937 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:36:01.942 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:36:17.016 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:36:17.023 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:36:32.046 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:36:32.054 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:36:47.093 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:36:47.106 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:37:02.149 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:37:02.157 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:37:02.169 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:37:02.180 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[528] 22:37:44.005 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:37:44.015 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:37:59.052 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:37:59.061 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:38:14.097 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:38:14.105 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:38:29.156 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:38:29.163 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:38:44.189 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:38:44.195 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:38:59.229 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:38:59.237 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[528] 22:38:59.247 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:38:59.256 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[528] 22:54:02.036 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[528] 22:54:02.045 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to '192.168.1.81'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586

@@ -1,0 +1,10 @@
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\bin\Debug\TOOL_MEDIBOX.exe.config
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\bin\Debug\TOOL_MEDIBOX.exe
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\bin\Debug\TOOL_MEDIBOX.pdb
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\obj\Debug\TOOL_MEDIBOX.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\obj\Debug\TOOL_MEDIBOX.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\obj\Debug\TOOL_MEDIBOX.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\obj\Debug\TOOL_MEDIBOX.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\obj\Debug\TOOL_MEDIBOX.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\obj\Debug\TOOL_MEDIBOX.exe
+C:\Users\huuuy\Desktop\GITHUB\TOOL_MEDIBOX\TOOL_MEDIBOX\obj\Debug\TOOL_MEDIBOX.pdb

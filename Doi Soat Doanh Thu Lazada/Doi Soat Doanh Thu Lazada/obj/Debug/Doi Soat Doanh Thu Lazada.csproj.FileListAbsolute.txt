@@ -1,0 +1,17 @@
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\Doi Soat Doanh Thu Lazada.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\Doi Soat Doanh Thu Lazada.exe
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\Doi Soat Doanh Thu Lazada.pdb
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\ExcelDataReader.dll
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\ExcelDataReader.pdb
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\ExcelDataReader.xml
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi Soat Doanh Thu Lazada.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi_Soat_Doanh_Thu_Lazada.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi_Soat_Doanh_Thu_Lazada.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi Soat Doanh Thu Lazada.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi Soat Doanh Thu Lazada.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi Soat Doanh Thu Lazada.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi Soat Doanh Thu Lazada.exe
+C:\Users\huuuy\Desktop\GITHUB\Doi Soat Doanh Thu Lazada\Doi Soat Doanh Thu Lazada\obj\Debug\Doi Soat Doanh Thu Lazada.pdb
