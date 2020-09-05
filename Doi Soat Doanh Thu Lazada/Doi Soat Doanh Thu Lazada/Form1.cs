@@ -33,6 +33,7 @@ namespace Doi_Soat_Doanh_Thu_Lazada
             public string Ky_Giao_Dich { get; set; }
             public string Trang_Thai_Giao_Dich { get; set; }
             public string Ma_Don_Hang { get; set; }
+            public string Order_Item { get; set; }
 
             //Tên giao dịch chuyển hóa
             public string TenGiaoDich { get; set; }
@@ -90,7 +91,8 @@ namespace Doi_Soat_Doanh_Thu_Lazada
                                  VAT_Giao_Dich = dr["VAT in Amount"].ToString(),
                                  Ky_Giao_Dich = dr["Statement"].ToString(),
                                  Trang_Thai_Giao_Dich = dr["Paid Status"].ToString(),
-                                 Ma_Don_Hang = dr["Order No."].ToString()
+                                 Ma_Don_Hang = dr["Order No."].ToString(),
+                                 Order_Item = dr["Order Item No."].ToString()
                              }).ToList();
                 foreach(GiaoDich gd in mList_Goc)
                 {
