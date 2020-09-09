@@ -204,7 +204,7 @@ namespace Dang_Don_Len_GHTK
         {
             DonHang mDonHang = new DonHang();
             mDonHang.IDSapo = IDSapo;
-            //try
+            try
             {
                 using (StreamReader sr = File.OpenText(fileName))
                 {
@@ -305,10 +305,10 @@ namespace Dang_Don_Len_GHTK
                     }
                 }
             }
-            //catch (Exception Ex)
-            //{
-            //    MessageBox.Show(Ex.ToString());
-            //}
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.ToString());
+            }
             return mDonHang;
         }
 
