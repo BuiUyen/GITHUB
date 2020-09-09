@@ -1,0 +1,46 @@
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\bin\Debug\Dang Don Len GHTK.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\bin\Debug\Dang Don Len GHTK.exe
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\bin\Debug\Dang Don Len GHTK.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\bin\Debug\WebDriver.xml
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang_Don_Len_GHTK.Form1.resources
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang_Don_Len_GHTK.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csproj.CopyComplete
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.exe
+C:\Users\huuuy\Desktop\Uyen C#\Dang Don Len GHTK\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.pdb
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\Dang Don Len GHTK.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\Dang Don Len GHTK.exe
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\Dang Don Len GHTK.pdb
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\Npgsql.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Buffers.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Memory.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Text.Json.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.ValueTuple.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\Npgsql.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Buffers.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Memory.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Text.Json.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\System.ValueTuple.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\bin\Debug\WebDriver.xml
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang_Don_Len_GHTK.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang_Don_Len_GHTK.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.exe
+C:\Users\huuuy\Desktop\GITHUB\Dang Don Len GHTK_Client\Dang Don Len GHTK\obj\Debug\Dang Don Len GHTK.pdb
