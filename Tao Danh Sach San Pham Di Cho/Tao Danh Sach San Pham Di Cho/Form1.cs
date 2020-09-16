@@ -10,6 +10,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WebForms;
+using System.Runtime.Remoting.Messaging;
 
 namespace Tao_Danh_Sach_San_Pham_Di_Cho
 {
@@ -101,7 +103,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
                         {
                             sp.ID = ListGoc.Count + 1;
                             sp.ListSanThuongMai.Add(table.TableName);
-                            sp.ListGia.Add(sp.Gia);                            
+                            sp.ListGia.Add(sp.Gia);
                             ListGoc.Add(sp);
                         }
                     }
@@ -142,7 +144,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             }
 
             //Lựa chọn sản phẩm đầu tiên trong danh sách
-            if(ListKetQuanTimKiem.Count>0)
+            if (ListKetQuanTimKiem.Count > 0)
             {
                 dataGridViewKetQua.Rows[0].Selected = true;
                 ShowSanPham(ListKetQuanTimKiem[0]);
@@ -177,7 +179,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             lbTenSanPham.Text = sanpham.TenDayDu;
             lbGia.Text = sanpham.Gia.ToString("#,##0") + "đ";
 
-            if(sanpham.AnhDaiDien != "")
+            if (sanpham.AnhDaiDien != "")
             {
                 var request = WebRequest.Create(sanpham.AnhDaiDien);
                 using (var response = request.GetResponse())
@@ -189,12 +191,12 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             }
             else
             {
-                Bitmap image = new Bitmap("chua co anh.jpg");                
+                Bitmap image = new Bitmap("chua co anh.jpg");
                 {
                     pictureBox1.Image = image;
                     pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                 }
-            }    
+            }
         }
 
         private void btnThemSanPham_Click(object sender, EventArgs e)
@@ -205,7 +207,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
                 if (SoLuong != 0)
                 {
                     int stt = ListOutput.FindIndex(x => x.ID == sanpham.ID);
-                    if ( stt < 0)
+                    if (stt < 0)
                     {
                         if (sanpham.ID == 0)
                         {
@@ -325,20 +327,20 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             var saveFileDialog = new SaveFileDialog();
 
             //Đặt tên file lưu
-            var dt = DateTime.Now;            
+            var dt = DateTime.Now;
             saveFileDialog.FileName = "Phiếu ngày " + dt.ToString("dd-MM-yyyy");
             saveFileDialog.DefaultExt = ".xlsx";
-            
+
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 workbook.SaveAs(saveFileDialog.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-            }            
+            }
             app.Quit();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string code ="";
+            string code = "";
             foreach (SanPham sp in ListOutput)
             {
                 code += sp.ID.ToString() + "$" + sp.TenDayDu.ToString() + "$" + sp.Gia.ToString() + "$" + sp.SoLuong.ToString() + "\n";
@@ -348,11 +350,11 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
 
         public void TaoFileCode(string input)
         {
-            var dt = DateTime.Now;            
-            string fileName = @"file\"+ dt.ToString("dd-MM-yyyy") +".txt";
+            var dt = DateTime.Now;
+            string fileName = @"file\" + dt.ToString("dd-MM-yyyy") + ".txt";
             if (File.Exists(fileName))
             {
-                File.Delete(fileName);                
+                File.Delete(fileName);
             }
             using (StreamWriter fs = File.CreateText(fileName))
             {
@@ -361,7 +363,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             }
         }
 
-        private void btnTImFileCu_Click(object sender, EventArgs e)
+        private void btnTimFileCu_Click(object sender, EventArgs e)
         {
             ListOutput.Clear();
             var dt = dateTimePicker.Value;
@@ -374,7 +376,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
                     while ((s = sr.ReadLine()) != null)
                     {
                         List<string> mlist = s.Split('$').ToList();
-                        if(mlist.Count > 1)
+                        if (mlist.Count > 1)
                         {
                             SanPham sp = new SanPham();
                             sp.ID = int.Parse(mlist[0]);
@@ -383,7 +385,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
                             sp.SoLuong = int.Parse(mlist[3]);
                             sp.TamTinh = sp.Gia * sp.SoLuong;
                             ListOutput.Add(sp);
-                        }                        
+                        }
                     }
                 }
             }
@@ -392,6 +394,64 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
                 Console.WriteLine(Ex.ToString());
             }
             ShowDataGirdViewOutput();
-        }        
+        }
+
+        private void btnPhieuIn_Click(object sender, EventArgs e)
+        {
+            Form3 frm = new Form3(ListOutput);
+            frm.ShowDialog();
+        }
+
+        private void btnThemMoi_Click(object sender, EventArgs e)
+        {
+            if (tbxSanPhamThem.Text != "" & tbxGiaThem.Text != "" & tbxSoLuongThem.Text != "")
+            {
+                if (int.Parse(tbxGiaThem.Text) == 0 || int.Parse(tbxSoLuongThem.Text) == 0)
+                {
+                    MessageBox.Show("Thiếu giá hoặc số lượng");
+                }
+                else
+                {
+                    SanPham sanpham = new SanPham();
+                    sanpham.ID = ListGoc.Count;
+                    sanpham.TenDayDu = tbxSanPhamThem.Text;
+                    sanpham.Gia = int.Parse(tbxGiaThem.Text);
+                    sanpham.SoLuong = int.Parse(tbxSoLuongThem.Text);
+                    sanpham.TamTinh = sanpham.Gia * sanpham.SoLuong;
+                    ListGoc.Add(sanpham);
+                    ListOutput.Add(sanpham);
+                    ShowDataGirdViewOutput();
+                }
+            }
+            else MessageBox.Show("Chưa đủ thông tin!");            
+        }
+
+        private void tbxSoLuongThem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnThemSanPham_Click(sender, e);
+            }
+        }
+
+        private void tbxSoLuongThem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void tbxGiaThem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnThemSanPham_Click(sender, e);
+            }
+        }
+
+        private void tbxGiaThem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
     }
 }
