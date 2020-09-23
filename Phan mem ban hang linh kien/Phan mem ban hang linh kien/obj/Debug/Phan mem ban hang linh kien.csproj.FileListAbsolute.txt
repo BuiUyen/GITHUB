@@ -1,0 +1,13 @@
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\bin\Debug\Phan mem ban hang linh kien.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\bin\Debug\Phan mem ban hang linh kien.exe
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\bin\Debug\Phan mem ban hang linh kien.pdb
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan mem ban hang linh kien.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan_mem_ban_hang_linh_kien.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan mem ban hang linh kien.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan mem ban hang linh kien.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan mem ban hang linh kien.exe
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan mem ban hang linh kien.pdb
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan_mem_ban_hang_linh_kien.FormDangNhap.resources
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan_mem_ban_hang_linh_kien.FormMain.resources
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan_mem_ban_hang_linh_kien.FormMatKhauQuanLiTaiKhoan.resources
+C:\Users\huuuy\Desktop\GITHUB\Phan mem ban hang linh kien\Phan mem ban hang linh kien\obj\Debug\Phan_mem_ban_hang_linh_kien.FormQuanLiTaiKhoan.resources

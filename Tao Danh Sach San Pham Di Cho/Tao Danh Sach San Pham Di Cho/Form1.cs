@@ -34,6 +34,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             public string SanThuongMai { get; set; }
 
             public List<string> ListSanThuongMai = new List<string>();
+            public int GiaNhap { get; set; }
             public int SoLuong { get; set; }
             public int TamTinh { get; set; }
             public string AnhDaiDien { get; set; }
@@ -178,6 +179,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
 
             lbTenSanPham.Text = sanpham.TenDayDu;
             lbGia.Text = sanpham.Gia.ToString("#,##0") + "đ";
+            tbxGia.Text = sanpham.Gia.ToString();
 
             if (sanpham.AnhDaiDien != "")
             {
@@ -204,6 +206,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             try
             {
                 int SoLuong = Convert.ToInt32(txbSoLuong.Text);
+                int Gia = Convert.ToInt32(tbxGia.Text);
                 if (SoLuong != 0)
                 {
                     int stt = ListOutput.FindIndex(x => x.ID == sanpham.ID);
@@ -216,6 +219,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
                         else
                         {
                             sanpham.SoLuong = SoLuong;
+                            sanpham.Gia = Gia;
                             ListOutput.Add(sanpham);
                         }
                     }
@@ -232,7 +236,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             }
             catch
             {
-                MessageBox.Show("Chưa điền số lượng!", "Thông Báo");
+                MessageBox.Show("Chưa điền số lượng hoặc giá sản phẩm!", "Thông Báo");
             }
         }
 
@@ -286,11 +290,11 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
         {
             int id = Convert.ToInt32(dataGridViewOutput.Rows[rowIndex].Cells["IDKetQua"].FormattedValue.ToString());
             int stt = ListOutput.FindIndex(x => x.ID == id);
-            using (Form2 form = new Form2(ListOutput[stt].SoLuong))
+            using (Form2 form = new Form2())
             {
-                var result = form.ShowDialog();
-                int val = form.SoLuongPublic;
-                ListOutput[stt].SoLuong = val;
+                var result = form.ShowDialog();                
+                ListOutput[stt].SoLuong = form.SoLuongPublic;
+                ListOutput[stt].Gia = form.GiaPublic;
             }
             ShowDataGirdViewOutput();
         }
@@ -307,7 +311,7 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
-            worksheet = workbook.Sheets["Trang_tính1"];
+            worksheet = workbook.Sheets["Sheet1"];
             worksheet = workbook.ActiveSheet;
             worksheet.Name = "Yêu cầu mua hàng";
 
@@ -320,6 +324,11 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             {
                 for (int j = 0; j < dataGridViewOutput.Columns.Count; j++)
                 {
+                    if(dataGridViewOutput.Rows[i].Cells[j].Value == null)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = "";
+                    }   
+                    else
                     worksheet.Cells[i + 2, j + 1] = dataGridViewOutput.Rows[i].Cells[j].Value.ToString();
                 }
             }
