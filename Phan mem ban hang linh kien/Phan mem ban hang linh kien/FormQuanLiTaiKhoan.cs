@@ -84,7 +84,7 @@ namespace Phan_mem_ban_hang_linh_kien
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string code = "";
+             string code = "";
             foreach (TaiKhoan taikhoan in mListTaiKhoan)
             {
                 code += taikhoan.TenNguoiDung.ToString() + "$" + taikhoan.TenDangNhap.ToString() + "$" + taikhoan.MatKhau.ToString() + "$" + taikhoan.MaQuyen.ToString() + "$" + taikhoan.CapQuyen.ToString() + "\n" ;

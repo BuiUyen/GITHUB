@@ -1,0 +1,10 @@
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\obj\Debug\Viet Hoa Chu Cai Dau.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\obj\Debug\Viet_Hoa_Chu_Cai_Dau.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\obj\Debug\Viet_Hoa_Chu_Cai_Dau.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\obj\Debug\Viet Hoa Chu Cai Dau.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\obj\Debug\Viet Hoa Chu Cai Dau.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\bin\Debug\Viet Hoa Chu Cai Dau.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\bin\Debug\Viet Hoa Chu Cai Dau.exe
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\bin\Debug\Viet Hoa Chu Cai Dau.pdb
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\obj\Debug\Viet Hoa Chu Cai Dau.exe
+C:\Users\huuuy\Desktop\GITHUB\Viet Hoa Chu Cai Dau\Viet Hoa Chu Cai Dau\obj\Debug\Viet Hoa Chu Cai Dau.pdb

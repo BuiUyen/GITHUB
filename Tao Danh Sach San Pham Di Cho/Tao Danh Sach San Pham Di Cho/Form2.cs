@@ -45,11 +45,6 @@ namespace Tao_Danh_Sach_San_Pham_Di_Cho
             }
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbxGia_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

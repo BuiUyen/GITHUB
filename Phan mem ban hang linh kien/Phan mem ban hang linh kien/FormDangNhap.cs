@@ -26,5 +26,8 @@ namespace Phan_mem_ban_hang_linh_kien
             }
             this.Close();
         }
+
+
+
     }
 }

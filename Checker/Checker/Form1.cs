@@ -59,7 +59,7 @@ namespace Checker
             int test = 10000;
             for (test = 10000; test <= 99999; test++)
             {
-                string linkdh = @"https://checkerviet.pro/threads/" + test.ToString() + "/";
+                string linkdh = @"https://checkerviet.me/threads/" + test.ToString() + "/";
                 driver.Navigate().GoToUrl(linkdh);
                 System.Threading.Thread.Sleep(100);
                 TaoFileCode(driver.PageSource);
@@ -133,8 +133,6 @@ namespace Checker
                         {
                             break;
                         }
-
-
                     }
                 }
             }

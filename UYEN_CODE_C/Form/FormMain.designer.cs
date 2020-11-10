@@ -80,10 +80,11 @@
             this.mPanelWelcome.Controls.Add(this.panelEx1);
             this.mPanelWelcome.DisabledBackColor = System.Drawing.Color.Empty;
             this.mPanelWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mPanelWelcome.Location = new System.Drawing.Point(0, 24);
+            this.mPanelWelcome.Location = new System.Drawing.Point(0, 28);
+            this.mPanelWelcome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mPanelWelcome.Name = "mPanelWelcome";
             this.mPanelWelcome.Padding = new System.Windows.Forms.Padding(1);
-            this.mPanelWelcome.Size = new System.Drawing.Size(769, 135);
+            this.mPanelWelcome.Size = new System.Drawing.Size(989, 161);
             this.mPanelWelcome.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.mPanelWelcome.Style.BackColor2.Color = System.Drawing.SystemColors.Control;
             this.mPanelWelcome.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -100,9 +101,10 @@
             this.panelEx9.Controls.Add(this.txtLinkWeb);
             this.panelEx9.Controls.Add(this.labelX8);
             this.panelEx9.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx9.Location = new System.Drawing.Point(336, 35);
+            this.panelEx9.Location = new System.Drawing.Point(432, 42);
+            this.panelEx9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx9.Name = "panelEx9";
-            this.panelEx9.Size = new System.Drawing.Size(433, 100);
+            this.panelEx9.Size = new System.Drawing.Size(557, 119);
             this.panelEx9.Style.BackColor1.Color = System.Drawing.Color.White;
             this.panelEx9.Style.BackColor2.Color = System.Drawing.Color.White;
             this.panelEx9.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -115,9 +117,10 @@
             // txtLinkWeb
             // 
             this.txtLinkWeb.LinkColor = System.Drawing.Color.Blue;
-            this.txtLinkWeb.Location = new System.Drawing.Point(138, 39);
+            this.txtLinkWeb.Location = new System.Drawing.Point(177, 46);
+            this.txtLinkWeb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtLinkWeb.Name = "txtLinkWeb";
-            this.txtLinkWeb.Size = new System.Drawing.Size(283, 23);
+            this.txtLinkWeb.Size = new System.Drawing.Size(364, 27);
             this.txtLinkWeb.TabIndex = 2;
             this.txtLinkWeb.TabStop = true;
             this.txtLinkWeb.Text = "http://192.168.1.100:9090/";
@@ -129,9 +132,10 @@
             // 
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Location = new System.Drawing.Point(11, 39);
+            this.labelX8.Location = new System.Drawing.Point(14, 46);
+            this.labelX8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(59, 23);
+            this.labelX8.Size = new System.Drawing.Size(76, 27);
             this.labelX8.TabIndex = 0;
             this.labelX8.Text = "Link:";
             // 
@@ -141,9 +145,10 @@
             this.panelEx6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx6.Controls.Add(this.txtStatusWeb);
             this.panelEx6.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx6.Location = new System.Drawing.Point(199, 35);
+            this.panelEx6.Location = new System.Drawing.Point(256, 42);
+            this.panelEx6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx6.Name = "panelEx6";
-            this.panelEx6.Size = new System.Drawing.Size(138, 100);
+            this.panelEx6.Size = new System.Drawing.Size(177, 119);
             this.panelEx6.Style.BackColor1.Color = System.Drawing.Color.White;
             this.panelEx6.Style.BackColor2.Color = System.Drawing.Color.White;
             this.panelEx6.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -157,8 +162,9 @@
             // 
             this.txtStatusWeb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtStatusWeb.Location = new System.Drawing.Point(0, 0);
+            this.txtStatusWeb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtStatusWeb.Name = "txtStatusWeb";
-            this.txtStatusWeb.Size = new System.Drawing.Size(138, 100);
+            this.txtStatusWeb.Size = new System.Drawing.Size(177, 119);
             this.txtStatusWeb.TabIndex = 0;
             this.txtStatusWeb.TabStop = true;
             this.txtStatusWeb.Text = "Running";
@@ -170,9 +176,10 @@
             this.panelEx3.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx3.Location = new System.Drawing.Point(0, 35);
+            this.panelEx3.Location = new System.Drawing.Point(0, 42);
+            this.panelEx3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx3.Name = "panelEx3";
-            this.panelEx3.Size = new System.Drawing.Size(200, 100);
+            this.panelEx3.Size = new System.Drawing.Size(257, 119);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx3.Style.BackColor1.Color = System.Drawing.Color.White;
             this.panelEx3.Style.BackColor2.Color = System.Drawing.Color.White;
@@ -188,9 +195,10 @@
             this.panelEx7.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx7.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx7.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx7.Location = new System.Drawing.Point(336, 0);
+            this.panelEx7.Location = new System.Drawing.Point(432, 0);
+            this.panelEx7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx7.Name = "panelEx7";
-            this.panelEx7.Size = new System.Drawing.Size(433, 36);
+            this.panelEx7.Size = new System.Drawing.Size(557, 43);
             this.panelEx7.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx7.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.panelEx7.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -206,9 +214,10 @@
             this.panelEx4.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx4.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx4.Location = new System.Drawing.Point(199, 0);
+            this.panelEx4.Location = new System.Drawing.Point(256, 0);
+            this.panelEx4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx4.Name = "panelEx4";
-            this.panelEx4.Size = new System.Drawing.Size(138, 36);
+            this.panelEx4.Size = new System.Drawing.Size(177, 43);
             this.panelEx4.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx4.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.panelEx4.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -225,8 +234,9 @@
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
+            this.panelEx1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(200, 36);
+            this.panelEx1.Size = new System.Drawing.Size(257, 43);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.panelEx1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -265,9 +275,10 @@
             this.btnFile});
             this.MainMenu.ItemSpacing = 5;
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
+            this.MainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MainMenu.MenuBar = true;
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(769, 24);
+            this.MainMenu.Size = new System.Drawing.Size(989, 28);
             this.MainMenu.Stretch = true;
             this.MainMenu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.MainMenu.TabIndex = 12;
@@ -407,11 +418,12 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 159);
+            this.ClientSize = new System.Drawing.Size(989, 189);
             this.Controls.Add(this.mPanelWelcome);
             this.Controls.Add(this.MainMenu);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MinimizeBox = true;
             this.Name = "FormMain";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
