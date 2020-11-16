@@ -200,9 +200,10 @@ namespace Chinh_Sua_Bai_Viet_Website
                     }
                 }
             }
-            catch
+            catch(Exception Ex)
             {
                 MessageBox.Show("Bảng Excel đang được sử dụng bởi một ứng dụng khác", "Thông Báo");
+                MessageBox.Show(Ex.ToString());
             }
         }
 
@@ -274,7 +275,7 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         private void tbxGiaBan_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar)  && e.KeyChar != '.')
                 e.Handled = true;
         }
 
@@ -288,7 +289,7 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         private void tbxGiaSoSanh_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar)  && e.KeyChar != '.')
                 e.Handled = true;
         }
 
@@ -313,7 +314,7 @@ namespace Chinh_Sua_Bai_Viet_Website
         {
             for(int i = 0; i < mList.Count; i++)
             {
-                if (mList[i].ChuThich == "")
+                if (mList[i].Tag == "")
                 {
                     lbIDSanPham.Text = mList[i].ID;
                     lbIDTuyChon.Text = mList[i].IDTuyChon;

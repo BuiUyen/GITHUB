@@ -1,0 +1,3 @@
+[6652] 09:54:55.421 D/Program: Version:1.0.0.1
+[6652] 09:54:55.422 D/Program: Name:MediboxAssistant
+[6652] 09:54:55.422 D/Program: Description:Build: 24/04/2019

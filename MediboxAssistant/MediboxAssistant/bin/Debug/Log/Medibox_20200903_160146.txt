@@ -1,0 +1,3 @@
+[15552] 16:01:46.380 D/Program: Name:MediboxAssistant
+[15552] 16:01:46.389 D/Program: Description:Build: 24/04/2019
+[15552] 16:01:46.393 D/Program: Version:1.0.0.1

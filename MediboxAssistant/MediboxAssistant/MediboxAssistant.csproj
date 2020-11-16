@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A47CF77-8CAF-4EDD-8BE5-E118FC39C0CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MediboxAssistant</RootNamespace>
+    <AssemblyName>MediboxAssistant</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Medibox\bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Medibox.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>06851809BF9EA8A5B4AAE1F9C6829CDD844893BA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MediPacs_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=12.2.0.5, Culture=neutral, PublicKeyToken=90f470f34c89ccaf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.2.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>Dll\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Database\UserDB.cs" />
+    <Compile Include="Core\Database\HomeDB.cs" />
+    <Compile Include="Core\Database\RoomDB.cs" />
+    <Compile Include="Core\Database\DanhMuc\DM_Entity_TypeDB.cs" />
+    <Compile Include="Core\Database\DanhMuc\DM_Intent_TypeDB.cs" />
+    <Compile Include="Core\Database\SoftUpdateDB.cs" />
+    <Compile Include="Core\Database\Intent_ResponseDB.cs" />
+    <Compile Include="Core\Database\IntentDB.cs" />
+    <Compile Include="Core\Database\DeviceDB.cs" />
+    <Compile Include="Core\Database\Intent_RequestDB.cs" />
+    <Compile Include="Core\Database\BaseDB.cs" />
+    <Compile Include="Core\Database\MediboxDatabaseUtility.cs" />
+    <Compile Include="Core\Integration\HassIO\Model\States_Get_Data.cs" />
+    <Compile Include="Core\Integration\HassIO\Model\Switch_Turn_OnOff_Data.cs" />
+    <Compile Include="Core\Integration\HassIO\UtilityHassIO.cs" />
+    <Compile Include="Core\Command\Command_HOME_CONTROL.cs" />
+    <Compile Include="Core\Command\Command_KE_CHUYEN.cs" />
+    <Compile Include="Core\Command\Command_WIKI.cs" />
+    <Compile Include="Core\Command\Command_THOI_GIAN.cs" />
+    <Compile Include="Core\Command\ICommand.cs" />
+    <Compile Include="Core\Integration\Spotify\UtilitySpotify.cs" />
+    <Compile Include="Core\Model\BaseModel.cs" />
+    <Compile Include="Core\Model\DanhMuc\DM_Hass_DeviceType.cs" />
+    <Compile Include="Core\Model\DanhMuc\DM_Entity_Type.cs" />
+    <Compile Include="Core\Model\DanhMuc\DM_Intent_Type.cs" />
+    <Compile Include="Core\Model\DataTypeModel.cs" />
+    <Compile Include="Core\Model\Data\Room.cs" />
+    <Compile Include="Core\Model\Data\Home.cs" />
+    <Compile Include="Core\Model\Data\User.cs" />
+    <Compile Include="Core\Model\Data\EntityParam.cs" />
+    <Compile Include="Core\Model\Data\SoftUpdate.cs" />
+    <Compile Include="Core\Model\Data\Device.cs" />
+    <Compile Include="Core\Model\Data\Intent_Response.cs" />
+    <Compile Include="Core\Model\Data\Intent_Request.cs" />
+    <Compile Include="Core\Model\Data\Intent.cs" />
+    <Compile Include="Core\Model\MediboxSetting.cs" />
+    <Compile Include="Core\Model\MyVar.cs" />
+    <Compile Include="Core\Model\UI\DM_Room_SubGroup.cs" />
+    <Compile Include="Core\Model\UI\DM_Room_Group.cs" />
+    <Compile Include="Core\Model\UI\DM_DM_Entity_Type_Group.cs" />
+    <Compile Include="Core\Model\UI\DM_DM_Entity_Type_SubGroup.cs" />
+    <Compile Include="Core\Model\UI\DM_Intent_Request_Group.cs" />
+    <Compile Include="Core\Model\UI\DM_Intent_Request_SubGroup.cs" />
+    <Compile Include="Core\Model\UI\DM_Intent_SubGroup.cs" />
+    <Compile Include="Core\Model\UI\DM_Intent_Group.cs" />
+    <Compile Include="Core\Model\UI\ThongTinDanhSachDevice.cs" />
+    <Compile Include="Core\Model\UI\ThongTinDanhSachRoom.cs" />
+    <Compile Include="Core\Model\UI\ThongTinDanhSachDM_Entity_Type.cs" />
+    <Compile Include="Core\Model\UI\ThongTinDanhSachIntent_Response.cs" />
+    <Compile Include="Core\Model\UI\ThongTinDanhSachIntent_Request.cs" />
+    <Compile Include="Core\Model\UI\ThongTinDanhSachIntent.cs" />
+    <Compile Include="Core\Presenter\UserPresenter.cs" />
+    <Compile Include="Core\Presenter\HomePresenter.cs" />
+    <Compile Include="Core\Presenter\RoomPresenter.cs" />
+    <Compile Include="Core\Presenter\DanhMuc\DM_Entity_TypePresenter.cs" />
+    <Compile Include="Core\Presenter\DanhMuc\DM_Intent_TypePresenter.cs" />
+    <Compile Include="Core\Presenter\Intent_ResponsePresenter.cs" />
+    <Compile Include="Core\Presenter\IntentPresenter.cs" />
+    <Compile Include="Core\Presenter\DevicePresenter.cs" />
+    <Compile Include="Core\Presenter\Intent_RequestPresenter.cs" />
+    <Compile Include="Core\Presenter\BasePresenter.cs" />
+    <Compile Include="Core\Presenter\SoftUpdatePresenter.cs" />
+    <Compile Include="Core\Service\Model\API_Spotify_CallbackData.cs" />
+    <Compile Include="Core\Service\Model\API_WebHookData.cs" />
+    <Compile Include="Core\Tool\Form_ThoCa_BaiThoChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Tool\Form_ThoCa_BaiThoChiTiet.Designer.cs">
+      <DependentUpon>Form_ThoCa_BaiThoChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Tool\Form_ThoCa_BaiTho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Tool\Form_ThoCa_BaiTho.Designer.cs">
+      <DependentUpon>Form_ThoCa_BaiTho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Tool\Form_ThoCa_TacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Tool\Form_ThoCa_TacGia.Designer.cs">
+      <DependentUpon>Form_ThoCa_TacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Tool\UtilityThoCa.cs" />
+    <Compile Include="Core\Utility\Database\BaseDao\IBaseDao.cs" />
+    <Compile Include="Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs" />
+    <Compile Include="Core\Utility\Database\Utility\DatabaseImplementUtility.cs" />
+    <Compile Include="Core\Utility\Database\Utility\DatabaseUtility.cs" />
+    <Compile Include="Core\Utility\Database\Utility\NpgsqlDatabaseUtility.cs" />
+    <Compile Include="Core\Utility\Database\Utility\SqliteDatabaseUtility.cs" />
+    <Compile Include="Core\Utility\EasySetting\EasySettingAttribute.cs" />
+    <Compile Include="Core\Utility\EasySetting\EasySettings.cs" />
+    <Compile Include="Core\Utility\Encryption\Crypto.cs" />
+    <Compile Include="Core\Utility\Encryption\CryptorEngine.cs" />
+    <Compile Include="Core\Utility\ExtendedThread\ExBackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\Language\MultilingualString.cs" />
+    <Compile Include="Core\Utility\Language\SanitaLanguage.cs" />
+    <Compile Include="Core\Utility\Logger\ILogOutput.cs" />
+    <Compile Include="Core\Utility\Logger\LogLevel.cs" />
+    <Compile Include="Core\Utility\Logger\SanitaDataLog.cs" />
+    <Compile Include="Core\Utility\Logger\SanitaLog.cs" />
+    <Compile Include="Core\Utility\Logger\SanitaLogEx.cs" />
+    <Compile Include="Core\Utility\ObjectCopier.cs" />
+    <Compile Include="Core\Utility\SanitaSystem.cs" />
+    <Compile Include="Core\Utility\SanitaUtility.cs" />
+    <Compile Include="Core\Utility\SystemInfo.cs" />
+    <Compile Include="Core\Utility\UI\AlertCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\AutocompleteItem.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\AutocompleteItems.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\AutocompleteListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\AutocompleteMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\AutocompleteMenuHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\AutoData.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\Colors.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\EventArgs.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\IAutocompleteListView.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\ITextBoxWrapper.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\Range.cs" />
+    <Compile Include="Core\Utility\UI\AutoCompleMenu\TextBoxWrapper.cs" />
+    <Compile Include="Core\Utility\UI\CursorUtil.cs" />
+    <Compile Include="Core\Utility\UI\FlexibleMessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\FormBase.designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\FormProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\FormProgress.designer.cs">
+      <DependentUpon>FormProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\FormProgressWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\FormProgressWait.designer.cs">
+      <DependentUpon>FormProgressWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\GalleryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\GalleryView.designer.cs">
+      <DependentUpon>GalleryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ImageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ImageViewer.designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\CellEditing\CellEditKeyEngine.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\CellEditing\CellEditors.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\CellEditing\EditorRegistry.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\DataListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\DataTreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\DragDrop\DragSource.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\DragDrop\DropSink.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\DragDrop\OLVDataObject.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\FastDataListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\FastObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\Cluster.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\ClusteringStrategy.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\ClustersFromGroupsStrategy.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\DateTimeClusteringStrategy.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\FilterMenuBuilder.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\Filters.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\FlagClusteringStrategy.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\ICluster.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\IClusteringStrategy.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Filtering\TextMatchFilter.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\Attributes.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\Comparers.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\DataSourceAdapter.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\Delegates.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\Enums.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\GroupingParameters.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\Groups.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\Munger.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\NativeMethods.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\NullableDictionary.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\OLVListItem.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\OLVListSubItem.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\OlvListViewHitTestInfo.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\TreeDataSourceAdapter.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\VirtualGroups.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Implementation\VirtualListDataSource.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\ObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\ObjectListView.DesignTime.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\OLVColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Rendering\Adornments.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Rendering\Decorations.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Rendering\Overlays.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Rendering\Renderers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Rendering\Styles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Rendering\TreeRenderer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\SubControls\GlassPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\SubControls\HeaderControl.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\SubControls\ToolStripCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\SubControls\ToolTipControl.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\TreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Utilities\ColumnSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Utilities\ColumnSelectionForm.Designer.cs">
+      <DependentUpon>ColumnSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ObjectListView\Utilities\Generator.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Utilities\OLVExporter.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\Utilities\TypedObjectListView.cs" />
+    <Compile Include="Core\Utility\UI\ObjectListView\VirtualObjectListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ProgressID\ProgressIndicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ProgressID\ProgressIndicator.designer.cs">
+      <DependentUpon>ProgressIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\ProgressID\RotationType.cs" />
+    <Compile Include="Core\Utility\UI\ProgressID\TextDisplayModes.cs" />
+    <Compile Include="Core\Utility\UI\SanitaButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\SanitaMessageBox.cs" />
+    <Compile Include="Core\Utility\UI\SanitaTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\SplashScreen\FormSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Utility\UI\SplashScreen\FormSplashScreen.designer.cs">
+      <DependentUpon>FormSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Utility\UI\SplashScreen\ISplashForm.cs" />
+    <Compile Include="Core\Utility\UI\SplashScreen\Splasher.cs" />
+    <Compile Include="Core\Utility\UtilityCache.cs" />
+    <Compile Include="Core\Utility\UtilityConvertMoney.cs" />
+    <Compile Include="Core\Utility\UtilityDate.cs" />
+    <Compile Include="Core\Utility\UtilityFormulaParse.cs" />
+    <Compile Include="Core\Utility\UtilityListView.cs" />
+    <Compile Include="Core\Utility\UtilityUpdateTime.cs" />
+    <Compile Include="Core\Utility\UtilityWeb.cs" />
+    <Compile Include="Form\Edit\FormEditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditRoom.designer.cs">
+      <DependentUpon>FormEditRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditHome.designer.cs">
+      <DependentUpon>FormEditHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditUser.designer.cs">
+      <DependentUpon>FormEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditDM_Entity_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditDM_Entity_Type.designer.cs">
+      <DependentUpon>FormEditDM_Entity_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditDM_Intent_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditDM_Intent_Type.designer.cs">
+      <DependentUpon>FormEditDM_Intent_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditIntent_Response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditIntent_Response.designer.cs">
+      <DependentUpon>FormEditIntent_Response.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditIntent_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditIntent_Request.designer.cs">
+      <DependentUpon>FormEditIntent_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditIntent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditIntent.designer.cs">
+      <DependentUpon>FormEditIntent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditDevice.designer.cs">
+      <DependentUpon>FormEditDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormConfigDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormConfigDatabase.designer.cs">
+      <DependentUpon>FormConfigDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormConfigSchema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormConfigSchema.designer.cs">
+      <DependentUpon>FormConfigSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMain.designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Service\Api\ApiBase.cs" />
+    <Compile Include="Core\Service\Api\IWebAPI.cs" />
+    <Compile Include="Core\Service\Api\WebAPI.cs" />
+    <Compile Include="Core\Service\Model\ApiResult.cs" />
+    <Compile Include="Core\Service\Model\API_TroLyAoData.cs" />
+    <Compile Include="Core\Service\Model\CollectionAndValue.cs" />
+    <Compile Include="Core\Service\Model\MessageBody.cs" />
+    <Compile Include="Core\Service\Model\MessageReader.cs" />
+    <Compile Include="Core\Service\Model\Status.cs" />
+    <Compile Include="Core\Service\Model\String2Extensions.cs" />
+    <Compile Include="Core\Service\Model\StringExtensions.cs" />
+    <Compile Include="Core\Service\Net\HttpListenerHost.cs" />
+    <Compile Include="Core\Service\Net\HttpListenerWorkerRequest.cs" />
+    <Compile Include="Core\Service\Net\MyServiceAuthorizationManager.cs" />
+    <Compile Include="Core\Service\Net\WebHost.cs" />
+    <Compile Include="Form\Select\FormSelectDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Select\FormSelectDevice.designer.cs">
+      <DependentUpon>FormSelectDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Select\FormSelectRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Select\FormSelectRoom.designer.cs">
+      <DependentUpon>FormSelectRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Select\FormSelectHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Select\FormSelectHome.designer.cs">
+      <DependentUpon>FormSelectHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewDevice2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewDevice2.designer.cs">
+      <DependentUpon>FormViewDevice2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewRoom.designer.cs">
+      <DependentUpon>FormViewRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewUser.designer.cs">
+      <DependentUpon>FormViewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewHome.designer.cs">
+      <DependentUpon>FormViewHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewDM_Entity_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewDM_Entity_Type.designer.cs">
+      <DependentUpon>FormViewDM_Entity_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewDM_Intent_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewDM_Intent_Type.designer.cs">
+      <DependentUpon>FormViewDM_Intent_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntent.designer.cs">
+      <DependentUpon>FormViewIntent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewDevice.designer.cs">
+      <DependentUpon>FormViewDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntent_Response.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntent_Response.designer.cs">
+      <DependentUpon>FormViewIntent_Response.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntent_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntent_Request.designer.cs">
+      <DependentUpon>FormViewIntent_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewIntentData.designer.cs">
+      <DependentUpon>FormViewIntentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Utility\UtilityWebServer.cs" />
+    <EmbeddedResource Include="Core\Tool\Form_ThoCa_BaiThoChiTiet.resx">
+      <DependentUpon>Form_ThoCa_BaiThoChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Tool\Form_ThoCa_BaiTho.resx">
+      <DependentUpon>Form_ThoCa_BaiTho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Tool\Form_ThoCa_TacGia.resx">
+      <DependentUpon>Form_ThoCa_TacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\AlertCustom.resx">
+      <DependentUpon>AlertCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\AutoCompleMenu\AutocompleteMenu.resx">
+      <DependentUpon>AutocompleteMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\FlexibleMessageBoxForm.resx">
+      <DependentUpon>FlexibleMessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\FormProgress.resx">
+      <DependentUpon>FormProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\FormProgressWait.resx">
+      <DependentUpon>FormProgressWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\GalleryView.resx">
+      <DependentUpon>GalleryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\ObjectListView\Utilities\ColumnSelectionForm.resx">
+      <DependentUpon>ColumnSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\ProgressID\ProgressIndicator.resx">
+      <DependentUpon>ProgressIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Utility\UI\SplashScreen\FormSplashScreen.resx">
+      <DependentUpon>FormSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditRoom.resx">
+      <DependentUpon>FormEditRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditHome.resx">
+      <DependentUpon>FormEditHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditUser.resx">
+      <DependentUpon>FormEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditDM_Entity_Type.resx">
+      <DependentUpon>FormEditDM_Entity_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditDM_Intent_Type.resx">
+      <DependentUpon>FormEditDM_Intent_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditIntent_Response.resx">
+      <DependentUpon>FormEditIntent_Response.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditIntent_Request.resx">
+      <DependentUpon>FormEditIntent_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditIntent.resx">
+      <DependentUpon>FormEditIntent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditDevice.resx">
+      <DependentUpon>FormEditDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormConfigDatabase.resx">
+      <DependentUpon>FormConfigDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormConfigSchema.resx">
+      <DependentUpon>FormConfigSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Select\FormSelectDevice.resx">
+      <DependentUpon>FormSelectDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Select\FormSelectRoom.resx">
+      <DependentUpon>FormSelectRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Select\FormSelectHome.resx">
+      <DependentUpon>FormSelectHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewDevice2.resx">
+      <DependentUpon>FormViewDevice2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewRoom.resx">
+      <DependentUpon>FormViewRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewUser.resx">
+      <DependentUpon>FormViewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewHome.resx">
+      <DependentUpon>FormViewHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewDM_Entity_Type.resx">
+      <DependentUpon>FormViewDM_Entity_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewDM_Intent_Type.resx">
+      <DependentUpon>FormViewDM_Intent_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewIntent.resx">
+      <DependentUpon>FormViewIntent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewDevice.resx">
+      <DependentUpon>FormViewDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewIntent_Response.resx">
+      <DependentUpon>FormViewIntent_Response.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewIntent_Request.resx">
+      <DependentUpon>FormViewIntent_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewIntentData.resx">
+      <DependentUpon>FormViewIntentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Core\Utility\UI\ObjectListView\FullClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XslSettings.xsl" />
+    <None Include="Resources\Zoom_32x321.png" />
+    <None Include="Resources\Xray_Broken_Bone_20.png" />
+    <None Include="Resources\20_wpf30613e2_06 - Copy_20.png" />
+    <None Include="Resources\20_wpf30613e2_06_20.png" />
+    <None Include="Resources\ggg.png" />
+    <None Include="Resources\xetnghiem_20.png" />
+    <None Include="Resources\wpf87ce8ed_06 - Copy %282%29_20.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\underline.png" />
+    <None Include="Resources\Treatment Plan-32.png" />
+    <None Include="Resources\Treatment Plan-16.png" />
+    <None Include="Resources\thuoc_32.png" />
+    <None Include="Resources\Tag_32x32.png" />
+    <None Include="Resources\Survey-20.png" />
+    <None Include="Resources\strike_trough.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\sort-descending.png" />
+    <None Include="Resources\sort-ascending.png" />
+    <None Include="Resources\Settings-20.png" />
+    <None Include="Resources\select_color_text.png" />
+    <None Include="Resources\select_background_color.png" />
+    <None Include="Resources\Search-321.png" />
+    <None Include="Resources\Search-32.png" />
+    <None Include="Resources\Scripts_32x32.png" />
+    <None Include="Resources\Save_32x32_close.png" />
+    <None Include="Resources\Save_32x322.png" />
+    <None Include="Resources\Save_16x16.png" />
+    <None Include="Resources\RUNNING.png" />
+    <None Include="Resources\Reset_32x32.png" />
+    <None Include="Resources\Reset_2022.png" />
+    <None Include="Resources\report_20.png" />
+    <None Include="Resources\remove_link.png" />
+    <None Include="Resources\Refresh-32 %281%29.png" />
+    <None Include="Resources\Properties_32x321.png" />
+    <None Include="Resources\Print_32x32.png" />
+    <None Include="Resources\Print_16x16.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\PDF-32.png" />
+    <None Include="Resources\Paste_32x32.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\Open_Excel_32x32.png" />
+    <None Include="Resources\Open_32x32.png" />
+    <None Include="Resources\numbered_list.png" />
+    <None Include="Resources\No Cash-48 - Copy.png" />
+    <None Include="Resources\new_image_logo.png" />
+    <None Include="Resources\MoveUp_32x32.png" />
+    <None Include="Resources\MoveDown_32x32.png" />
+    <None Include="Resources\Message32x32.png" />
+    <None Include="Resources\Merge_32x32.png" />
+    <None Include="Resources\menu_32.png" />
+    <None Include="Resources\Medical_Report_20.png" />
+    <None Include="Resources\Medibox.png" />
+    <None Include="Resources\logo_BP.png" />
+    <None Include="Resources\Line_32x32.png" />
+    <None Include="Resources\Labs_32.png" />
+    <None Include="Resources\20_wpfa424be2_06_20.png" />
+    <None Include="Resources\KET_THUC_20.png" />
+    <None Include="Resources\italic.png" />
+    <None Include="Resources\insert_link.png" />
+    <None Include="Resources\Insert_16x16.png" />
+    <None Include="Resources\Info_32x32.png" />
+    <None Include="Resources\increase_indent.png" />
+    <None Include="Resources\image_logo.png" />
+    <None Include="Resources\image_load_progress_texture.png" />
+    <None Include="Resources\icon-microbiology - Copy.png" />
+    <None Include="Resources\ffffaa.png" />
+    <None Include="Resources\Front Desk-20 %281%29.png" />
+    <None Include="Resources\Forward_32x32.png" />
+    <None Include="Resources\20_FORWARD_20.png" />
+    <None Include="Resources\Forward_16x16.png" />
+    <None Include="Resources\Find_16x161.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\Feature_16x16.png" />
+    <None Include="Resources\ExportToXLS_32x321.png" />
+    <None Include="Resources\ExportToPDF_32x32.png" />
+    <None Include="Resources\ExportToDOC_32x321.png" />
+    <None Include="Resources\Export_16x16.png" />
+    <None Include="Resources\Expensive 2-48 - Copy %282%29.png" />
+    <None Include="Resources\Expensive 2-48 - Copy.png" />
+    <None Include="Resources\aa.png" />
+    <None Include="Resources\Edit_32x32.png" />
+    <None Include="Resources\Edit_16x161.png" />
+    <None Include="Resources\20_wpf87ce8ed_06_20.png" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\Doctor Male-20.png" />
+    <None Include="Resources\Delete_16x161.png" />
+    <None Include="Resources\decrease_indent.png" />
+    <None Include="Resources\20_wpfa424be2_07 - Copy_20.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\CT_Scan_Search - Copy.png" />
+    <None Include="Resources\Courses-20.png" />
+    <None Include="Resources\Copy_32x32.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\ConnectorToolSpd.png" />
+    <None Include="Resources\Connected-20.png" />
+    <None Include="Resources\ConflictViewEnter.png" />
+    <None Include="Resources\Commet32x32.png" />
+    <None Include="Resources\Combo Chart-20.png" />
+    <None Include="Resources\filter-icons3.png" />
+    <None Include="Resources\CollatePortraitSeparated.png" />
+    <None Include="Resources\Close_20.png" />
+    <None Include="Resources\clear-filter.png" />
+    <None Include="Resources\Chart_32x32.png" />
+    <None Include="Resources\cdt_20x20.png" />
+    <None Include="Resources\CancelRequest_32.png" />
+    <None Include="Resources\Cancel_32x324.png" />
+    <None Include="Resources\Cancel_32x32.png" />
+    <None Include="Resources\bulleted_list.png" />
+    <None Include="Resources\BPLOGO.png" />
+    <None Include="Resources\BP_logo.png" />
+    <None Include="Resources\bold.png" />
+    <None Include="Resources\Barcode-64.png" />
+    <None Include="Resources\Barcode-16.png" />
+    <None Include="Resources\BAD_SAMPLE.png" />
+    <None Include="Resources\Backward_32x32.png" />
+    <None Include="Resources\Apply_32x322.png" />
+    <None Include="Resources\Apply_16x16.png" />
+    <None Include="Resources\align_right.png" />
+    <None Include="Resources\align_left.png" />
+    <None Include="Resources\align_justify.png" />
+    <None Include="Resources\align_center.png" />
+    <None Include="Resources\Add_32x32.png" />
+    <None Include="Resources\Add_16x16.png" />
+    <None Include="Resources\icon_ehc.ico" />
+    <None Include="Resources\Delete_16x16.png" />
+    <None Include="Resources\Find_16x16.png" />
+    <None Include="Resources\Zoom_32x32.png" />
+    <None Include="Resources\Save_32x321.png" />
+    <None Include="Resources\Delete_32x32.png" />
+    <None Include="Resources\Apply_32x321.png" />
+    <None Include="Resources\Save_32x32.png" />
+    <None Include="Resources\Properties_32x32.png" />
+    <None Include="Resources\Apply_32x32.png" />
+    <None Include="Data\Setting.xml" />
+    <Content Include="Core\Utility\Database\sql\update_sequence.sql" />
+    <Content Include="Core\Utility\UI\ObjectListView\CustomDictionary.xml" />
+    <Content Include="Core\Utility\UI\ObjectListView\Resources\clear-filter.png" />
+    <Content Include="Core\Utility\UI\ObjectListView\Resources\coffee.jpg" />
+    <Content Include="Core\Utility\UI\ObjectListView\Resources\filter-icons3.png" />
+    <Content Include="Core\Utility\UI\ObjectListView\Resources\filter.png" />
+    <Content Include="Core\Utility\UI\ObjectListView\Resources\sort-ascending.png" />
+    <Content Include="Core\Utility\UI\ObjectListView\Resources\sort-descending.png" />
+    <Content Include="Medibox.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>call "$(DevEnvDir)..\..\vc\vcvarsall.bat" x86
+"$(DevEnvDir)..\..\vc\bin\EditBin.exe"  /LARGEADDRESSAWARE "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

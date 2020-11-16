@@ -1,0 +1,18 @@
+[7540] 09:57:26.866 D/Program: Name:MediboxAssistant
+[7540] 09:57:26.867 D/Program: Description:Build: 24/04/2019
+[7540] 09:57:26.867 D/Program: Version:1.0.0.1
+[7540] 09:57:28.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--START
+[7540] 09:57:28.000 D/SoftUpdatePresenter: Database sql = 
+[7540] 09:57:28.000 D/SoftUpdatePresenter: Software sql = 20
+[7540] 09:57:28.000 D/SoftUpdatePresenter: BEGIN UPDATE SQL
+[7540] 09:57:28.000 D/SoftUpdatePresenter: END UPDATE SQL
+[7540] 09:57:28.000 E/SoftUpdatePresenter: System.InvalidOperationException: No transaction in progress.
+   at Npgsql.NpgsqlTransaction.Commit()
+   at Medibox.Presenter.SoftUpdatePresenter.DoUpdateDatabaseSQL() in D:\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Presenter\SoftUpdatePresenter.cs:line 139
+[7540] 09:57:28.000 E/UtilityWebServer: StartWebServer error !
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.Collections.CollectionBase.System.Collections.IList.get_Item(Int32 index)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2Collection.get_Item(Int32 index)
+   at Medibox.Service.Net.WebHost.Start() in D:\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Service\Net\WebHost.cs:line 125
+   at Medibox.UtilityWebServer.<StartWebServer>b__11_0() in D:\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\UtilityWebServer.cs:line 69
