@@ -312,42 +312,50 @@ namespace Chinh_Sua_Bai_Viet_Website
         int STTAnhDaiDien;
         private void btnTiep_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < mList.Count; i++)
+            try
+
             {
-                if (mList[i].Tag == "")
+                for (int i = 0; i < mList.Count; i++)
                 {
-                    lbIDSanPham.Text = mList[i].ID;
-                    lbIDTuyChon.Text = mList[i].IDTuyChon;
-                    tbxTenSanPham.Text = mList[i].TenSanPham;
-                    lbSKU.Text = mList[i].SKU;
-                    tbxGiaBan.Text = mList[i].Gia;
-                    tbxGiaSoSanh.Text = mList[i].GiaSoSanh;
-                    tbxCanNang.Text = mList[i].CanNang;
-                    STTLinhKien = i;
-                    STTAnhDaiDien = 1;
-                    if (mList[i].mListAnh.Count > 0)
+                    if (mList[i].Tag == "")
                     {
-                        var request = WebRequest.Create(mList[i].mListAnh[0]);
-                        using (var response = request.GetResponse())
-                        using (var stream = response.GetResponseStream())
+                        lbIDSanPham.Text = mList[i].ID;
+                        lbIDTuyChon.Text = mList[i].IDTuyChon;
+                        tbxTenSanPham.Text = mList[i].TenSanPham;
+                        lbSKU.Text = mList[i].SKU;
+                        tbxGiaBan.Text = mList[i].Gia;
+                        tbxGiaSoSanh.Text = mList[i].GiaSoSanh;
+                        tbxCanNang.Text = mList[i].CanNang;
+                        STTLinhKien = i;
+                        STTAnhDaiDien = 1;
+                        if (mList[i].mListAnh.Count > 0)
                         {
-                            pictureBox1.Image = Bitmap.FromStream(stream);
-                            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                            var request = WebRequest.Create(mList[i].mListAnh[0]);
+                            using (var response = request.GetResponse())
+                            using (var stream = response.GetResponseStream())
+                            {
+                                pictureBox1.Image = Bitmap.FromStream(stream);
+                                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                            }
                         }
-                    }
-                    else
-                    {
-                        Bitmap image = new Bitmap("chua co anh.jpg");
+                        else
                         {
-                            pictureBox1.Image = image;
-                            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                            Bitmap image = new Bitmap("chua co anh.jpg");
+                            {
+                                pictureBox1.Image = image;
+                                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                            }
                         }
+                        lbSTTAnhDaiDien.Text = STTAnhDaiDien.ToString();
+                        lbSoLuongAnh.Text = mList[i].mListAnh.Count.ToString();
+                        break;
                     }
-                    lbSTTAnhDaiDien.Text = STTAnhDaiDien.ToString();
-                    lbSoLuongAnh.Text = mList[i].mListAnh.Count.ToString();
-                    break;
                 }
-            }    
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -1,0 +1,15 @@
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\bin\Debug\Lay Khach Hang 3M.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\bin\Debug\Lay Khach Hang 3M.exe
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\bin\Debug\Lay Khach Hang 3M.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\bin\Debug\WebDriver.xml
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay Khach Hang 3M.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay_Khach_Hang_3M.Form1.resources
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay_Khach_Hang_3M.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay Khach Hang 3M.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay Khach Hang 3M.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay Khach Hang 3M.csproj.CopyComplete
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay Khach Hang 3M.exe
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\obj\Debug\Lay Khach Hang 3M.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\bin\Debug\WebDriver.Support.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay Khach Hang 3M\Lay Khach Hang 3M\bin\Debug\WebDriver.Support.xml

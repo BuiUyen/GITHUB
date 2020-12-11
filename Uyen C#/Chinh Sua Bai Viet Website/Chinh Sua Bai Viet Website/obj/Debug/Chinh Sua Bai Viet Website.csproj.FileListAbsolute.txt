@@ -1,0 +1,18 @@
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\Chinh Sua Bai Viet Website.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\Chinh Sua Bai Viet Website.exe
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\Chinh Sua Bai Viet Website.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.dll
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.xml
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.ResolveComReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.Form1.resources
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.CopyComplete
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.exe
+C:\Users\huuuy\Desktop\Uyen C#\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.pdb

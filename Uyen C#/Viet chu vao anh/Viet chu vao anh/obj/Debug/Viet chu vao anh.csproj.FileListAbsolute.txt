@@ -1,0 +1,10 @@
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\bin\Debug\Viet chu vao anh.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\bin\Debug\Viet chu vao anh.exe
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\bin\Debug\Viet chu vao anh.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\obj\Debug\Viet chu vao anh.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\obj\Debug\Viet_chu_vao_anh.Form1.resources
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\obj\Debug\Viet_chu_vao_anh.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\obj\Debug\Viet chu vao anh.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\obj\Debug\Viet chu vao anh.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\obj\Debug\Viet chu vao anh.exe
+C:\Users\huuuy\Desktop\Uyen C#\Viet chu vao anh\Viet chu vao anh\obj\Debug\Viet chu vao anh.pdb

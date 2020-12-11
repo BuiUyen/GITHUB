@@ -1,0 +1,13 @@
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\bin\Debug\Lay Thong Tin San Pham Sendo.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\bin\Debug\Lay Thong Tin San Pham Sendo.exe
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\bin\Debug\Lay Thong Tin San Pham Sendo.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\bin\Debug\WebDriver.xml
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay Thong Tin San Pham Sendo.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay_Thong_Tin_San_Pham_Sendo.FormMain.resources
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay_Thong_Tin_San_Pham_Sendo.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay Thong Tin San Pham Sendo.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay Thong Tin San Pham Sendo.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay Thong Tin San Pham Sendo.csproj.CopyComplete
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay Thong Tin San Pham Sendo.exe
+C:\Users\huuuy\Desktop\Uyen C#\Lay Thong Tin San Pham Sendo\Lay Thong Tin San Pham Sendo\obj\Debug\Lay Thong Tin San Pham Sendo.pdb

@@ -1,0 +1,18 @@
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\Dang San Phan Sapo Len Shopee.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\Dang San Phan Sapo Len Shopee.exe
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\Dang San Phan Sapo Len Shopee.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\ExcelDataReader.dll
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\ExcelDataReader.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\ExcelDataReader.xml
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang San Phan Sapo Len Shopee.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang_San_Phan_Sapo_Len_Shopee.Form1.resources
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang_San_Phan_Sapo_Len_Shopee.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang San Phan Sapo Len Shopee.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang San Phan Sapo Len Shopee.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang San Phan Sapo Len Shopee.csproj.CopyComplete
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang San Phan Sapo Len Shopee.exe
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang San Phan Sapo Len Shopee.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\Dang San Phan Sapo Len Shopee\obj\Debug\Dang San Phan Sapo Len Shopee.csproj.ResolveComReference.cache
