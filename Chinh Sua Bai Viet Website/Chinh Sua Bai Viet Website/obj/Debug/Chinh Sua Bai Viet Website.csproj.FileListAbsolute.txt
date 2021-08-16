@@ -25,7 +25,6 @@ C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Webs
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.xml
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.pdb
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.xml
-C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csprojAssemblyReference.cache
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.ResolveComReference.cache
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.Form1.resources
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.Properties.Resources.resources
@@ -34,3 +33,4 @@ C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Webs
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.CopyComplete
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.exe
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.pdb
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.AssemblyReference.cache
