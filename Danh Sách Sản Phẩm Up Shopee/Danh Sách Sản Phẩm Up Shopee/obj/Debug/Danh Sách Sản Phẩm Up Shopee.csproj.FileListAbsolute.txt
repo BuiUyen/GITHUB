@@ -1,0 +1,17 @@
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\Danh Sách Sản Phẩm Up Shopee.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\Danh Sách Sản Phẩm Up Shopee.exe
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\Danh Sách Sản Phẩm Up Shopee.pdb
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\ExcelDataReader.dll
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\ExcelDataReader.pdb
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\ExcelDataReader.xml
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh Sách Sản Phẩm Up Shopee.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh_Sách_Sản_Phẩm_Up_Shopee.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh_Sách_Sản_Phẩm_Up_Shopee.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh Sách Sản Phẩm Up Shopee.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh Sách Sản Phẩm Up Shopee.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh Sách Sản Phẩm Up Shopee.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh Sách Sản Phẩm Up Shopee.exe
+C:\Users\huuuy\Desktop\GITHUB\Danh Sách Sản Phẩm Up Shopee\Danh Sách Sản Phẩm Up Shopee\obj\Debug\Danh Sách Sản Phẩm Up Shopee.pdb

@@ -36,7 +36,7 @@ namespace Checker
             var driverService = ChromeDriverService.CreateDefaultService();
             driverService.HideCommandPromptWindow = true;
             var options = new ChromeOptions();
-            options.AddArgument("--window-position=-32000,-32000");
+            //options.AddArgument("--window-position=-32000,-32000"); //an chorme
 
             var driver = new ChromeDriver(driverService, options);
             driver.Navigate().GoToUrl("https://www.google.com/");            

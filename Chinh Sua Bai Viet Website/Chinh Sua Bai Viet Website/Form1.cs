@@ -50,16 +50,15 @@ namespace Chinh_Sua_Bai_Viet_Website
             public string ChuThich { get; set; }
             public string TheTieuDe { get; set; }
             public string TheMoTa { get; set; }
-            //
             public string CanNang { get; set; }
             public string DonViCan { get; set; }
             public string AnhPhienBan { get; set; }
             public string MoTaNgan { get; set; }
             public string ID { get; set; }
-            public string IDTuyChon { get; set; }
+            public string IDTuyChon { get; set; }           
             public List<string> mListAnh { get; set; } = new List<string>();
-
-
+            public string TenPhienBan { get; set; }
+            public List<LinhKien> mListLinhKien { get; set; } = new List<LinhKien>();
         }
 
         public class Tags
@@ -73,6 +72,8 @@ namespace Chinh_Sua_Bai_Viet_Website
         public List<LinhKien> mList = new List<LinhKien>();
         public List<Tags> mListTags = new List<Tags>();
         public List<Tags> mListTagsKetQua = new List<Tags>();
+
+        public List<LinhKien> mListXepAnh = new List<LinhKien>();
 
         public Form1()
         {
@@ -198,6 +199,17 @@ namespace Chinh_Sua_Bai_Viet_Website
                         int stt = mList.FindIndex(v => v.ID == mList_Goc[x].ID);
                         mList[stt].mListAnh.Add(mList_Goc[x].AnhDaiDien);
                     }
+
+                    //tạo tên phiên bản
+                    if (mList_Goc[x].TenSanPham == "")
+                    {
+                        LinhKien lk = mList_Goc.FirstOrDefault(v => v.ID == mList_Goc[x].ID);
+                        mList_Goc[x].TenPhienBan = lk.TenSanPham + " - " + mList_Goc[x].GiaTriThuocTinh;
+                    }
+                    else
+                    {
+                        mList_Goc[x].TenPhienBan = mList_Goc[x].TenSanPham;
+                    }    
                 }
             }
             catch(Exception Ex)
@@ -470,7 +482,7 @@ namespace Chinh_Sua_Bai_Viet_Website
             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
-            worksheet = workbook.Sheets["Sheet1"];
+            worksheet = workbook.Sheets["Trang_tính1"];
             worksheet = workbook.ActiveSheet;
             worksheet.Name = "Uyên";
 
@@ -484,6 +496,225 @@ namespace Chinh_Sua_Bai_Viet_Website
                 for (int j = 0; j < dataGridViewXuat.Columns.Count; j++)
                 {
                     worksheet.Cells[i + 2, j + 1] = dataGridViewXuat.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+
+            var saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = "Ket Qua Danh Muc San Pham";
+            saveFileDialog.DefaultExt = ".xlsx";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                workbook.SaveAs(saveFileDialog.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            }
+            app.Quit();
+        }
+
+        private void btnXepAnh_Click(object sender, EventArgs e)
+        {
+            mListXepAnh = new List<LinhKien>();
+            mListKetQua = new List<LinhKien>();
+            for (int x = 0; x < mList_Goc.Count; x++)
+            {
+                if(mList_Goc[x].SKU != "")
+                {
+                    LinhKien _linhkien = new LinhKien();                        
+                    if (mListXepAnh.FirstOrDefault(v => v.ID == mList_Goc[x].ID) == null)
+                    {
+                        _linhkien = mList_Goc[x];
+                    }
+                    else
+                    {
+                        int stt = mListXepAnh.FindIndex(v => v.ID == mList_Goc[x].ID);
+                        _linhkien = mList_Goc[x];
+                        _linhkien.AnhDaiDien = mListXepAnh[stt].AnhDaiDien;
+                    }
+                    mListXepAnh.Add(_linhkien);
+                }
+            }
+            
+            foreach (string line in tbxInputSKU.Lines)
+            {
+                string text = line.Trim();
+                if(text == "")
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    _linhkien.AnhDaiDien = "chưa có ảnh";
+                    _linhkien.SKU = "Lỗi SKU";
+                    mListKetQua.Add(_linhkien);
+                }
+                else
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    int stt = mListXepAnh.FindIndex(v => v.SKU == text);
+                    if (stt < 0)
+                    {
+                        _linhkien.SKU = "Lỗi SKU";
+                    }
+                    else
+                    {
+                        _linhkien = mListXepAnh[stt];
+                    }
+                    mListKetQua.Add(_linhkien);
+
+
+                    //LinhKien _linhkien = new LinhKien();
+                    //int stt = mList_Goc.FindIndex(v => v.TenSanPham == text);
+                    //if (stt < 0)
+                    //{
+                    //    _linhkien.SKU = "Lỗi SKU";
+                    //}
+                    //else
+                    //{
+                    //    _linhkien = mListXepAnh[stt];
+                    //}
+                    //mListKetQua.Add(_linhkien);
+                }                
+            }
+
+
+
+            dataGridViewKetQua.Rows.Clear();
+            foreach (LinhKien sp in mListKetQua)
+            {
+                int n = dataGridViewKetQua.Rows.Add();
+                dataGridViewKetQua.Rows[n].Cells[0].Value = sp.ID;
+                dataGridViewKetQua.Rows[n].Cells[1].Value = sp.IDTuyChon;
+                dataGridViewKetQua.Rows[n].Cells[2].Value = sp.TenPhienBan;
+                dataGridViewKetQua.Rows[n].Cells[3].Value = sp.SKU;
+                dataGridViewKetQua.Rows[n].Cells[4].Value = sp.Gia;
+                dataGridViewKetQua.Rows[n].Cells[5].Value = sp.GiaSoSanh;
+                dataGridViewKetQua.Rows[n].Cells[6].Value = sp.CanNang;
+                dataGridViewKetQua.Rows[n].Cells[7].Value = sp.AnhDaiDien;
+            }
+        }
+
+        private void btnXulinoidung_Click(object sender, EventArgs e)
+        {
+            mListXepAnh = new List<LinhKien>();
+            mListKetQua = new List<LinhKien>();
+            for (int x = 0; x < mList_Goc.Count; x++)
+            {
+                LinhKien _linhkien = new LinhKien();
+
+                if (mListXepAnh.FirstOrDefault(v => v.ID == mList_Goc[x].ID) == null)
+                {
+                    _linhkien = mList_Goc[x];
+                    _linhkien.mListLinhKien.Add(mList_Goc[x]);
+                    mListXepAnh.Add(_linhkien);
+                }
+                else
+                {
+                    int stt = mListXepAnh.FindIndex(v => v.ID == mList_Goc[x].ID);                    
+                    mListXepAnh[stt].mListLinhKien.Add(mList_Goc[x]);
+                }
+            }
+
+            foreach (string line in tbxInputSKU.Lines)
+            {
+                string text = line.Trim();
+                if (text == "")
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    _linhkien.AnhDaiDien = "chưa có ảnh";
+                    _linhkien.SKU = "Lỗi SKU";
+                    mListKetQua.Add(_linhkien);
+                }
+                else
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    int stt = mListXepAnh.FindIndex(v => v.SKU == text);
+                    if (stt < 0)
+                    {
+                        _linhkien.SKU = "Lỗi SKU không tồn tại";
+                        mListKetQua.Add(_linhkien);
+                    }
+                    else
+                    {
+                        _linhkien = mListXepAnh[stt];
+                        if(_linhkien.mListLinhKien.Count > 1)
+                        {
+                            foreach(LinhKien lk in _linhkien.mListLinhKien)
+                            {
+                                mListKetQua.Add(lk);
+                            }
+                        }
+                        else
+                        {
+                            mListKetQua.Add(_linhkien);
+                        }
+                    }
+                }
+            }
+
+
+            dataGridViewAnhWeb.Rows.Clear();
+            foreach (LinhKien sp in mListKetQua)
+            {
+                int n = dataGridViewAnhWeb.Rows.Add();
+                dataGridViewAnhWeb.Rows[n].Cells[0].Value = sp.Alias;
+                dataGridViewAnhWeb.Rows[n].Cells[1].Value = sp.TenSanPham;
+                dataGridViewAnhWeb.Rows[n].Cells[2].Value = sp.NoiDung;
+                dataGridViewAnhWeb.Rows[n].Cells[3].Value = sp.NhaCungCap;
+                dataGridViewAnhWeb.Rows[n].Cells[4].Value = sp.Loai;
+                dataGridViewAnhWeb.Rows[n].Cells[5].Value = sp.Tag;
+                dataGridViewAnhWeb.Rows[n].Cells[6].Value = sp.HienThi;
+                dataGridViewAnhWeb.Rows[n].Cells[7].Value = sp.ThuocTinh;
+                dataGridViewAnhWeb.Rows[n].Cells[8].Value = sp.GiaTriThuocTinh;
+                dataGridViewAnhWeb.Rows[n].Cells[9].Value = sp.ThuocTinh2;
+                dataGridViewAnhWeb.Rows[n].Cells[10].Value = sp.GiaTriThuocTinh2;
+                dataGridViewAnhWeb.Rows[n].Cells[11].Value = sp.ThuocTinh3;
+                dataGridViewAnhWeb.Rows[n].Cells[12].Value = sp.GiaTriThuocTinh3;
+                dataGridViewAnhWeb.Rows[n].Cells[13].Value = sp.SKU;
+                dataGridViewAnhWeb.Rows[n].Cells[14].Value = sp.QuanLyKho;
+                dataGridViewAnhWeb.Rows[n].Cells[15].Value = sp.SoLuong;
+                dataGridViewAnhWeb.Rows[n].Cells[16].Value = sp.ChoPhepBan;
+                dataGridViewAnhWeb.Rows[n].Cells[17].Value = sp.Variant;
+                dataGridViewAnhWeb.Rows[n].Cells[18].Value = sp.Gia;
+                dataGridViewAnhWeb.Rows[n].Cells[19].Value = sp.GiaSoSanh;
+                dataGridViewAnhWeb.Rows[n].Cells[20].Value = sp.YeuCauVanChuyen;
+                dataGridViewAnhWeb.Rows[n].Cells[21].Value = sp.VAT;
+                dataGridViewAnhWeb.Rows[n].Cells[22].Value = sp.MaVach;
+                dataGridViewAnhWeb.Rows[n].Cells[23].Value = sp.AnhDaiDien;
+                dataGridViewAnhWeb.Rows[n].Cells[24].Value = sp.ChuThich;
+                dataGridViewAnhWeb.Rows[n].Cells[25].Value = sp.TheTieuDe;
+                dataGridViewAnhWeb.Rows[n].Cells[26].Value = sp.TheMoTa;
+                dataGridViewAnhWeb.Rows[n].Cells[27].Value = sp.CanNang;
+                dataGridViewAnhWeb.Rows[n].Cells[28].Value = sp.DonViCan;
+                dataGridViewAnhWeb.Rows[n].Cells[29].Value = sp.AnhPhienBan;
+                dataGridViewAnhWeb.Rows[n].Cells[30].Value = sp.MoTaNgan;
+                dataGridViewAnhWeb.Rows[n].Cells[31].Value = sp.ID;
+                dataGridViewAnhWeb.Rows[n].Cells[32].Value = sp.IDTuyChon;
+
+
+            }
+        }
+
+        private void btnXuatFile_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = workbook.Sheets["Trang_tính1"];
+            worksheet = workbook.ActiveSheet;
+            worksheet.Name = "Uyên";
+
+            for (int i = 1; i < dataGridViewAnhWeb.Columns.Count + 1; i++)
+            {
+                worksheet.Cells[1, i] = dataGridViewAnhWeb.Columns[i - 1].HeaderText;
+            }
+
+            for (int i = 0; i < dataGridViewAnhWeb.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < dataGridViewAnhWeb.Columns.Count; j++)
+                {
+                    if(dataGridViewAnhWeb.Rows[i].Cells[j].Value == null)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = "";
+                    }
+                    else
+                    {
+                        worksheet.Cells[i + 2, j + 1] = dataGridViewAnhWeb.Rows[i].Cells[j].Value.ToString();
+                    }
                 }
             }
 

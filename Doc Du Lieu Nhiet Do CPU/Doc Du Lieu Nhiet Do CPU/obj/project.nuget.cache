@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "in/ijVmtwZ38JpSg5ZK8oIQV6/JWybVuBFM7fBV4CfuM3DjW6+zBUkm9jPj7DUQiUgvnhS0QTLlntmQfUt5dGA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\huuuy\\Desktop\\GITHUB\\Doc Du Lieu Nhiet Do CPU\\Doc Du Lieu Nhiet Do CPU\\Doc Du Lieu Nhiet Do CPU.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\huuuy\\.nuget\\packages\\openhardwaremonitor\\0.9.6\\openhardwaremonitor.0.9.6.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenHardwareMonitor 0.9.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenHardwareMonitor",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
