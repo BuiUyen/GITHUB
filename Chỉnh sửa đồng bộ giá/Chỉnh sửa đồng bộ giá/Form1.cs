@@ -316,6 +316,13 @@ namespace Chỉnh_sửa_đồng_bộ_giá
                             _giainput.GiaBanLe = fields[1];
                             mListGiaInput.Add(_giainput);
                         }
+                        else
+                        {
+                            GiaInput _giainput = new GiaInput();
+                            _giainput.SKU = "lỗi";
+                            _giainput.GiaBanLe = "chưa có giá";
+                            mListGiaInput.Add(_giainput);
+                        }    
 
                         foreach (string f in fields)
                         {
@@ -353,24 +360,44 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             foreach (GiaInput _giaInput in mListGiaInput)
             {
                 LinhKien _linhkien = new LinhKien();
-                if(mList_Goc.FirstOrDefault(v => v.MaSKU == _giaInput.SKU.Trim()) != null)
+                if (mList_Goc.FirstOrDefault(v => v.MaSKU == _giaInput.SKU.Trim()) != null)
                 {
-                    string SKU = mList_Goc.FirstOrDefault(v => v.MaSKU == _giaInput.SKU.Trim()).SKU_SanPhamChinh;
-                    _linhkien = mList_PhienBanSanPham.FirstOrDefault(v => v.MaSKU == SKU);
-                    foreach (LinhKien lk in _linhkien.mListThuocTinh)
-                    {
-                        if (lk.MaSKU == _giaInput.SKU)
-                        {
-                            lk.GiaBanLe = _giaInput.GiaBanLe;
-                        }
-                        mList_KetQua.Add(lk);
-                    }
+                    //string SKU = mList_Goc.FirstOrDefault(v => v.MaSKU == _giaInput.SKU.Trim()).SKU_SanPhamChinh;
+                    //_linhkien = mList_PhienBanSanPham.FirstOrDefault(v => v.MaSKU == SKU);
+                    //foreach (LinhKien lk in _linhkien.mListThuocTinh)
+                    //{
+                    //    if (lk.MaSKU == _giaInput.SKU)
+                    //    {
+                    //        lk.GiaBanLe = _giaInput.GiaBanLe;
+                    //    }
+                    //    mList_KetQua.Add(lk);
+                    //}
+
+                    _linhkien = mList_Goc.FirstOrDefault(v => v.MaSKU == _giaInput.SKU.Trim());
+                    mList_KetQua.Add(_linhkien);
                 }
                 else
                 {
-                    MessageBox.Show("Lỗi SKU sản phẩm không tìm thấy: " + _giaInput.SKU.Trim(), "Thông Báo");
-                }                
+                    _linhkien.MaSKU = "không tìm thấy SKU";
+                    _linhkien.GiaNhap = "chưa có giá nhập";
+                    mList_KetQua.Add(_linhkien);
+                    //MessageBox.Show("Lỗi SKU sản phẩm không tìm thấy: " + _giaInput.SKU.Trim(), "Thông Báo");
+                }
             }
+
+            //foreach (LinhKien _lk in mList_Goc)
+            //{
+            //    //LinhKien _linhkien = new LinhKien();
+            //    if (mListGiaInput.FirstOrDefault(v => v.SKU.Trim() == _lk.MaSKU) == null)
+            //    {
+            //        mList_KetQua.Add(_lk);
+            //    }
+            //    else
+            //    {
+            //        _lk.MoTaSanPham = mListGiaInput.FirstOrDefault(v => v.SKU.Trim() == _lk.MaSKU).GiaBanLe;
+            //        mList_KetQua.Add(_lk);
+            //    }
+            //}
 
             dataGridViewKetQua.Rows.Clear();
             foreach (LinhKien sp in mList_KetQua)
@@ -596,6 +623,13 @@ namespace Chỉnh_sửa_đồng_bộ_giá
                 dataGridViewXuLyChung.Rows[n].Cells[5].Value = _giaInput.ShopeeAna;
                 dataGridViewXuLyChung.Rows[n].Cells[6].Value = _giaInput.ShopeeCoDienTu;
             }
+        }
+
+        private void btnWebtoShopee_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            this.Close();
         }
     }
 }

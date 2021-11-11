@@ -16,3 +16,4 @@ C:\Users\huuuy\Desktop\GITHUB\Chỉnh sửa đồng bộ giá\Chỉnh sửa đ�
 C:\Users\huuuy\Desktop\GITHUB\Chỉnh sửa đồng bộ giá\Chỉnh sửa đồng bộ giá\obj\Debug\Chỉnh sửa đồng bộ giá.exe
 C:\Users\huuuy\Desktop\GITHUB\Chỉnh sửa đồng bộ giá\Chỉnh sửa đồng bộ giá\obj\Debug\Chỉnh sửa đồng bộ giá.pdb
 C:\Users\huuuy\Desktop\GITHUB\Chỉnh sửa đồng bộ giá\Chỉnh sửa đồng bộ giá\obj\Debug\Chỉnh sửa đồng bộ giá.csproj.ResolveComReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Chỉnh sửa đồng bộ giá\Chỉnh sửa đồng bộ giá\obj\Debug\Chỉnh_sửa_đồng_bộ_giá.Form2.resources

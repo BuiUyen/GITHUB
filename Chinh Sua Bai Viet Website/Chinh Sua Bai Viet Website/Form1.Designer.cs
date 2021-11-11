@@ -141,7 +141,7 @@
             // 
             // btnOpenFileExcel
             // 
-            this.btnOpenFileExcel.Location = new System.Drawing.Point(702, 17);
+            this.btnOpenFileExcel.Location = new System.Drawing.Point(702, 13);
             this.btnOpenFileExcel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOpenFileExcel.Name = "btnOpenFileExcel";
             this.btnOpenFileExcel.Size = new System.Drawing.Size(112, 31);

@@ -113,6 +113,8 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.label2 = new System.Windows.Forms.Label();
             this.btnFolder = new System.Windows.Forms.Button();
             this.tbxFolder = new System.Windows.Forms.TextBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnWebtoShopee = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData_Goc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInput)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -168,7 +170,7 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.dataGridViewInput.Location = new System.Drawing.Point(1641, 46);
             this.dataGridViewInput.Name = "dataGridViewInput";
             this.dataGridViewInput.RowHeadersWidth = 51;
-            this.dataGridViewInput.Size = new System.Drawing.Size(616, 1152);
+            this.dataGridViewInput.Size = new System.Drawing.Size(616, 1054);
             this.dataGridViewInput.TabIndex = 8;
             this.dataGridViewInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridViewInput_KeyDown);
             // 
@@ -214,6 +216,7 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.tabControl1.Controls.Add(this.tabSapo);
             this.tabControl1.Controls.Add(this.tabShopee);
             this.tabControl1.Controls.Add(this.tabXuLyChung);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(66, 30);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
@@ -235,7 +238,7 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.tabSapo.Controls.Add(this.cbxSheet);
             this.tabSapo.Location = new System.Drawing.Point(4, 34);
             this.tabSapo.Name = "tabSapo";
-            this.tabSapo.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabSapo.Padding = new System.Windows.Forms.Padding(3);
             this.tabSapo.Size = new System.Drawing.Size(1606, 1174);
             this.tabSapo.TabIndex = 0;
             this.tabSapo.Text = "Sapo";
@@ -292,8 +295,8 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.Column26,
             this.Column27,
             this.Column28});
-            this.dataGridViewKetQua.Location = new System.Drawing.Point(6, 478);
-            this.dataGridViewKetQua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewKetQua.Location = new System.Drawing.Point(12, 471);
+            this.dataGridViewKetQua.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewKetQua.Name = "dataGridViewKetQua";
             this.dataGridViewKetQua.RowHeadersWidth = 51;
             this.dataGridViewKetQua.RowTemplate.Height = 24;
@@ -510,8 +513,8 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             // 
             this.tabShopee.Location = new System.Drawing.Point(4, 34);
             this.tabShopee.Name = "tabShopee";
-            this.tabShopee.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabShopee.Size = new System.Drawing.Size(1606, 1151);
+            this.tabShopee.Padding = new System.Windows.Forms.Padding(3);
+            this.tabShopee.Size = new System.Drawing.Size(1606, 1174);
             this.tabShopee.TabIndex = 1;
             this.tabShopee.Text = "Shopee";
             this.tabShopee.UseVisualStyleBackColor = true;
@@ -551,7 +554,7 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.tabXuLyChung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabXuLyChung.Location = new System.Drawing.Point(4, 34);
             this.tabXuLyChung.Name = "tabXuLyChung";
-            this.tabXuLyChung.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabXuLyChung.Padding = new System.Windows.Forms.Padding(3);
             this.tabXuLyChung.Size = new System.Drawing.Size(1606, 1174);
             this.tabXuLyChung.TabIndex = 2;
             this.tabXuLyChung.Text = "Xử lý chung";
@@ -579,7 +582,7 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.Column33,
             this.Column34});
             this.dataGridViewXuLyChung.Location = new System.Drawing.Point(4, 523);
-            this.dataGridViewXuLyChung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewXuLyChung.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewXuLyChung.Name = "dataGridViewXuLyChung";
             this.dataGridViewXuLyChung.RowHeadersWidth = 51;
             this.dataGridViewXuLyChung.RowTemplate.Height = 24;
@@ -886,11 +889,32 @@ namespace Chỉnh_sửa_đồng_bộ_giá
             this.tbxFolder.Size = new System.Drawing.Size(1028, 30);
             this.tbxFolder.TabIndex = 43;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1606, 1174);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Sản phẩm Web sang Shopee";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnWebtoShopee
+            // 
+            this.btnWebtoShopee.Location = new System.Drawing.Point(2082, 1172);
+            this.btnWebtoShopee.Name = "btnWebtoShopee";
+            this.btnWebtoShopee.Size = new System.Drawing.Size(175, 52);
+            this.btnWebtoShopee.TabIndex = 11;
+            this.btnWebtoShopee.Text = "Sản phẩm WEB sang Shopee";
+            this.btnWebtoShopee.UseVisualStyleBackColor = true;
+            this.btnWebtoShopee.Click += new System.EventHandler(this.btnWebtoShopee_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2264, 1236);
+            this.Controls.Add(this.btnWebtoShopee);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dataGridViewInput);
             this.Name = "Form1";
@@ -994,6 +1018,8 @@ namespace Chỉnh_sửa_đồng_bộ_giá
         private System.Windows.Forms.DataGridViewTextBoxColumn Column33;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column34;
         private System.Windows.Forms.Button btnXuLyChung;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button btnWebtoShopee;
     }
 }
 
