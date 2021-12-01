@@ -34,3 +34,4 @@ C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Webs
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.exe
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.pdb
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.SuggestedBindingRedirects.cache
