@@ -3,7 +3,6 @@ C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\bin\Debug\Checker.exe
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\bin\Debug\Checker.pdb
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\bin\Debug\WebDriver.dll
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\bin\Debug\WebDriver.xml
-C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.csprojAssemblyReference.cache
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.Form1.resources
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.Properties.Resources.resources
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.csproj.GenerateResource.cache
@@ -11,3 +10,5 @@ C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.csproj.CoreCompi
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.csproj.CopyComplete
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.exe
 C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.pdb
+C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Checker\Checker\obj\Debug\Checker.csproj.SuggestedBindingRedirects.cache

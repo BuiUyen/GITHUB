@@ -56,44 +56,46 @@ namespace Checker
             //    mListData.Add(_object);
             //}
 
-            int test = 10000;
-            for (test = 10000; test <= 99999; test++)
-            {
-                string linkdh = @"https://checkerviet.me/threads/" + test.ToString() + "/";
-                driver.Navigate().GoToUrl(linkdh);
-                System.Threading.Thread.Sleep(100);
-                TaoFileCode(driver.PageSource);
-
-                Object _object = new Object();
-                _object.ID = test;
-                _object.mListData = ReadSource();
-                if (_object.mListData.Count > 0)
-                {
-                    mListData.Add(_object);
-                }
-            }
-
-            string link = "";
+            
+            
             string fileoutput = @"D:\link.txt";
-            foreach (Object ob in mListData)
-            {
-                link = link + "\n" + ob.ID.ToString();
+            List<int> List_cod = new List<int>();
 
-                foreach(string str in ob.mListData)
+            for (int test = 10000; test <= 99999; test++)  //4257
+            {
+                try
                 {
-                    link = link + "\n" + str;
-                } 
-            }
+                    string linkdh = @"https://checkerviet.org/threads/" + test.ToString() + "/";
+                    driver.Navigate().GoToUrl(linkdh);
+                    System.Threading.Thread.Sleep(5000);
+                    TaoFileCode(driver.PageSource);
 
-            if (File.Exists(fileoutput))
-            {
-                File.Delete(fileoutput);
-            }
-            using (StreamWriter fs = File.CreateText(fileoutput))
-            {
-                fs.WriteLine(link);
-            }
+                    Object _object = new Object();
+                    _object.ID = test;
+                    _object.mListData = ReadSource();
+                    if (_object.mListData.Count > 0)
+                    {
+                        string readText = File.ReadAllText(fileoutput);
+                        using (StreamWriter writer = new StreamWriter(fileoutput))
+                        {
+                            writer.WriteLine(readText + test.ToString());
+                        }
 
+                        //if (File.Exists(fileoutput))
+                        //{
+                        //    File.Delete(fileoutput);
+                        //}
+                        //using (StreamWriter fs = File.CreateText(fileoutput))
+                        //{
+                        //    fs.WriteLine(link);
+                        //}
+                    }                
+                }
+                catch (Exception ex)
+                {
+
+                }                
+            }
         }
 
         public void TaoFileCode(string input)
@@ -141,6 +143,17 @@ namespace Checker
                 Console.WriteLine(Ex.ToString());
             }
             return List_String;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string fileoutput = @"D:\link.txt";
+
+            string readText = File.ReadAllText(fileoutput);
+            using (StreamWriter writer = new StreamWriter(fileoutput))
+            {
+                writer.WriteLine(readText + tbxketqua.Text);
+            }
         }
     }
 }
