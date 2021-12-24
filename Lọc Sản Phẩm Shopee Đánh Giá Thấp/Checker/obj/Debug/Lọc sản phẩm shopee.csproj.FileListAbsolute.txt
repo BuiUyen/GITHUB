@@ -1,0 +1,14 @@
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\bin\Debug\Checker.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\bin\Debug\Checker.exe
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\bin\Debug\Checker.pdb
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\bin\Debug\WebDriver.xml
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.SuggestedBindingRedirects.cache
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Checker.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Checker.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Checker.exe
+C:\Users\huuuy\Desktop\GITHUB\Lọc Sản Phẩm Shopee Đánh Giá Thấp\Checker\obj\Debug\Checker.pdb

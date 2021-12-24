@@ -1,0 +1,10 @@
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\bin\Debug\Test Lay Du Lieu PageSource.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\bin\Debug\Test Lay Du Lieu PageSource.exe
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\bin\Debug\Test Lay Du Lieu PageSource.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\obj\Debug\Test Lay Du Lieu PageSource.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\obj\Debug\Test_Lay_Du_Lieu_PageSource.Form1.resources
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\obj\Debug\Test_Lay_Du_Lieu_PageSource.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\obj\Debug\Test Lay Du Lieu PageSource.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\obj\Debug\Test Lay Du Lieu PageSource.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\obj\Debug\Test Lay Du Lieu PageSource.exe
+C:\Users\huuuy\Desktop\Uyen C#\Test Lay Du Lieu PageSource\Test Lay Du Lieu PageSource\obj\Debug\Test Lay Du Lieu PageSource.pdb

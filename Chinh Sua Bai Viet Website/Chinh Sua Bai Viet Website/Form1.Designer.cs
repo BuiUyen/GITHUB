@@ -53,14 +53,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.dataGridViewKetQua = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDTuyChon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaSoSanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CanNang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TagSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbxTimTags = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridViewTagsGoiY = new System.Windows.Forms.DataGridView();
@@ -123,12 +115,24 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXulinoidung = new System.Windows.Forms.Button();
             this.btnXuatFile = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDTuyChon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaSoSanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CanNang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AnhDaiDien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnXuat2 = new System.Windows.Forms.Button();
+            this.dataGridViewNganhHang = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTagsGoiY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnhWeb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNganhHang)).BeginInit();
             this.SuspendLayout();
             // 
             // tbxFile
@@ -366,69 +370,14 @@
             this.GiaBan,
             this.GiaSoSanh,
             this.CanNang,
-            this.TagSP});
+            this.AnhDaiDien,
+            this.Column35});
             this.dataGridViewKetQua.Location = new System.Drawing.Point(18, 1005);
             this.dataGridViewKetQua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewKetQua.Name = "dataGridViewKetQua";
             this.dataGridViewKetQua.RowHeadersWidth = 51;
             this.dataGridViewKetQua.Size = new System.Drawing.Size(1900, 452);
             this.dataGridViewKetQua.TabIndex = 24;
-            // 
-            // ID
-            // 
-            this.ID.FillWeight = 43.50782F;
-            this.ID.HeaderText = "ID Sản phẩm";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            // 
-            // IDTuyChon
-            // 
-            this.IDTuyChon.FillWeight = 46.21473F;
-            this.IDTuyChon.HeaderText = "ID Tùy Chọn";
-            this.IDTuyChon.MinimumWidth = 6;
-            this.IDTuyChon.Name = "IDTuyChon";
-            // 
-            // TenSanPham
-            // 
-            this.TenSanPham.FillWeight = 182.9041F;
-            this.TenSanPham.HeaderText = "Tên Sản Phẩm";
-            this.TenSanPham.MinimumWidth = 6;
-            this.TenSanPham.Name = "TenSanPham";
-            // 
-            // SKU
-            // 
-            this.SKU.FillWeight = 43.9003F;
-            this.SKU.HeaderText = "SKU";
-            this.SKU.MinimumWidth = 6;
-            this.SKU.Name = "SKU";
-            // 
-            // GiaBan
-            // 
-            this.GiaBan.FillWeight = 46.58588F;
-            this.GiaBan.HeaderText = "Giá Bán";
-            this.GiaBan.MinimumWidth = 6;
-            this.GiaBan.Name = "GiaBan";
-            // 
-            // GiaSoSanh
-            // 
-            this.GiaSoSanh.FillWeight = 49.12538F;
-            this.GiaSoSanh.HeaderText = "Giá So Sánh";
-            this.GiaSoSanh.MinimumWidth = 6;
-            this.GiaSoSanh.Name = "GiaSoSanh";
-            // 
-            // CanNang
-            // 
-            this.CanNang.FillWeight = 51.52679F;
-            this.CanNang.HeaderText = "Cân Nặng";
-            this.CanNang.MinimumWidth = 6;
-            this.CanNang.Name = "CanNang";
-            // 
-            // TagSP
-            // 
-            this.TagSP.FillWeight = 336.235F;
-            this.TagSP.HeaderText = "Tags";
-            this.TagSP.MinimumWidth = 6;
-            this.TagSP.Name = "TagSP";
             // 
             // tbxTimTags
             // 
@@ -556,7 +505,7 @@
             this.Column8,
             this.Column9,
             this.Column10});
-            this.dataGridViewXuat.Location = new System.Drawing.Point(18, 1003);
+            this.dataGridViewXuat.Location = new System.Drawing.Point(19, 1005);
             this.dataGridViewXuat.Name = "dataGridViewXuat";
             this.dataGridViewXuat.RowHeadersWidth = 51;
             this.dataGridViewXuat.RowTemplate.Height = 24;
@@ -668,7 +617,7 @@
             this.tbxInputSKU.Location = new System.Drawing.Point(1925, 217);
             this.tbxInputSKU.Multiline = true;
             this.tbxInputSKU.Name = "tbxInputSKU";
-            this.tbxInputSKU.Size = new System.Drawing.Size(160, 1547);
+            this.tbxInputSKU.Size = new System.Drawing.Size(247, 1547);
             this.tbxInputSKU.TabIndex = 39;
             // 
             // dataGridViewAnhWeb
@@ -975,11 +924,96 @@
             this.btnXuatFile.UseVisualStyleBackColor = true;
             this.btnXuatFile.Click += new System.EventHandler(this.btnXuatFile_Click);
             // 
+            // ID
+            // 
+            this.ID.FillWeight = 61.56355F;
+            this.ID.HeaderText = "ID Sản phẩm";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // IDTuyChon
+            // 
+            this.IDTuyChon.FillWeight = 65.39382F;
+            this.IDTuyChon.HeaderText = "ID Tùy Chọn";
+            this.IDTuyChon.MinimumWidth = 6;
+            this.IDTuyChon.Name = "IDTuyChon";
+            // 
+            // TenSanPham
+            // 
+            this.TenSanPham.FillWeight = 258.8092F;
+            this.TenSanPham.HeaderText = "Tên Sản Phẩm";
+            this.TenSanPham.MinimumWidth = 6;
+            this.TenSanPham.Name = "TenSanPham";
+            // 
+            // SKU
+            // 
+            this.SKU.FillWeight = 62.11891F;
+            this.SKU.HeaderText = "SKU";
+            this.SKU.MinimumWidth = 6;
+            this.SKU.Name = "SKU";
+            // 
+            // GiaBan
+            // 
+            this.GiaBan.FillWeight = 65.91901F;
+            this.GiaBan.HeaderText = "Đường dẫn ảnh";
+            this.GiaBan.MinimumWidth = 6;
+            this.GiaBan.Name = "GiaBan";
+            // 
+            // GiaSoSanh
+            // 
+            this.GiaSoSanh.FillWeight = 69.5124F;
+            this.GiaSoSanh.HeaderText = "Mô tả sản phẩm";
+            this.GiaSoSanh.MinimumWidth = 6;
+            this.GiaSoSanh.Name = "GiaSoSanh";
+            // 
+            // CanNang
+            // 
+            this.CanNang.FillWeight = 72.91039F;
+            this.CanNang.HeaderText = "Giá bán";
+            this.CanNang.MinimumWidth = 6;
+            this.CanNang.Name = "CanNang";
+            // 
+            // AnhDaiDien
+            // 
+            this.AnhDaiDien.FillWeight = 102.2727F;
+            this.AnhDaiDien.HeaderText = "Cân nặng";
+            this.AnhDaiDien.MinimumWidth = 6;
+            this.AnhDaiDien.Name = "AnhDaiDien";
+            // 
+            // Column35
+            // 
+            this.Column35.FillWeight = 141.5F;
+            this.Column35.HeaderText = "Ảnh đại diện";
+            this.Column35.MinimumWidth = 8;
+            this.Column35.Name = "Column35";
+            // 
+            // btnXuat2
+            // 
+            this.btnXuat2.Location = new System.Drawing.Point(216, 1480);
+            this.btnXuat2.Name = "btnXuat2";
+            this.btnXuat2.Size = new System.Drawing.Size(82, 38);
+            this.btnXuat2.TabIndex = 43;
+            this.btnXuat2.Text = "=>";
+            this.btnXuat2.UseVisualStyleBackColor = true;
+            this.btnXuat2.Click += new System.EventHandler(this.btnXuat2_Click);
+            // 
+            // dataGridViewNganhHang
+            // 
+            this.dataGridViewNganhHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNganhHang.Location = new System.Drawing.Point(2179, 58);
+            this.dataGridViewNganhHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridViewNganhHang.Name = "dataGridViewNganhHang";
+            this.dataGridViewNganhHang.RowHeadersWidth = 51;
+            this.dataGridViewNganhHang.Size = new System.Drawing.Size(411, 1706);
+            this.dataGridViewNganhHang.TabIndex = 44;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2192, 1814);
+            this.ClientSize = new System.Drawing.Size(2636, 1814);
+            this.Controls.Add(this.dataGridViewNganhHang);
+            this.Controls.Add(this.btnXuat2);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.btnXulinoidung);
             this.Controls.Add(this.dataGridViewAnhWeb);
@@ -1032,6 +1066,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTagsGoiY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnhWeb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNganhHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1073,14 +1108,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lbSTTAnhDaiDien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDTuyChon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaSoSanh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CanNang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TagSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTags;
         private System.Windows.Forms.DataGridViewTextBoxColumn TagsGoiY;
         private System.Windows.Forms.Button btnXuat;
@@ -1134,6 +1161,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.Button btnXulinoidung;
         private System.Windows.Forms.Button btnXuatFile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDTuyChon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaSoSanh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CanNang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AnhDaiDien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column35;
+        private System.Windows.Forms.Button btnXuat2;
+        private System.Windows.Forms.DataGridView dataGridViewNganhHang;
     }
 }
 

@@ -1,0 +1,25 @@
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\Lay San Pham 3M.exe.config
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\Lay San Pham 3M.exe
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\Lay San Pham 3M.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\WebDriver.xml
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay San Pham 3M.csprojAssemblyReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay_San_Pham_3M.Form1.resources
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay_San_Pham_3M.Properties.Resources.resources
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay San Pham 3M.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay San Pham 3M.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay San Pham 3M.csproj.CopyComplete
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay San Pham 3M.exe
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay San Pham 3M.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\obj\Debug\Lay San Pham 3M.csproj.ResolveComReference.cache
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\ExcelDataReader.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\ExcelDataReader.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\ExcelDataReader.xml
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\itextsharp.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\itextsharp.xml
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\HtmlAgilityPack.dll
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\huuuy\Desktop\Uyen C#\Lay San Pham 3M\Lay San Pham 3M\bin\Debug\HtmlAgilityPack.xml

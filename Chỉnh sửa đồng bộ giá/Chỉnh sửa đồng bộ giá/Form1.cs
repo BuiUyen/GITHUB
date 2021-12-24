@@ -153,7 +153,7 @@ namespace Chỉnh_sửa_đồng_bộ_giá
                 MessageBox.Show(Ex.ToString());
             }
         }
-
+        
         private void BrowseFolderButton_Click()
         {
             FolderBrowserDialog folderDlg = new FolderBrowserDialog();

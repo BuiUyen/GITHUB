@@ -31,6 +31,8 @@
             this.btnRun = new System.Windows.Forms.Button();
             this.tbxketqua = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.tbxMin = new System.Windows.Forms.TextBox();
+            this.tbxMax = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnRun
@@ -63,11 +65,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // tbxMin
+            // 
+            this.tbxMin.Location = new System.Drawing.Point(102, 133);
+            this.tbxMin.Name = "tbxMin";
+            this.tbxMin.Size = new System.Drawing.Size(100, 26);
+            this.tbxMin.TabIndex = 3;
+            // 
+            // tbxMax
+            // 
+            this.tbxMax.Location = new System.Drawing.Point(102, 251);
+            this.tbxMax.Name = "tbxMax";
+            this.tbxMax.Size = new System.Drawing.Size(100, 26);
+            this.tbxMax.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 670);
+            this.Controls.Add(this.tbxMax);
+            this.Controls.Add(this.tbxMin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbxketqua);
             this.Controls.Add(this.btnRun);
@@ -84,6 +102,8 @@
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.TextBox tbxketqua;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbxMin;
+        private System.Windows.Forms.TextBox tbxMax;
     }
 }
 

@@ -58,10 +58,20 @@ namespace Checker
 
             
             
-            string fileoutput = @"D:\link.txt";
+            string fileoutput = @"link.txt";
             List<int> List_cod = new List<int>();
+            if (File.Exists(fileoutput))
+            {
+                File.Delete(fileoutput);
+            }
+            using (StreamWriter fs = File.CreateText(fileoutput))
+            {
+                
+            }
+            int.TryParse(tbxMin.Text, out int Min);
+            int.TryParse(tbxMax.Text, out int Max);
 
-            for (int test = 10000; test <= 99999; test++)  //4257
+            for (int test = Min; test <= Max; test++)
             {
                 try
                 {

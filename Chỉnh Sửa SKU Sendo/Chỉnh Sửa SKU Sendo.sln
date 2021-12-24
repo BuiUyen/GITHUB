@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lọc sản phẩm shopee", "Checker\Lọc sản phẩm shopee.csproj", "{32F126D4-6247-442D-97C4-AAE4B94B2C23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32F126D4-6247-442D-97C4-AAE4B94B2C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F126D4-6247-442D-97C4-AAE4B94B2C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F126D4-6247-442D-97C4-AAE4B94B2C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F126D4-6247-442D-97C4-AAE4B94B2C23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1288E69-B8B0-4660-B172-C37A422B375B}
+	EndGlobalSection
+EndGlobal

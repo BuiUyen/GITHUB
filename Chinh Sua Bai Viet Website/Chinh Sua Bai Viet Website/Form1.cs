@@ -59,6 +59,8 @@ namespace Chinh_Sua_Bai_Viet_Website
             public List<string> mListAnh { get; set; } = new List<string>();
             public string TenPhienBan { get; set; }
             public List<LinhKien> mListLinhKien { get; set; } = new List<LinhKien>();
+
+            public string MaNganhSenDo { get; set; }
         }
 
         public class Tags
@@ -68,15 +70,23 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         }
 
+        public class NganhHang
+        {
+            public string TuKhoa { get; set; }
+            public string MaNganh { get; set; }
+
+        }
+
         public List<LinhKien> mList_Goc = new List<LinhKien>();
         public List<LinhKien> mList = new List<LinhKien>();
         public List<Tags> mListTags = new List<Tags>();
         public List<Tags> mListTagsKetQua = new List<Tags>();
-
         public List<LinhKien> mListXepAnh = new List<LinhKien>();
 
+        public List<NganhHang> mListNganh = new List<NganhHang>();
+
         public Form1()
-        {
+        {            
             InitializeComponent();
         }
         
@@ -135,6 +145,8 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         private void cbxSheet_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Nganhhang();
+
             try
             {
                 System.Data.DataTable dt = tableCollection[cbxSheet.SelectedItem.ToString()];
@@ -482,8 +494,8 @@ namespace Chinh_Sua_Bai_Viet_Website
             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
-            worksheet = workbook.Sheets["Trang_tính1"];
-            worksheet = workbook.ActiveSheet;
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.Sheets["Trang_tính1"];
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.ActiveSheet;
             worksheet.Name = "Uyên";
 
             for (int i = 1; i < dataGridViewXuat.Columns.Count + 1; i++)
@@ -513,6 +525,9 @@ namespace Chinh_Sua_Bai_Viet_Website
         {
             mListXepAnh = new List<LinhKien>();
             mListKetQua = new List<LinhKien>();
+
+            dataGridViewXuat.Hide();
+
             for (int x = 0; x < mList_Goc.Count; x++)
             {
                 if(mList_Goc[x].SKU != "")
@@ -578,13 +593,35 @@ namespace Chinh_Sua_Bai_Viet_Website
             {
                 int n = dataGridViewKetQua.Rows.Add();
                 dataGridViewKetQua.Rows[n].Cells[0].Value = sp.ID;
-                dataGridViewKetQua.Rows[n].Cells[1].Value = sp.IDTuyChon;
+
+                NganhHang nganh = mListNganh.FirstOrDefault(v => sp.Tag.Contains(v.TuKhoa));
+                if (nganh == null)
+                {
+                    sp.MaNganhSenDo = "chưa có";
+
+                } else
+                    sp.MaNganhSenDo = nganh.MaNganh;
+                dataGridViewKetQua.Rows[n].Cells[1].Value = sp.MaNganhSenDo;
                 dataGridViewKetQua.Rows[n].Cells[2].Value = sp.TenPhienBan;
                 dataGridViewKetQua.Rows[n].Cells[3].Value = sp.SKU;
-                dataGridViewKetQua.Rows[n].Cells[4].Value = sp.Gia;
-                dataGridViewKetQua.Rows[n].Cells[5].Value = sp.GiaSoSanh;
-                dataGridViewKetQua.Rows[n].Cells[6].Value = sp.CanNang;
-                dataGridViewKetQua.Rows[n].Cells[7].Value = sp.AnhDaiDien;
+                string tatcaanh = "";
+                foreach (string anh in sp.mListAnh)
+                {
+                    if (tatcaanh.Length == 0)
+                    {
+                        tatcaanh = anh;
+                    }
+                    else
+                    {
+                        tatcaanh = tatcaanh + ";" + anh;
+                    }
+                }
+                dataGridViewKetQua.Rows[n].Cells[4].Value = tatcaanh;
+                dataGridViewKetQua.Rows[n].Cells[5].Value = sp.NoiDung;
+                dataGridViewKetQua.Rows[n].Cells[6].Value = sp.Gia.Replace(".","");
+                dataGridViewKetQua.Rows[n].Cells[7].Value = sp.CanNang;
+                dataGridViewKetQua.Rows[n].Cells[8].Value = sp.AnhDaiDien;
+                
             }
         }
 
@@ -694,8 +731,8 @@ namespace Chinh_Sua_Bai_Viet_Website
             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
-            worksheet = workbook.Sheets["Trang_tính1"];
-            worksheet = workbook.ActiveSheet;
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.Sheets["Trang_tính1"];
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.ActiveSheet;
             worksheet.Name = "Uyên";
 
             for (int i = 1; i < dataGridViewAnhWeb.Columns.Count + 1; i++)
@@ -726,6 +763,76 @@ namespace Chinh_Sua_Bai_Viet_Website
                 workbook.SaveAs(saveFileDialog.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             }
             app.Quit();
+        }
+
+        private void btnXuat2_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.Sheets["Trang_tính1"];
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.ActiveSheet;
+            worksheet.Name = "Uyên";
+
+            for (int i = 1; i < dataGridViewKetQua.Columns.Count + 1; i++)
+            {
+                worksheet.Cells[1, i] = dataGridViewKetQua.Columns[i - 1].HeaderText;
+            }
+
+            for (int i = 0; i < dataGridViewKetQua.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < dataGridViewKetQua.Columns.Count; j++)
+                {
+                    worksheet.Cells[i + 2, j + 1] = dataGridViewKetQua.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+
+            var saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = "Ket Qua Danh Muc San Pham";
+            saveFileDialog.DefaultExt = ".xlsx";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                workbook.SaveAs(saveFileDialog.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            }
+            app.Quit();
+        }
+
+        private void Nganhhang()
+        {
+            DataTableCollection tableMaNganhCollection;
+            List<string> listSheet = new List<string>();
+            mListNganh.Clear();
+
+            using (var steam = File.Open(@"Ma nganh.xlsx", FileMode.Open, FileAccess.Read))
+            {
+                using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(steam))
+                {
+                    DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                    {
+                        ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
+
+                    });
+                    tableMaNganhCollection = result.Tables;
+                    foreach (System.Data.DataTable table in result.Tables)
+                        listSheet.Add(table.TableName);
+                }
+            }
+
+            try
+            {
+                System.Data.DataTable dt = tableMaNganhCollection[listSheet[0]];
+                dataGridViewNganhHang.DataSource = dt;
+                mListNganh = (from DataRow dr in dt.Rows
+                             select new NganhHang()
+                             {
+                                 TuKhoa = dr["Từ khóa"].ToString(),
+                                 MaNganh = dr["Mã ngành"].ToString()                             
+                             }).ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
