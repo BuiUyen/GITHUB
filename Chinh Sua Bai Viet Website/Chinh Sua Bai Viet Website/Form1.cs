@@ -91,8 +91,7 @@ namespace Chinh_Sua_Bai_Viet_Website
         }
         
         private void Form1_Load(object sender, EventArgs e)
-        {
-            dataGridViewXuat.Hide();
+        {            
             btnExcel.Hide();
             try
             {
@@ -439,19 +438,21 @@ namespace Chinh_Sua_Bai_Viet_Website
         }
 
         private void ShowDataGirdViewKetQua()
-        {            
-            dataGridViewKetQua.Rows.Clear();
+        {
+            dataGridViewXuat.Rows.Clear();
             foreach (LinhKien sp in mListKetQua)
             {
-                int n = dataGridViewKetQua.Rows.Add();
-                dataGridViewKetQua.Rows[n].Cells[0].Value = sp.ID;
-                dataGridViewKetQua.Rows[n].Cells[1].Value = sp.IDTuyChon;
-                dataGridViewKetQua.Rows[n].Cells[2].Value = sp.TenSanPham;
-                dataGridViewKetQua.Rows[n].Cells[3].Value = sp.SKU;
-                dataGridViewKetQua.Rows[n].Cells[4].Value = sp.Gia;
-                dataGridViewKetQua.Rows[n].Cells[5].Value = sp.GiaSoSanh;
-                dataGridViewKetQua.Rows[n].Cells[6].Value = sp.CanNang;
-                dataGridViewKetQua.Rows[n].Cells[7].Value = sp.Tag;               
+                int n = dataGridViewXuat.Rows.Add();
+                dataGridViewXuat.Rows[n].Cells[0].Value = sp.ID;
+                dataGridViewXuat.Rows[n].Cells[1].Value = sp.IDTuyChon;
+                dataGridViewXuat.Rows[n].Cells[2].Value = sp.TenSanPham;
+                dataGridViewXuat.Rows[n].Cells[3].Value = sp.SKU;
+                dataGridViewXuat.Rows[n].Cells[4].Value = sp.Gia;
+                dataGridViewXuat.Rows[n].Cells[5].Value = sp.GiaSoSanh;
+                dataGridViewXuat.Rows[n].Cells[6].Value = sp.CanNang;
+                dataGridViewXuat.Rows[n].Cells[7].Value = sp.ID;
+                dataGridViewXuat.Rows[n].Cells[8].Value = sp.IDTuyChon;
+                dataGridViewXuat.Rows[n].Cells[9].Value = sp.Tag;
             }
         }
 
@@ -469,8 +470,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                     mList_Goc[x].ChuThich = linhkien.ChuThich;
                 }
             }
-
-            dataGridViewXuat.Show();
+            
             dataGridViewXuat.Rows.Clear();
             foreach (LinhKien sp in mList_Goc)
             {
@@ -525,9 +525,7 @@ namespace Chinh_Sua_Bai_Viet_Website
         {
             mListXepAnh = new List<LinhKien>();
             mListKetQua = new List<LinhKien>();
-
-            dataGridViewXuat.Hide();
-
+            
             for (int x = 0; x < mList_Goc.Count; x++)
             {
                 if(mList_Goc[x].SKU != "")
@@ -721,8 +719,6 @@ namespace Chinh_Sua_Bai_Viet_Website
                 dataGridViewAnhWeb.Rows[n].Cells[30].Value = sp.MoTaNgan;
                 dataGridViewAnhWeb.Rows[n].Cells[31].Value = sp.ID;
                 dataGridViewAnhWeb.Rows[n].Cells[32].Value = sp.IDTuyChon;
-
-
             }
         }
 
@@ -788,7 +784,7 @@ namespace Chinh_Sua_Bai_Viet_Website
             }
 
             var saveFileDialog = new SaveFileDialog();
-            saveFileDialog.FileName = "Ket Qua Danh Muc San Pham";
+            saveFileDialog.FileName = "Ket Qua Link Anh";
             saveFileDialog.DefaultExt = ".xlsx";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
