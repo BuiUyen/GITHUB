@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HtmlAgilityPack;
+using System.Threading;
 
 namespace Lay_San_Pham_3M
 {
@@ -27,18 +28,24 @@ namespace Lay_San_Pham_3M
         {
             public string LinkSanPham { get; set; }
             public string TenSanPham { get; set; }
+            public string SKU { get; set; }
             public string Gia { get; set; }
+            public string GiaCu { get; set; }
             public string ThongSoKiThuat { get; set; }
             public List<string> LinkAnhSP { get; set; }
             public string CanNang { get; set; }
+            public List<string> ListTenPhanLoai { get; set; }
             public string PhanLoai { get; set; }
+            public List<SanPham> mListSanPhamPhanLoai { get; set; }
         }
 
         DataTableCollection tableCollection;
-        public string fileName = @"D:\code.txt";
+        public string fileName = @"E:\code.txt";
         public List<SanPham> mListSanPham = new List<SanPham>();
         public List<SanPham> mList3M = new List<SanPham>();
         public List<SanPham> mListKetQua = new List<SanPham>();
+
+        ChromeDriver driver;
 
         private void btnLaySanPham_Click(object sender, EventArgs e)
         {
@@ -215,7 +222,7 @@ namespace Lay_San_Pham_3M
 
         private void btnXuLi_Click(object sender, EventArgs e)
         {
-            var driver = new ChromeDriver();
+            driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://google.com/");
             System.Threading.Thread.Sleep(1000);
             ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
@@ -238,21 +245,18 @@ namespace Lay_San_Pham_3M
 
                     }
                     SanPham sp = ReadSourceImage(mSanPham);
-                    
 
-                        int n = dataGridViewKetQua.Rows.Add();
-                        dataGridViewKetQua.Rows[n].Cells[0].Value = sp.LinkSanPham;
-                        dataGridViewKetQua.Rows[n].Cells[1].Value = sp.TenSanPham;
-                        dataGridViewKetQua.Rows[n].Cells[2].Value = sp.Gia;
-                        dataGridViewKetQua.Rows[n].Cells[3].Value = sp.ThongSoKiThuat;
-                        for(int i=0; i<sp.LinkAnhSP.Count && i < 5;i++)
-                        {
-                            dataGridViewKetQua.Rows[n].Cells[i+4].Value = sp.LinkAnhSP[i];
-                        }
-                        dataGridViewKetQua.Rows[n].Cells[10].Value = sp.CanNang;
-                        dataGridViewKetQua.Rows[n].Cells[11].Value = sp.PhanLoai;
-
-
+                    int n = dataGridViewKetQua.Rows.Add();
+                    dataGridViewKetQua.Rows[n].Cells[0].Value = sp.LinkSanPham;
+                    dataGridViewKetQua.Rows[n].Cells[1].Value = sp.TenSanPham;
+                    dataGridViewKetQua.Rows[n].Cells[2].Value = sp.Gia;
+                    dataGridViewKetQua.Rows[n].Cells[3].Value = sp.ThongSoKiThuat;
+                    for (int i = 0; i < sp.LinkAnhSP.Count && i < 5; i++)
+                    {
+                        dataGridViewKetQua.Rows[n].Cells[i + 4].Value = sp.LinkAnhSP[i];
+                    }
+                    dataGridViewKetQua.Rows[n].Cells[10].Value = sp.CanNang;
+                    dataGridViewKetQua.Rows[n].Cells[11].Value = sp.PhanLoai;
                 }
             }            
         }
@@ -365,6 +369,86 @@ namespace Lay_San_Pham_3M
                 Console.WriteLine(Ex.ToString());
             }
             return mSanPham;
+        }
+
+        public SanPham ReadSourceImage2(SanPham mSanPham)
+        {
+            //mSanPham = new SanPham();
+            mSanPham.LinkAnhSP = new List<string>();            
+            string link = mSanPham.LinkSanPham;
+            try
+            {
+                driver.Navigate().GoToUrl(link);
+                Thread.Sleep(3000);
+
+
+                //Lấy ảnh đại diện
+                var mListAnhDaiDien = driver.FindElements(By.ClassName("thumb-link"));
+                foreach (var Anh in mListAnhDaiDien)
+                {
+                    mSanPham.LinkAnhSP.Add(Anh.GetAttribute("data-zoom-image"));
+                }
+
+                //Lấy tên sản phẩm
+                mSanPham.TenSanPham = driver.FindElements(By.ClassName("title-head"))[0].Text;                
+
+                //Lấy list phân loại
+                var phanloai = driver.FindElements(By.ClassName("select-swatch"));
+                if (phanloai.Count != 0)
+                {
+                    //Lấy tên phân loại sản phẩm
+                    mSanPham.PhanLoai = driver.FindElements(By.ClassName("header"))[1].Text;
+
+                    //Danh sách giá trị phân loại
+                    mSanPham.ListTenPhanLoai = new List<string>();
+                    var tenphanloai = driver.FindElement(By.ClassName("select-swap")).Text;
+                    string[] listphanloai = tenphanloai.Split('\r');
+
+                    mSanPham.mListSanPhamPhanLoai = new List<SanPham>();
+
+                    //đếm số phân loại
+                    int i = 0;
+                    foreach (var item in listphanloai)
+                    {
+                        string pl = item.Trim();
+                        mSanPham.ListTenPhanLoai.Add(pl);
+
+                        driver.FindElements(By.ClassName("swatch-element"))[i].Click();//click từng phân loại
+                        Thread.Sleep(1000);
+                        mSanPham.mListSanPhamPhanLoai.Add(LayThongTinSanPham(mSanPham, pl));
+                        i++;
+                    }
+                }
+                else
+                {
+                    mSanPham = LayThongTinSanPham(mSanPham, mSanPham.PhanLoai);
+                    //mSanPham = LayThongTinSanPham(mSanPham, "Mặc định");
+                }
+            }
+            catch (Exception ex)
+            {
+                mSanPham.TenSanPham = "lỗi link sản phẩm"+ ex;
+            }
+            
+            return mSanPham;
+        }
+
+        public SanPham LayThongTinSanPham(SanPham mSanPham, string phanloai)
+        {
+            SanPham sanpham = new SanPham();
+            sanpham.LinkSanPham = mSanPham.LinkSanPham;
+            sanpham.TenSanPham = mSanPham.TenSanPham;
+            sanpham.LinkAnhSP = mSanPham.LinkAnhSP;
+            sanpham.Gia = driver.FindElements(By.ClassName("product-price"))[0].Text;
+            sanpham.GiaCu = driver.FindElements(By.ClassName("product-price-old"))[0].Text;
+            if(sanpham.GiaCu == null)
+            {
+                sanpham.GiaCu = "0";
+            }    
+            sanpham.SKU = driver.FindElements(By.ClassName("product_sku"))[0].Text;
+            sanpham.SKU = sanpham.SKU.Replace("Mã sản phẩm:", "").Trim();
+            sanpham.PhanLoai = phanloai;
+            return sanpham;
         }
 
         public static string ConvertHTMLToPlanText(string source)
@@ -544,7 +628,159 @@ namespace Lay_San_Pham_3M
 
                 return "";
             }
-        }        
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://google.com/");
+            System.Threading.Thread.Sleep(1000);
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
+            driver.SwitchTo().Window(driver.WindowHandles.Last());            
+
+            dataGridViewKetQua2.Rows.Clear();
+            mListKetQua.Clear();
+            {
+                foreach (SanPham mSanPham in mList3M)
+                {
+                    var _sanpham = ReadSourceImage2(mSanPham);
+                    mListKetQua.Add(_sanpham);
+                }
+            }
+
+            foreach (SanPham mSanPham in mListKetQua)
+            {
+                if (!(mSanPham.mListSanPhamPhanLoai == null))
+                {
+                    foreach(SanPham _sanpham in mSanPham.mListSanPhamPhanLoai)
+                    {
+                        ShowKetQua(_sanpham);
+                    }
+                }
+                else
+                {
+                    ShowKetQua(mSanPham);
+                }
+            }
+        }
+
+        private void ShowKetQua(SanPham mSanPham)
+        {
+            int n = dataGridViewKetQua2.Rows.Add();
+            dataGridViewKetQua2.Rows[n].Cells[0].Value = mSanPham.LinkSanPham;
+            dataGridViewKetQua2.Rows[n].Cells[1].Value = mSanPham.TenSanPham;
+            dataGridViewKetQua2.Rows[n].Cells[2].Value = mSanPham.SKU;
+            dataGridViewKetQua2.Rows[n].Cells[3].Value = mSanPham.PhanLoai;
+            dataGridViewKetQua2.Rows[n].Cells[4].Value = mSanPham.Gia;
+            dataGridViewKetQua2.Rows[n].Cells[5].Value = mSanPham.GiaCu;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {            
+            try
+            {
+                for (int i = 0; i < 500; i=i+100)
+                {
+                    new Thread(() =>
+                    {
+                        Thread.CurrentThread.IsBackground = true;
+                        CheckSDT(i, i + 99);
+                    }).Start();
+                }
+                MessageBox.Show("Đã xong");
+            }
+            catch (Exception ex)
+            { 
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void CheckSDT(int min, int max)
+        {
+            string SoDienThoai = "";
+            driver = new ChromeDriver();
+            try
+            {
+                for (int i = min; i < max; i++)
+                {
+                    driver.Navigate().GoToUrl(@"https://checkorder.sapoapps.vn/orders/app/widget?store=linhkien3m.mysapo.net");
+                    Thread.Sleep(1000);
+                    var sdt = driver.FindElement(By.ClassName("form-control"));
+                    SoDienThoai = "032" + i.ToString("0000000");
+                    
+                    //điền số điện thoại
+                    sdt.SendKeys(SoDienThoai);
+                    sdt.SendKeys(OpenQA.Selenium.Keys.Return);
+                    Thread.Sleep(1000);
+                    var test = driver.FindElements(By.Id("empty-error"));
+                    string tenfile = min.ToString() + "-" + max.ToString();
+                    if (test.Count == 0)
+                    {
+                        LuuSDT(tenfile, SoDienThoai);
+                    }
+                }                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void LuuSDT(string tenfile, string SDT)
+        {
+            tenfile = @"D:\SoDienThoai" + tenfile + ".txt";
+            if (!File.Exists(tenfile))
+            {
+                using (StreamWriter fs = File.CreateText(tenfile))
+                {
+
+                }
+            }
+
+            string readText = File.ReadAllText(tenfile);
+            using (StreamWriter writer = new StreamWriter(tenfile))
+            {
+                writer.WriteLine(readText + SDT);
+            }            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.Sheets["Trang_tính1"];
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.ActiveSheet;
+            worksheet.Name = "Uyên";
+
+            for (int i = 1; i < dataGridViewKetQua2.Columns.Count + 1; i++)
+            {
+                worksheet.Cells[1, i] = dataGridViewKetQua2.Columns[i - 1].HeaderText;
+            }
+
+            for (int i = 0; i < dataGridViewKetQua2.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < dataGridViewKetQua2.Columns.Count; j++)
+                {
+                    if (dataGridViewKetQua2.Rows[i].Cells[j].Value == null)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = "";
+                    }
+                    else
+                        worksheet.Cells[i + 2, j + 1] = dataGridViewKetQua2.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+
+            var saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = "Ket Qua";
+            saveFileDialog.DefaultExt = ".xlsx";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                workbook.SaveAs(saveFileDialog.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            }
+            app.Quit();
+        }
     }
 }
 

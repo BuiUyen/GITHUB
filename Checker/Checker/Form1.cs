@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,16 @@ namespace Checker
             InitializeComponent();
         }
 
+        public class Checker
+        {
+            public string ID { get; set; }
+            public string Gia { get; set; }
+            public string Ten { get; set; }
+            public string SDT { get; set; }
+            public List<string> ListAnh { get; set; }
+        }
+
+
         public class Object
         {
             public int ID { get; set; }
@@ -30,6 +41,8 @@ namespace Checker
         public string fileName = @"D:\code.txt";
 
         public List<Object> mListData = new List<Object>();
+
+        public List<Checker> mListChecker = new List<Checker>();
 
         private void btnRun_Click(object sender, EventArgs e)
         {
@@ -90,15 +103,6 @@ namespace Checker
                         {
                             writer.WriteLine(readText + test.ToString());
                         }
-
-                        //if (File.Exists(fileoutput))
-                        //{
-                        //    File.Delete(fileoutput);
-                        //}
-                        //using (StreamWriter fs = File.CreateText(fileoutput))
-                        //{
-                        //    fs.WriteLine(link);
-                        //}
                     }                
                 }
                 catch (Exception ex)
@@ -157,12 +161,130 @@ namespace Checker
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string fileoutput = @"D:\link.txt";
-
-            string readText = File.ReadAllText(fileoutput);
-            using (StreamWriter writer = new StreamWriter(fileoutput))
+            var filePath = string.Empty;
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                writer.WriteLine(readText + tbxketqua.Text);
+                openFileDialog.InitialDirectory = "C:\\";
+                openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    //Read the contents of the file into a stream
+                    var fileStream = openFileDialog.OpenFile();
+                    txbFile.Text = filePath.ToString();
+                }
+            }
+
+            var driverService = ChromeDriverService.CreateDefaultService();
+            driverService.HideCommandPromptWindow = true;
+            var options = new ChromeOptions();
+            //options.AddArgument("--window-position=-32000,-32000"); //an chorme
+
+            var driver = new ChromeDriver(driverService, options);
+            driver.Navigate().GoToUrl("https://www.google.com/");
+            System.Threading.Thread.Sleep(300);
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
+
+            mListChecker = new List<Checker>();
+            using (StreamReader reader = new StreamReader(filePath.ToString()))
+            {
+                string s = "";
+                while ((s = reader.ReadLine()) != null)
+                {
+                    Checker _checker = new Checker();
+                    _checker.ListAnh = new List<string>(12);
+
+                    string linkdh = @"https://checkerviet.gg/threads/" + s.ToString() + "/";
+                    try
+                    {
+                        driver.Navigate().GoToUrl(linkdh);
+                    }
+                    catch (Exception ex)
+                    {
+                        Actions actions = new Actions(driver);
+                        actions.SendKeys(OpenQA.Selenium.Keys.Escape);
+                    }                    
+
+                    _checker.ID = s;
+
+                    //lấy tên
+                    try
+                    {
+                        _checker.Ten = driver.Title;
+                    }
+                    catch
+                    {
+                        _checker.Ten = "lỗi tên";
+                    }
+
+                    //lấy giá
+                    try
+                    {
+                        _checker.Gia = driver.FindElements(By.ClassName("label--orange"))[0].Text;
+                    }
+                    catch
+                    {
+                        _checker.Gia = "lỗi giá";
+                    }
+
+                    //lấy ảnh
+                    try
+                    {
+                        var soluonganh = driver.FindElements(By.ClassName("bbImage"));
+                        var element = driver.FindElements(By.TagName("img"));
+                        foreach (var ele in element)
+                        {
+                            if (ele.GetAttribute("src").Contains("upload69.pro"))
+                            {
+                                _checker.ListAnh.Add(ele.GetAttribute("src"));
+                            }
+                            if (_checker.ListAnh.Count >= soluonganh.Count)
+                            {
+                                break;
+                            }
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+
+                    //lấy SD
+                    try
+                    {
+                        _checker.SDT = driver.FindElement(By.ClassName("fone")).Text;
+                    }
+                    catch
+                    {
+                        _checker.SDT = "lỗi SDT";
+                    }
+                    mListChecker.Add(_checker);
+                }
+            }
+            ShowKetQua();
+        }
+
+        public void ShowKetQua()
+        {
+            dataGridViewKetQua.Rows.Clear();
+            foreach(Checker ch in mListChecker)
+            {
+                int n = dataGridViewKetQua.Rows.Add();
+                dataGridViewKetQua.Rows[n].Cells[0].Value = ch.ID;
+                dataGridViewKetQua.Rows[n].Cells[1].Value = ch.Gia;
+                dataGridViewKetQua.Rows[n].Cells[2].Value = ch.Ten;
+                dataGridViewKetQua.Rows[n].Cells[3].Value = ch.SDT;
+
+                for(int i = 0; i < ch.ListAnh.Count - 1 & i < 11 ; i++)
+                {
+                    dataGridViewKetQua.Rows[n].Cells[i+4].Value = ch.ListAnh[i];
+                }
             }
         }
     }

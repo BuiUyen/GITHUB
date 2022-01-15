@@ -35,3 +35,13 @@ C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Webs
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.pdb
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.AssemblyReference.cache
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.SuggestedBindingRedirects.cache
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\HtmlAgilityPack.dll
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\itextsharp.dll
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.dll
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\HtmlAgilityPack.xml
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\itextsharp.xml
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.pdb
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.xml

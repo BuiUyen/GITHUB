@@ -55,12 +55,15 @@ namespace Chinh_Sua_Bai_Viet_Website
             public string AnhPhienBan { get; set; }
             public string MoTaNgan { get; set; }
             public string ID { get; set; }
-            public string IDTuyChon { get; set; }           
+            public string IDTuyChon { get; set; }    
+            
+            //thông số thêm
             public List<string> mListAnh { get; set; } = new List<string>();
             public string TenPhienBan { get; set; }
             public List<LinhKien> mListLinhKien { get; set; } = new List<LinhKien>();
-
             public string MaNganhSenDo { get; set; }
+            public string ThongSo { get; set; }
+            public string CongDung { get; set; }
         }
 
         public class Tags
@@ -540,6 +543,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                         int stt = mListXepAnh.FindIndex(v => v.ID == mList_Goc[x].ID);
                         _linhkien = mList_Goc[x];
                         _linhkien.AnhDaiDien = mListXepAnh[stt].AnhDaiDien;
+                        _linhkien.NoiDung = mListXepAnh[stt].NoiDung;
                     }
                     mListXepAnh.Add(_linhkien);
                 }
@@ -584,21 +588,34 @@ namespace Chinh_Sua_Bai_Viet_Website
                 }                
             }
 
-
-
             dataGridViewKetQua.Rows.Clear();
             foreach (LinhKien sp in mListKetQua)
             {
                 int n = dataGridViewKetQua.Rows.Add();
                 dataGridViewKetQua.Rows[n].Cells[0].Value = sp.ID;
-
-                NganhHang nganh = mListNganh.FirstOrDefault(v => sp.Tag.Contains(v.TuKhoa));
-                if (nganh == null)
+                try
                 {
-                    sp.MaNganhSenDo = "chưa có";
+                    if(sp.Tag == null)
+                    {
 
-                } else
-                    sp.MaNganhSenDo = nganh.MaNganh;
+                    }
+                    else
+                    {
+                        NganhHang nganh = mListNganh.FirstOrDefault(v => sp.Tag.Contains(v.TuKhoa));
+                        if (nganh == null)
+                        {
+                            sp.MaNganhSenDo = "chưa có";
+
+                        }
+                        else
+                            sp.MaNganhSenDo = nganh.MaNganh;
+                    }                    
+                }
+                catch (Exception ex)
+                {
+
+                }
+
                 dataGridViewKetQua.Rows[n].Cells[1].Value = sp.MaNganhSenDo;
                 dataGridViewKetQua.Rows[n].Cells[2].Value = sp.TenPhienBan;
                 dataGridViewKetQua.Rows[n].Cells[3].Value = sp.SKU;
@@ -616,10 +633,57 @@ namespace Chinh_Sua_Bai_Viet_Website
                 }
                 dataGridViewKetQua.Rows[n].Cells[4].Value = tatcaanh;
                 dataGridViewKetQua.Rows[n].Cells[5].Value = sp.NoiDung;
-                dataGridViewKetQua.Rows[n].Cells[6].Value = sp.Gia.Replace(".","");
+                dataGridViewKetQua.Rows[n].Cells[6].Value = sp.Gia;
                 dataGridViewKetQua.Rows[n].Cells[7].Value = sp.CanNang;
                 dataGridViewKetQua.Rows[n].Cells[8].Value = sp.AnhDaiDien;
                 
+            }
+        }
+
+        private void btnThongSoCongDung_Click(object sender, EventArgs e)
+        {
+            foreach (LinhKien sp in mListKetQua)
+            {
+                HtmlToText _HtmlToText = new HtmlToText();
+                if(!(sp.NoiDung == null))
+                {
+                    string noidung = _HtmlToText.HTMLToText(sp.NoiDung);
+                    var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
+                    if (listNoiDung.Count > 5)
+                    {
+                        sp.ThongSo = listNoiDung[2].Trim('\n');
+                        sp.CongDung = listNoiDung[4].Trim('\n');
+                    }
+                }
+                
+            }
+
+            dataGridViewKetQua.Rows.Clear();
+            foreach (LinhKien sp in mListKetQua)
+            {
+                int n = dataGridViewKetQua.Rows.Add();                
+                dataGridViewKetQua.Rows[n].Cells[1].Value = sp.MaNganhSenDo;
+                dataGridViewKetQua.Rows[n].Cells[2].Value = sp.TenPhienBan;
+                dataGridViewKetQua.Rows[n].Cells[3].Value = sp.SKU;
+                string tatcaanh = "";
+                foreach (string anh in sp.mListAnh)
+                {
+                    if (tatcaanh.Length == 0)
+                    {
+                        tatcaanh = anh;
+                    }
+                    else
+                    {
+                        tatcaanh = tatcaanh + ";" + anh;
+                    }
+                }
+                dataGridViewKetQua.Rows[n].Cells[4].Value = tatcaanh;
+                dataGridViewKetQua.Rows[n].Cells[5].Value = sp.NoiDung;
+                dataGridViewKetQua.Rows[n].Cells[6].Value = sp.Gia;
+                dataGridViewKetQua.Rows[n].Cells[7].Value = sp.CanNang;
+                dataGridViewKetQua.Rows[n].Cells[8].Value = sp.AnhDaiDien;
+                dataGridViewKetQua.Rows[n].Cells[9].Value = sp.ThongSo;
+                dataGridViewKetQua.Rows[n].Cells[10].Value = sp.CongDung;
             }
         }
 
@@ -681,7 +745,6 @@ namespace Chinh_Sua_Bai_Viet_Website
                 }
             }
 
-
             dataGridViewAnhWeb.Rows.Clear();
             foreach (LinhKien sp in mListKetQua)
             {
@@ -720,7 +783,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                 dataGridViewAnhWeb.Rows[n].Cells[31].Value = sp.ID;
                 dataGridViewAnhWeb.Rows[n].Cells[32].Value = sp.IDTuyChon;
             }
-        }
+        }        
 
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
@@ -779,12 +842,17 @@ namespace Chinh_Sua_Bai_Viet_Website
             {
                 for (int j = 0; j < dataGridViewKetQua.Columns.Count; j++)
                 {
+                    if(dataGridViewKetQua.Rows[i].Cells[j].Value == null)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = "";
+                    }
+                    else
                     worksheet.Cells[i + 2, j + 1] = dataGridViewKetQua.Rows[i].Cells[j].Value.ToString();
                 }
             }
 
             var saveFileDialog = new SaveFileDialog();
-            saveFileDialog.FileName = "Ket Qua Link Anh";
+            saveFileDialog.FileName = "Ket Qua";
             saveFileDialog.DefaultExt = ".xlsx";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -830,5 +898,8 @@ namespace Chinh_Sua_Bai_Viet_Website
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+        
     }
 }
