@@ -27,6 +27,7 @@ namespace Checker
             public string Gia { get; set; }
             public string Ten { get; set; }
             public string SDT { get; set; }
+            public string LinkAnh { get; set; }
             public List<string> ListAnh { get; set; }
         }
 
@@ -236,18 +237,10 @@ namespace Checker
                     //lấy ảnh
                     try
                     {
-                        var soluonganh = driver.FindElements(By.ClassName("bbImage"));
-                        var element = driver.FindElements(By.TagName("img"));
-                        foreach (var ele in element)
+                        var test = driver.FindElements(By.ClassName("lbContainer-zoomer"));
+                        foreach (var ele in test)
                         {
-                            if (ele.GetAttribute("src").Contains("upload69.pro"))
-                            {
-                                _checker.ListAnh.Add(ele.GetAttribute("src"));
-                            }
-                            if (_checker.ListAnh.Count >= soluonganh.Count)
-                            {
-                                break;
-                            }
+                            _checker.ListAnh.Add(ele.GetAttribute("data-src"));
                         }
                     }
                     catch

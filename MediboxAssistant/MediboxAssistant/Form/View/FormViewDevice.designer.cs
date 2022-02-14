@@ -72,9 +72,9 @@
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
-            this.panelEx1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(1350, 690);
+            this.panelEx1.Size = new System.Drawing.Size(1736, 819);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.panelEx1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -115,12 +115,13 @@
             this.mListViewData.FullRowSelect = true;
             this.mListViewData.GridLines = true;
             this.mListViewData.HideSelection = false;
-            this.mListViewData.Location = new System.Drawing.Point(0, 87);
+            this.mListViewData.Location = new System.Drawing.Point(0, 103);
+            this.mListViewData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mListViewData.MenuLabelSortAscending = "Sắp xếp tăng dần theo \'{0}\'";
             this.mListViewData.MultiSelect = false;
             this.mListViewData.Name = "mListViewData";
             this.mListViewData.ShowGroups = false;
-            this.mListViewData.Size = new System.Drawing.Size(1350, 603);
+            this.mListViewData.Size = new System.Drawing.Size(1736, 716);
             this.mListViewData.SortGroupItemsByPrimaryColumn = false;
             this.mListViewData.TabIndex = 222;
             this.mListViewData.UnfocusedHighlightBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
@@ -216,10 +217,11 @@
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtSearch.FocusHighlightEnabled = true;
             this.txtSearch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(0, 60);
+            this.txtSearch.Location = new System.Drawing.Point(0, 71);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PreventEnterBeep = true;
-            this.txtSearch.Size = new System.Drawing.Size(1350, 27);
+            this.txtSearch.Size = new System.Drawing.Size(1736, 32);
             this.txtSearch.TabIndex = 221;
             this.txtSearch.WatermarkColor = System.Drawing.Color.DimGray;
             this.txtSearch.WatermarkText = "Tìm kiếm (Ctrl+F)";
@@ -236,9 +238,10 @@
             this.panelEx3.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEx3.Location = new System.Drawing.Point(0, 0);
+            this.panelEx3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx3.Name = "panelEx3";
             this.panelEx3.Padding = new System.Windows.Forms.Padding(1);
-            this.panelEx3.Size = new System.Drawing.Size(1350, 60);
+            this.panelEx3.Size = new System.Drawing.Size(1736, 71);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx3.Style.BackColor2.Color = System.Drawing.SystemColors.Control;
             this.panelEx3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -256,9 +259,10 @@
             this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnAdd.Image = global::MediboxAssistant.Properties.Resources.Add_32x32;
             this.btnAdd.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnAdd.Location = new System.Drawing.Point(120, 1);
+            this.btnAdd.Location = new System.Drawing.Point(154, 1);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 58);
+            this.btnAdd.Size = new System.Drawing.Size(90, 69);
             this.btnAdd.TabIndex = 147;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -271,9 +275,10 @@
             this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnRefresh.Image = global::MediboxAssistant.Properties.Resources.Refresh_32__1_;
             this.btnRefresh.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnRefresh.Location = new System.Drawing.Point(50, 1);
+            this.btnRefresh.Location = new System.Drawing.Point(64, 1);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(70, 58);
+            this.btnRefresh.Size = new System.Drawing.Size(90, 69);
             this.btnRefresh.TabIndex = 148;
             this.btnRefresh.Text = "Làm Mới";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
@@ -286,9 +291,10 @@
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.buttonX1.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonX1.Location = new System.Drawing.Point(1, 1);
+            this.buttonX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.ShowSubItems = false;
-            this.buttonX1.Size = new System.Drawing.Size(49, 58);
+            this.buttonX1.Size = new System.Drawing.Size(63, 69);
             this.buttonX1.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.labelItem1,
             this.btnImport,
@@ -337,10 +343,10 @@
             this.lblBenhAn.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblBenhAn.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblBenhAn.ForeColor = System.Drawing.Color.Maroon;
-            this.lblBenhAn.Location = new System.Drawing.Point(1020, 1);
-            this.lblBenhAn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblBenhAn.Location = new System.Drawing.Point(1312, 1);
+            this.lblBenhAn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblBenhAn.Name = "lblBenhAn";
-            this.lblBenhAn.Size = new System.Drawing.Size(329, 58);
+            this.lblBenhAn.Size = new System.Drawing.Size(423, 69);
             this.lblBenhAn.TabIndex = 9;
             this.lblBenhAn.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
@@ -352,9 +358,10 @@
             this.DichVuMenuBar.IsMaximized = false;
             this.DichVuMenuBar.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.DichVuMenu});
-            this.DichVuMenuBar.Location = new System.Drawing.Point(346, 12);
+            this.DichVuMenuBar.Location = new System.Drawing.Point(445, 14);
+            this.DichVuMenuBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DichVuMenuBar.Name = "DichVuMenuBar";
-            this.DichVuMenuBar.Size = new System.Drawing.Size(82, 25);
+            this.DichVuMenuBar.Size = new System.Drawing.Size(105, 29);
             this.DichVuMenuBar.Stretch = true;
             this.DichVuMenuBar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.DichVuMenuBar.TabIndex = 224;
@@ -416,10 +423,11 @@
             // 
             // FormViewDevice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 690);
+            this.ClientSize = new System.Drawing.Size(1736, 819);
             this.Controls.Add(this.panelEx1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormViewDevice";
             this.Text = "Danh Sách Thiết Bị";
             this.Load += new System.EventHandler(this.Database_Load);

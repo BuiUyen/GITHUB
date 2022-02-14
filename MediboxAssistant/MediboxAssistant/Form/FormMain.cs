@@ -186,10 +186,14 @@ namespace Medibox
             }
         }
 
+        private void btnSanPhamWEB_Click(object sender, EventArgs e)
+        {
+            using (FormViewSanPhamWeb form = new FormViewSanPhamWeb())
+            {
+                form.ShowDialog();
+            }
+        }
 
         #endregion
-
-
-
     }
 }

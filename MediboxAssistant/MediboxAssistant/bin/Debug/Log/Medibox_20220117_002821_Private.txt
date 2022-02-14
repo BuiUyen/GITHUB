@@ -1,0 +1,28 @@
+[27840] 00:28:21.405 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to 'localhost'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[27840] 00:28:37.791 D/NpgsqlDatabaseUtility: [SynchDatabase] Database = [postgres]
+[27840] 00:28:37.862 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_room'
+[27840] 00:28:37.864 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_home'
+[27840] 00:28:37.864 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_user'
+[27840] 00:28:37.864 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_softupdate'
+[27840] 00:28:37.865 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_dm_entity_type'
+[27840] 00:28:37.865 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_dm_intent_type'
+[27840] 00:28:37.865 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_intent_response'
+[27840] 00:28:37.866 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_intent'
+[27840] 00:28:37.866 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_device'
+[27840] 00:28:37.866 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_intent_request'
+[27840] 00:28:37.867 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_sanphamweb'
+[27840] 00:28:42.834 D/UtilityCache: Start database cache...
+[27840] 00:28:42.000 D/UtilityCache: End database cache...
+[27840] 00:28:42.000 E/UtilityUpdateTime: Start get timer...

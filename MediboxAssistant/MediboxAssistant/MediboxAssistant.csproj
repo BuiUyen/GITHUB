@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MediboxAssistant</RootNamespace>
     <AssemblyName>MediboxAssistant</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
     </SccProjectName>
@@ -103,6 +103,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dll\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -116,6 +122,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Management" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
@@ -133,6 +140,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Database\SanPhamWebDB.cs" />
     <Compile Include="Core\Database\UserDB.cs" />
     <Compile Include="Core\Database\HomeDB.cs" />
     <Compile Include="Core\Database\RoomDB.cs" />
@@ -159,6 +167,7 @@
     <Compile Include="Core\Model\DanhMuc\DM_Entity_Type.cs" />
     <Compile Include="Core\Model\DanhMuc\DM_Intent_Type.cs" />
     <Compile Include="Core\Model\DataTypeModel.cs" />
+    <Compile Include="Core\Model\Data\SanPhamWeb.cs" />
     <Compile Include="Core\Model\Data\Room.cs" />
     <Compile Include="Core\Model\Data\Home.cs" />
     <Compile Include="Core\Model\Data\User.cs" />
@@ -184,6 +193,7 @@
     <Compile Include="Core\Model\UI\ThongTinDanhSachIntent_Response.cs" />
     <Compile Include="Core\Model\UI\ThongTinDanhSachIntent_Request.cs" />
     <Compile Include="Core\Model\UI\ThongTinDanhSachIntent.cs" />
+    <Compile Include="Core\Presenter\SanPhamWebPresenter.cs" />
     <Compile Include="Core\Presenter\UserPresenter.cs" />
     <Compile Include="Core\Presenter\HomePresenter.cs" />
     <Compile Include="Core\Presenter\RoomPresenter.cs" />
@@ -428,6 +438,12 @@
     <Compile Include="Form\Edit\FormEditHome.designer.cs">
       <DependentUpon>FormEditHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Edit\FormEditSanPhamWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditSanPhamWeb.designer.cs">
+      <DependentUpon>FormEditSanPhamWeb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Edit\FormEditUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -532,6 +548,12 @@
     </Compile>
     <Compile Include="Form\View\FormViewRoom.designer.cs">
       <DependentUpon>FormViewRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewSanPhamWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewSanPhamWeb.designer.cs">
+      <DependentUpon>FormViewSanPhamWeb.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\View\FormViewUser.cs">
       <SubType>Form</SubType>
@@ -638,6 +660,9 @@
     <EmbeddedResource Include="Form\Edit\FormEditHome.resx">
       <DependentUpon>FormEditHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditSanPhamWeb.resx">
+      <DependentUpon>FormEditSanPhamWeb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Edit\FormEditUser.resx">
       <DependentUpon>FormEditUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -683,6 +708,9 @@
     <EmbeddedResource Include="Form\View\FormViewRoom.resx">
       <DependentUpon>FormViewRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewSanPhamWeb.resx">
+      <DependentUpon>FormViewSanPhamWeb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\View\FormViewUser.resx">
       <DependentUpon>FormViewUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -721,6 +749,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Core\Utility\UI\ObjectListView\FullClassDiagram.cd" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

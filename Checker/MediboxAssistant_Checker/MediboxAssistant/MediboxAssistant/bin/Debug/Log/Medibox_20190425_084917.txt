@@ -1,0 +1,3 @@
+[972] 08:49:17.571 D/Program: Version:1.0.0.1
+[972] 08:49:17.573 D/Program: Name:MediboxAssistant
+[972] 08:49:17.573 D/Program: Description:Build: 24/04/2019

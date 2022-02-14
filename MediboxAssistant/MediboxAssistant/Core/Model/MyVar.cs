@@ -56,5 +56,7 @@ namespace Medibox.Model
         public static IList<Room> mListRoom = new List<Room>();
         public static IList<User> mListUser = new List<User>();
 
+        public static IList<SanPhamWeb> mListSanPhamWeb = new List<SanPhamWeb>();
+
     }
 }

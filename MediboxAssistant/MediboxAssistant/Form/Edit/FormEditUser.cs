@@ -19,6 +19,7 @@ namespace Medibox
         private ExBackgroundWorker mThread;
         private User mUser = new User();
         private IList<User> mListUser = new List<User>();
+        private User data;        
 
         private enum ProcessingType
         {
@@ -54,6 +55,7 @@ namespace Medibox
             txtHassIO_KEY.Text = mUser.HassIO_KEY;
 
         }
+
 
         #region Worker thread
 
