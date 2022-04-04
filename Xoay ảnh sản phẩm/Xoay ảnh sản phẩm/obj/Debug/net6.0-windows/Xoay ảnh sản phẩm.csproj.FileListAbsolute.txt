@@ -1,0 +1,17 @@
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay_ảnh_sản_phẩm.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.AssemblyInfoInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.AssemblyInfo.cs
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\Xoay ảnh sản phẩm.exe
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\Xoay ảnh sản phẩm.deps.json
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\Xoay ảnh sản phẩm.runtimeconfig.json
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\Xoay ảnh sản phẩm.dll
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\ref\Xoay ảnh sản phẩm.dll
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\Xoay ảnh sản phẩm.pdb
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.dll
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\ref\Xoay ảnh sản phẩm.dll
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.pdb
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.genruntimeconfig.cache

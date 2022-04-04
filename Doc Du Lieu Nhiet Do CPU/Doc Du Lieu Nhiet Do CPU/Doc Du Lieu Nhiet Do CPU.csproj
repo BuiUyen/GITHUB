@@ -5,11 +5,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Doc_Du_Lieu_Nhiet_Do_CPU</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationManifest>requestedExecutionLevel.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenHardwareMonitor" Version="0.9.6" />
+    <Reference Include="OpenHardwareMonitorLib">
+      <HintPath>..\OpenHardwareMonitor\OpenHardwareMonitorLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

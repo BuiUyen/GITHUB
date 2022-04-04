@@ -1,37 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "OpenHardwareMonitor/0.9.6": {
-        "type": "package",
-        "compile": {
-          "lib/net45/OpenHardwareMonitorLib.dll": {}
-        },
-        "runtime": {
-          "lib/net45/OpenHardwareMonitorLib.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "OpenHardwareMonitor/0.9.6": {
-      "sha512": "vbx870Mi1nzz99VYx4yF0uaH2a8jtQ94Y+vT+0pRZz3alvCzaiJlbre7ArV8oP2YDNO1oVuvYxKZSoWSFUFj3Q==",
-      "type": "package",
-      "path": "openhardwaremonitor/0.9.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "OpenHardwareMonitor.png",
-        "lib/net45/OpenHardwareMonitorLib.dll",
-        "openhardwaremonitor.0.9.6.nupkg.sha512",
-        "openhardwaremonitor.nuspec"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "OpenHardwareMonitor >= 0.9.6"
-    ]
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\huuuy\\.nuget\\packages\\": {}
@@ -71,12 +45,6 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
-        "dependencies": {
-          "OpenHardwareMonitor": {
-            "target": "Package",
-            "version": "[0.9.6, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -87,6 +55,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.21, 3.1.21]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -95,20 +81,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenHardwareMonitor 0.9.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "OpenHardwareMonitor",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

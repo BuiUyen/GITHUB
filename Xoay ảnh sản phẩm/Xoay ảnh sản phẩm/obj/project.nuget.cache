@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1Ha/eFwBlobbgi/dSObgYUWItAJhSx4lvVv4/PuCBYQuNay5tLFgGzrQtDutEDf0cr3w8zPZUlFd80PtzLs/yg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\huuuy\\Desktop\\GITHUB\\Xoay ảnh sản phẩm\\Xoay ảnh sản phẩm\\Xoay ảnh sản phẩm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

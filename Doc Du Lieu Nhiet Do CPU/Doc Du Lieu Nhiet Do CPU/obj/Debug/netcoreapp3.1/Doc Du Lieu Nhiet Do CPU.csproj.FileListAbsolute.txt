@@ -5,9 +5,6 @@ C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.dll
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.pdb
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\OpenHardwareMonitorLib.dll
-C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.csprojAssemblyReference.cache
-C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc_Du_Lieu_Nhiet_Do_CPU.Form1.resources
-C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.csproj.GenerateResource.cache
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.AssemblyInfoInputs.cache
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.AssemblyInfo.cs
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.csproj.CoreCompileInputs.cache
@@ -15,3 +12,5 @@ C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.dll
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.pdb
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.genruntimeconfig.cache
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.GeneratedMSBuildEditorConfig.editorconfig

@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v3.1": {
       "Doc Du Lieu Nhiet Do CPU/1.0.0": {
         "dependencies": {
-          "OpenHardwareMonitor": "0.9.6"
+          "OpenHardwareMonitorLib": "0.9.6.0"
         },
         "runtime": {
           "Doc Du Lieu Nhiet Do CPU.dll": {}
         }
       },
-      "OpenHardwareMonitor/0.9.6": {
+      "OpenHardwareMonitorLib/0.9.6.0": {
         "runtime": {
-          "lib/net45/OpenHardwareMonitorLib.dll": {
+          "OpenHardwareMonitorLib.dll": {
             "assemblyVersion": "0.9.6.0",
             "fileVersion": "0.9.6.0"
           }
@@ -30,12 +30,10 @@
       "serviceable": false,
       "sha512": ""
     },
-    "OpenHardwareMonitor/0.9.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vbx870Mi1nzz99VYx4yF0uaH2a8jtQ94Y+vT+0pRZz3alvCzaiJlbre7ArV8oP2YDNO1oVuvYxKZSoWSFUFj3Q==",
-      "path": "openhardwaremonitor/0.9.6",
-      "hashPath": "openhardwaremonitor.0.9.6.nupkg.sha512"
+    "OpenHardwareMonitorLib/0.9.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

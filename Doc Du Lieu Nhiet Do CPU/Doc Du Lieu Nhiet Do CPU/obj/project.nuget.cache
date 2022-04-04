@@ -1,21 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "in/ijVmtwZ38JpSg5ZK8oIQV6/JWybVuBFM7fBV4CfuM3DjW6+zBUkm9jPj7DUQiUgvnhS0QTLlntmQfUt5dGA==",
+  "dgSpecHash": "i7YmxGwoWL+Zl41vXqhPw2MV0gwj+QuuGtVkb9dzEZjG4AGEohCQIyeyjTIZUyMU8ICH5edzOy+eo4gMRIY5wQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\huuuy\\Desktop\\GITHUB\\Doc Du Lieu Nhiet Do CPU\\Doc Du Lieu Nhiet Do CPU\\Doc Du Lieu Nhiet Do CPU.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\huuuy\\.nuget\\packages\\openhardwaremonitor\\0.9.6\\openhardwaremonitor.0.9.6.nupkg.sha512"
+    "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenHardwareMonitor 0.9.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "OpenHardwareMonitor",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

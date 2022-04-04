@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xoay ảnh sản phẩm", "Xoay ảnh sản phẩm\Xoay ảnh sản phẩm.csproj", "{5B69643C-6E71-428D-8E00-6A3DFF834719}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B69643C-6E71-428D-8E00-6A3DFF834719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B69643C-6E71-428D-8E00-6A3DFF834719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B69643C-6E71-428D-8E00-6A3DFF834719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B69643C-6E71-428D-8E00-6A3DFF834719}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93E6E39B-8C4B-454F-B1E4-549B7EADDBAF}
+	EndGlobalSection
+EndGlobal
