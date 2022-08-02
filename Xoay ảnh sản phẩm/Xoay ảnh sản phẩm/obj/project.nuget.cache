@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1Ha/eFwBlobbgi/dSObgYUWItAJhSx4lvVv4/PuCBYQuNay5tLFgGzrQtDutEDf0cr3w8zPZUlFd80PtzLs/yg==",
+  "dgSpecHash": "KXtb2XAVXjcNYzUfN2V6fb8MlEQkbcdpTrvK8kvp/n+eoBtHnx7qOnNy5vfgRfOgFD8mH/VKcFGDNyqS1wLdag==",
   "success": true,
   "projectFilePath": "C:\\Users\\huuuy\\Desktop\\GITHUB\\Xoay ảnh sản phẩm\\Xoay ảnh sản phẩm\\Xoay ảnh sản phẩm.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\huuuy\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\huuuy\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
   ],

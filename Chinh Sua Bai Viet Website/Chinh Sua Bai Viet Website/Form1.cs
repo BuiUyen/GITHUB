@@ -198,6 +198,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                     {
                         LinhKien _linhkien = new LinhKien();
                         _linhkien = mList_Goc[x];
+                        _linhkien.mListLinhKien.Add(mList_Goc[x]);
                         if (mList_Goc[x].AnhDaiDien == "")
                         {
 
@@ -210,8 +211,16 @@ namespace Chinh_Sua_Bai_Viet_Website
                     }
                     else
                     {
-                        int stt = mList.FindIndex(v => v.ID == mList_Goc[x].ID);
-                        mList[stt].mListAnh.Add(mList_Goc[x].AnhDaiDien);
+                        int stt = mList.FindIndex(v => v.ID == mList_Goc[x].ID);                        
+                        mList[stt].mListLinhKien.Add(mList_Goc[x]);
+                        if (mList_Goc[x].AnhDaiDien == "")
+                        {
+
+                        }
+                        else
+                        {
+                            mList[stt].mListAnh.Add(mList_Goc[x].AnhDaiDien);
+                        }
                     }
 
                     //tạo tên phiên bản
@@ -613,7 +622,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                 }
                 catch (Exception ex)
                 {
-
+                    
                 }
 
                 dataGridViewKetQua.Rows[n].Cells[1].Value = sp.MaNganhSenDo;
@@ -651,9 +660,11 @@ namespace Chinh_Sua_Bai_Viet_Website
                     var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
                     if (listNoiDung.Count > 5)
                     {
-                        sp.ThongSo = listNoiDung[2].Trim('\n');
-                        sp.CongDung = listNoiDung[4].Trim('\n');
+                        sp.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");  
+                        sp.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
+                        sp.MoTaNgan = tbxBaiVietTren.Text + sp.ThongSo + "\n\n************\nCÔNG DỤNG SẢN PHẨM\n\n" + sp.CongDung + tbxBaiVietDuoi.Text;
                     }
+
                 }
                 
             }
@@ -678,7 +689,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                     }
                 }
                 dataGridViewKetQua.Rows[n].Cells[4].Value = tatcaanh;
-                dataGridViewKetQua.Rows[n].Cells[5].Value = sp.NoiDung;
+                dataGridViewKetQua.Rows[n].Cells[5].Value = sp.MoTaNgan;
                 dataGridViewKetQua.Rows[n].Cells[6].Value = sp.Gia;
                 dataGridViewKetQua.Rows[n].Cells[7].Value = sp.CanNang;
                 dataGridViewKetQua.Rows[n].Cells[8].Value = sp.AnhDaiDien;
@@ -899,7 +910,109 @@ namespace Chinh_Sua_Bai_Viet_Website
             }
         }
 
+        private void tbxSKU_TextChanged(object sender, EventArgs e)
+        {
+            string SKU = tbxSKU.Text;
+            WebClient webClient = new WebClient();
+            int i=1;
+            try
+            {
+                LinhKien lk = mList_Goc.FirstOrDefault(v => v.SKU == SKU);
+                if(lk != null)
+                {
+                    LinhKien _linhkien = mList.FirstOrDefault(v => v.ID == lk.ID);
+                    if(_linhkien != null)
+                    {
+                        //using (var fbd = new FolderBrowserDialog())
+                        //{
+                        //    DialogResult result = fbd.ShowDialog();
+                        //    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                        //    {
+                        //        foreach (string linkanh in _linhkien.mListAnh)
+                        //        {
+                        //            string localFile = fbd.SelectedPath + @"\" + _linhkien.SKU + "_" + i + ".jpg";
+                        //            string remoteFile = linkanh;
+                        //            webClient.DownloadFile(remoteFile, localFile);
+                        //            i++;
+                        //        }
+                        //    }
+                        //}
 
-        
+                        string Path = @"C:\Users\huuuy\Downloads\ANHWEB";
+                        foreach (string linkanh in _linhkien.mListAnh)
+                        {
+                            string localFile = Path + @"\" + _linhkien.SKU + "_" + i + ".jpg";
+                            string remoteFile = linkanh;
+                            webClient.DownloadFile(remoteFile, localFile);
+                            i++;
+                        }
+                        MessageBox.Show("Đã tải " + _linhkien.mListAnh.Count + " ảnh sản phẩm: " + _linhkien.TenSanPham + ".");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnLayAnhShopee_Click(object sender, EventArgs e)
+        {
+            List<LinhKien> mList_KetQua = new List<LinhKien>();
+
+            foreach (string line in tbxInputSKU.Lines)
+            {
+                string text = line.Trim();
+                if (text == "")
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    _linhkien.AnhDaiDien = "chưa có ảnh";
+                    _linhkien.SKU = "Lỗi cách dòng";
+                    mListKetQua.Add(_linhkien);
+                }
+                else
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    LinhKien lk = mList_Goc.FirstOrDefault(v => v.SKU == text);
+
+                    if (lk != null)
+                    {
+                        _linhkien = mList.FirstOrDefault(v => v.ID == lk.ID);
+                        if (_linhkien != null)
+                        {
+                            //_linhkien.SKU = text;
+                            mList_KetQua.Add(_linhkien);                            
+                        }
+                    }
+                    else
+                    {
+                        _linhkien.Alias = text;
+                        _linhkien.AnhDaiDien = "chưa có ảnh";
+                        _linhkien.SKU = "Lỗi SKU";
+                        mList_KetQua.Add(_linhkien);
+                    }
+                }
+            }
+
+            dataGridViewAnhShopee.Rows.Clear();
+            foreach (LinhKien sp in mList_KetQua)
+            {
+                int n = dataGridViewAnhShopee.Rows.Add();
+                dataGridViewAnhShopee.Rows[n].Cells[0].Value = sp.Alias;
+                dataGridViewAnhShopee.Rows[n].Cells[1].Value = sp.TenSanPham;
+                dataGridViewAnhShopee.Rows[n].Cells[2].Value = sp.SKU;
+
+                int i = 0;
+                foreach (string anh in sp.mListAnh)
+                {
+                    dataGridViewAnhShopee.Rows[n].Cells[i + 3].Value = sp.mListAnh[i];
+                    i++;
+                    if (i > 7)
+                    {
+                        break;
+                    }
+                }
+            }
+        }
     }
 }

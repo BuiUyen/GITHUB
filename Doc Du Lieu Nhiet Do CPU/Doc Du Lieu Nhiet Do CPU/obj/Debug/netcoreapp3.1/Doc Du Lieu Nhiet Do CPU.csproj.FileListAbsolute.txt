@@ -14,3 +14,15 @@ C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.genruntimeconfig.cache
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.csproj.AssemblyReference.cache
 C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc_Du_Lieu_Nhiet_Do_CPU.Nhiet_Do_CPU.resources
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\obj\Debug\netcoreapp3.1\Doc Du Lieu Nhiet Do CPU.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\System.Management.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Management.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\huuuy\Desktop\GITHUB\Doc Du Lieu Nhiet Do CPU\Doc Du Lieu Nhiet Do CPU\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll

@@ -15,3 +15,8 @@ C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\ob
 C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\ref\Xoay ảnh sản phẩm.dll
 C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.pdb
 C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.genruntimeconfig.cache
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\ExcelDataReader.dll
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.csproj.ResolveComReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Xoay ảnh sản phẩm\Xoay ảnh sản phẩm\obj\Debug\net6.0-windows\Xoay ảnh sản phẩm.csproj.CopyComplete

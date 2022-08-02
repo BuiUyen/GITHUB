@@ -1,9 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "i7YmxGwoWL+Zl41vXqhPw2MV0gwj+QuuGtVkb9dzEZjG4AGEohCQIyeyjTIZUyMU8ICH5edzOy+eo4gMRIY5wQ==",
+  "dgSpecHash": "RmGlzBAr3lfAm6pDdYm35Q0hW6VpSfs5uEMhLWpv7QTnSeJjc2g/SV/jox5tK1uS7CAQr/E03zdoeMkv5qQy+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\huuuy\\Desktop\\GITHUB\\Doc Du Lieu Nhiet Do CPU\\Doc Du Lieu Nhiet Do CPU\\Doc Du Lieu Nhiet Do CPU.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\huuuy\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512",
     "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
     "C:\\Users\\huuuy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",

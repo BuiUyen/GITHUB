@@ -5,6 +5,11 @@
       "ProjectGuid": "92f3235e-21c4-42a9-b4ad-d8e5058a5549",
       "DisplayName": "Doc Du Lieu Nhiet Do CPU",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1
