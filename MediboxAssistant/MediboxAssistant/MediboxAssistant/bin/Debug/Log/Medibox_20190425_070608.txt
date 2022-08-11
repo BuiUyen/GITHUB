@@ -1,3 +1,0 @@
-[5080] 07:06:08.816 D/Program: Version:1.0.0.1
-[5080] 07:06:08.820 D/Program: Description:Build: 24/04/2019
-[5080] 07:06:08.820 D/Program: Name:MediboxAssistant

@@ -1,3 +1,0 @@
-[9860] 15:32:34.910 D/Program: Name:MediboxAssistant
-[9860] 15:32:34.934 D/Program: Description:Build: 24/04/2019
-[9860] 15:32:34.985 D/Program: Version:1.0.0.1

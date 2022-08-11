@@ -39,7 +39,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.lbSoLuongAnh = new System.Windows.Forms.Label();
@@ -158,8 +157,45 @@
             this.tbxBaiVietDuoi = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbxBaiVietGiua = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.dataGridViewDangSPLazada = new System.Windows.Forms.DataGridView();
+            this.Column38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDangLazada = new System.Windows.Forms.Button();
+            this.btnXuatFileLazada = new System.Windows.Forms.Button();
+            this.btnTaobaivietLazada = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTagsGoiY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXuat)).BeginInit();
@@ -171,6 +207,9 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnhShopee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDangSPLazada)).BeginInit();
             this.SuspendLayout();
             // 
             // tbxFile
@@ -277,15 +316,6 @@
             this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 10;
             this.label7.Text = "Giá so sánh:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(903, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 386);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // btnBack
             // 
@@ -1095,6 +1125,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(14, 141);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1384,45 +1415,328 @@
             // 
             // tbxBaiVietTren
             // 
-            this.tbxBaiVietTren.Location = new System.Drawing.Point(1458, 114);
+            this.tbxBaiVietTren.Location = new System.Drawing.Point(1458, 61);
             this.tbxBaiVietTren.Margin = new System.Windows.Forms.Padding(2);
             this.tbxBaiVietTren.Multiline = true;
             this.tbxBaiVietTren.Name = "tbxBaiVietTren";
-            this.tbxBaiVietTren.Size = new System.Drawing.Size(559, 423);
+            this.tbxBaiVietTren.Size = new System.Drawing.Size(559, 331);
             this.tbxBaiVietTren.TabIndex = 48;
             // 
             // tbxBaiVietDuoi
             // 
-            this.tbxBaiVietDuoi.Location = new System.Drawing.Point(1458, 607);
+            this.tbxBaiVietDuoi.Location = new System.Drawing.Point(1458, 633);
             this.tbxBaiVietDuoi.Margin = new System.Windows.Forms.Padding(2);
             this.tbxBaiVietDuoi.Multiline = true;
             this.tbxBaiVietDuoi.Name = "tbxBaiVietDuoi";
-            this.tbxBaiVietDuoi.Size = new System.Drawing.Size(559, 357);
+            this.tbxBaiVietDuoi.Size = new System.Drawing.Size(559, 331);
             this.tbxBaiVietDuoi.TabIndex = 49;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1704, 87);
+            this.label19.Location = new System.Drawing.Point(1706, 46);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(55, 13);
+            this.label19.Size = new System.Drawing.Size(53, 13);
             this.label19.TabIndex = 50;
-            this.label19.Text = "Phần dưới";
+            this.label19.Text = "Phần trên";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(1704, 567);
+            this.label20.Location = new System.Drawing.Point(1704, 618);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(55, 13);
             this.label20.TabIndex = 51;
             this.label20.Text = "Phần dưới";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(903, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(355, 386);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label24);
+            this.tabPage5.Controls.Add(this.label23);
+            this.tabPage5.Controls.Add(this.btnTaobaivietLazada);
+            this.tabPage5.Controls.Add(this.btnXuatFileLazada);
+            this.tabPage5.Controls.Add(this.btnDangLazada);
+            this.tabPage5.Controls.Add(this.dataGridViewDangSPLazada);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1262, 801);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Đăng sản phẩm Lazada";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(1586, 18);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(309, 13);
+            this.label21.TabIndex = 52;
+            this.label21.Text = "Sử dụng thông tin bài biết mẫu tạo nội dung sản phẩm SHOPEE";
+            // 
+            // tbxBaiVietGiua
+            // 
+            this.tbxBaiVietGiua.Location = new System.Drawing.Point(1458, 420);
+            this.tbxBaiVietGiua.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxBaiVietGiua.Multiline = true;
+            this.tbxBaiVietGiua.Name = "tbxBaiVietGiua";
+            this.tbxBaiVietGiua.Size = new System.Drawing.Size(559, 186);
+            this.tbxBaiVietGiua.TabIndex = 53;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(1704, 405);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(55, 13);
+            this.label22.TabIndex = 54;
+            this.label22.Text = "Phần giữa";
+            // 
+            // dataGridViewDangSPLazada
+            // 
+            this.dataGridViewDangSPLazada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDangSPLazada.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column38,
+            this.Column46,
+            this.Column39,
+            this.Column40,
+            this.Column41,
+            this.Column42,
+            this.Column43,
+            this.Column44,
+            this.Column45,
+            this.Column47,
+            this.Column48,
+            this.Column49,
+            this.Column50,
+            this.Column51,
+            this.Column52,
+            this.Column53,
+            this.Column54,
+            this.Column55,
+            this.Column56,
+            this.Column57,
+            this.Column58,
+            this.Column59,
+            this.Column60,
+            this.Column61,
+            this.Column62,
+            this.Column63,
+            this.Column64});
+            this.dataGridViewDangSPLazada.Location = new System.Drawing.Point(2, 43);
+            this.dataGridViewDangSPLazada.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewDangSPLazada.Name = "dataGridViewDangSPLazada";
+            this.dataGridViewDangSPLazada.RowHeadersWidth = 51;
+            this.dataGridViewDangSPLazada.RowTemplate.Height = 24;
+            this.dataGridViewDangSPLazada.Size = new System.Drawing.Size(1253, 700);
+            this.dataGridViewDangSPLazada.TabIndex = 55;
+            // 
+            // Column38
+            // 
+            this.Column38.HeaderText = "Group No";
+            this.Column38.Name = "Column38";
+            // 
+            // Column46
+            // 
+            this.Column46.HeaderText = "catId";
+            this.Column46.Name = "Column46";
+            // 
+            // Column39
+            // 
+            this.Column39.HeaderText = "Danh mục ngành hàng";
+            this.Column39.Name = "Column39";
+            // 
+            // Column40
+            // 
+            this.Column40.HeaderText = "Tên sản phẩm";
+            this.Column40.Name = "Column40";
+            // 
+            // Column41
+            // 
+            this.Column41.HeaderText = "Ảnh sản phẩm1";
+            this.Column41.Name = "Column41";
+            // 
+            // Column42
+            // 
+            this.Column42.HeaderText = "Ảnh sản phẩm2";
+            this.Column42.Name = "Column42";
+            // 
+            // Column43
+            // 
+            this.Column43.HeaderText = "Ảnh sản phẩm3";
+            this.Column43.Name = "Column43";
+            // 
+            // Column44
+            // 
+            this.Column44.HeaderText = "Ảnh sản phẩm4";
+            this.Column44.Name = "Column44";
+            // 
+            // Column45
+            // 
+            this.Column45.HeaderText = "Ảnh sản phẩm5";
+            this.Column45.Name = "Column45";
+            // 
+            // Column47
+            // 
+            this.Column47.HeaderText = "Ảnh sản phẩm6";
+            this.Column47.Name = "Column47";
+            // 
+            // Column48
+            // 
+            this.Column48.HeaderText = "Ảnh sản phẩm7";
+            this.Column48.Name = "Column48";
+            // 
+            // Column49
+            // 
+            this.Column49.HeaderText = "Ảnh sản phẩm8";
+            this.Column49.Name = "Column49";
+            // 
+            // Column50
+            // 
+            this.Column50.HeaderText = "Thương hiệu";
+            this.Column50.Name = "Column50";
+            // 
+            // Column51
+            // 
+            this.Column51.HeaderText = "Long Description (Lorikeet)";
+            this.Column51.Name = "Column51";
+            // 
+            // Column52
+            // 
+            this.Column52.HeaderText = "Chất liệu nguy hiểm";
+            this.Column52.Name = "Column52";
+            // 
+            // Column53
+            // 
+            this.Column53.HeaderText = "Variation Name1";
+            this.Column53.Name = "Column53";
+            // 
+            // Column54
+            // 
+            this.Column54.HeaderText = "Option for Variation1";
+            this.Column54.Name = "Column54";
+            // 
+            // Column55
+            // 
+            this.Column55.HeaderText = "Image per Variation";
+            this.Column55.Name = "Column55";
+            // 
+            // Column56
+            // 
+            this.Column56.HeaderText = "Variation Name2";
+            this.Column56.Name = "Column56";
+            // 
+            // Column57
+            // 
+            this.Column57.HeaderText = "Option for Variation2";
+            this.Column57.Name = "Column57";
+            // 
+            // Column58
+            // 
+            this.Column58.HeaderText = "Giá";
+            this.Column58.Name = "Column58";
+            // 
+            // Column59
+            // 
+            this.Column59.HeaderText = "SellerSku";
+            this.Column59.Name = "Column59";
+            // 
+            // Column60
+            // 
+            this.Column60.HeaderText = "Kho hàng";
+            this.Column60.Name = "Column60";
+            // 
+            // Column61
+            // 
+            this.Column61.HeaderText = "Khối lượng gói hàng (kg)";
+            this.Column61.Name = "Column61";
+            // 
+            // Column62
+            // 
+            this.Column62.HeaderText = "Chiều rộng gói hàng (cm)";
+            this.Column62.Name = "Column62";
+            // 
+            // Column63
+            // 
+            this.Column63.HeaderText = "Chiều dài gói hàng (cm)";
+            this.Column63.Name = "Column63";
+            // 
+            // Column64
+            // 
+            this.Column64.HeaderText = "Chiều cao gói hàng (cm)";
+            this.Column64.Name = "Column64";
+            // 
+            // btnDangLazada
+            // 
+            this.btnDangLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangLazada.Location = new System.Drawing.Point(1004, 747);
+            this.btnDangLazada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDangLazada.Name = "btnDangLazada";
+            this.btnDangLazada.Size = new System.Drawing.Size(251, 49);
+            this.btnDangLazada.TabIndex = 55;
+            this.btnDangLazada.Text = "Đăng sản phẩm Lazada**";
+            this.btnDangLazada.UseVisualStyleBackColor = true;
+            this.btnDangLazada.Click += new System.EventHandler(this.btnDangLazada_Click);
+            // 
+            // btnXuatFileLazada
+            // 
+            this.btnXuatFileLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatFileLazada.Location = new System.Drawing.Point(5, 747);
+            this.btnXuatFileLazada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXuatFileLazada.Name = "btnXuatFileLazada";
+            this.btnXuatFileLazada.Size = new System.Drawing.Size(120, 49);
+            this.btnXuatFileLazada.TabIndex = 56;
+            this.btnXuatFileLazada.Text = "Xuất Excel";
+            this.btnXuatFileLazada.UseVisualStyleBackColor = true;
+            this.btnXuatFileLazada.Click += new System.EventHandler(this.btnXuatFileLazada_Click);
+            // 
+            // btnTaobaivietLazada
+            // 
+            this.btnTaobaivietLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaobaivietLazada.Location = new System.Drawing.Point(185, 747);
+            this.btnTaobaivietLazada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTaobaivietLazada.Name = "btnTaobaivietLazada";
+            this.btnTaobaivietLazada.Size = new System.Drawing.Size(286, 49);
+            this.btnTaobaivietLazada.TabIndex = 57;
+            this.btnTaobaivietLazada.Text = "Tạo bài viết sản phẩm Lazada*";
+            this.btnTaobaivietLazada.UseVisualStyleBackColor = true;
+            this.btnTaobaivietLazada.Click += new System.EventHandler(this.btnTaobaivietLazada_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(485, 756);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(265, 13);
+            this.label23.TabIndex = 58;
+            this.label23.Text = "*Tạo list bài viết thông tin sản phẩm từ danh sách SKU";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(485, 776);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(213, 13);
+            this.label24.TabIndex = 59;
+            this.label24.Text = "**Tạo danh sách đăng sản phẩm theo SKU";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2028, 1005);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.tbxBaiVietGiua);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.tbxBaiVietDuoi);
@@ -1440,7 +1754,6 @@
             this.Text = "Phân mềm phân loại sản phẩm";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTagsGoiY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXuat)).EndInit();
@@ -1456,6 +1769,10 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnhShopee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDangSPLazada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1593,6 +1910,43 @@
         private System.Windows.Forms.TextBox tbxBaiVietDuoi;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox tbxBaiVietGiua;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.DataGridView dataGridViewDangSPLazada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column46;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column40;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column41;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column42;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column43;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column44;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column45;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column47;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column48;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column49;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column50;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column51;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column52;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column53;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column54;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column55;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column56;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column57;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column58;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column59;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column60;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column61;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column62;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column63;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column64;
+        private System.Windows.Forms.Button btnDangLazada;
+        private System.Windows.Forms.Button btnXuatFileLazada;
+        private System.Windows.Forms.Button btnTaobaivietLazada;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
     }
 }
 

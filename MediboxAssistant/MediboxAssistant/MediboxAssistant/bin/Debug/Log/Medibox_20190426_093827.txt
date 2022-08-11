@@ -1,3 +1,0 @@
-[2044] 09:38:27.588 D/Program: Version:1.0.0.1
-[2044] 09:38:27.589 D/Program: Name:MediboxAssistant
-[2044] 09:38:27.589 D/Program: Description:Build: 24/04/2019

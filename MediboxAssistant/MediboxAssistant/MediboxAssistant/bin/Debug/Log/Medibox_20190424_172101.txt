@@ -1,3 +1,0 @@
-[6224] 17:21:01.030 D/Program: Version:1.0.0.1
-[6224] 17:21:01.031 D/Program: Description:Build: 24/04/2019
-[6224] 17:21:01.031 D/Program: Name:MediboxAssistant

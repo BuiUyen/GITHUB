@@ -64,6 +64,7 @@ namespace Chinh_Sua_Bai_Viet_Website
             public string MaNganhSenDo { get; set; }
             public string ThongSo { get; set; }
             public string CongDung { get; set; }
+            public List<LinhKien> mListPhanLoai { get; set; } = new List<LinhKien>();
         }
 
         public class Tags
@@ -199,11 +200,9 @@ namespace Chinh_Sua_Bai_Viet_Website
                         LinhKien _linhkien = new LinhKien();
                         _linhkien = mList_Goc[x];
                         _linhkien.mListLinhKien.Add(mList_Goc[x]);
-                        if (mList_Goc[x].AnhDaiDien == "")
-                        {
+                        _linhkien.mListPhanLoai.Add(mList_Goc[x]);
 
-                        }
-                        else
+                        if (mList_Goc[x].AnhDaiDien != "")
                         {
                             _linhkien.mListAnh.Add(mList_Goc[x].AnhDaiDien);
                         }
@@ -211,15 +210,21 @@ namespace Chinh_Sua_Bai_Viet_Website
                     }
                     else
                     {
-                        int stt = mList.FindIndex(v => v.ID == mList_Goc[x].ID);                        
-                        mList[stt].mListLinhKien.Add(mList_Goc[x]);
-                        if (mList_Goc[x].AnhDaiDien == "")
-                        {
+                        int stt = mList.FindIndex(v => v.ID == mList_Goc[x].ID);
+                        mList_Goc[x].ThuocTinh = mList[stt].ThuocTinh;
 
-                        }
-                        else
+                        mList[stt].mListLinhKien.Add(mList_Goc[x]);                        
+
+                        //thêm link ảnh vào list mListLinhKien
+                        if (mList_Goc[x].AnhDaiDien != "")
                         {
                             mList[stt].mListAnh.Add(mList_Goc[x].AnhDaiDien);
+                        }
+
+                        //thêm phân loại vào list mListPhanLoai
+                        if (mList_Goc[x].IDTuyChon != "")
+                        {
+                            mList[stt].mListPhanLoai.Add(mList_Goc[x]);
                         }
                     }
 
@@ -662,11 +667,9 @@ namespace Chinh_Sua_Bai_Viet_Website
                     {
                         sp.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");  
                         sp.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
-                        sp.MoTaNgan = tbxBaiVietTren.Text + sp.ThongSo + "\n\n************\nCÔNG DỤNG SẢN PHẨM\n\n" + sp.CongDung + tbxBaiVietDuoi.Text;
+                        sp.MoTaNgan = tbxBaiVietTren.Text + sp.ThongSo + tbxBaiVietGiua.Text + sp.CongDung + tbxBaiVietDuoi.Text;
                     }
-
-                }
-                
+                }                
             }
 
             dataGridViewKetQua.Rows.Clear();
@@ -938,7 +941,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                         //    }
                         //}
 
-                        string Path = @"C:\Users\huuuy\Downloads\ANHWEB";
+                        string Path = @"ANHWEB";
                         foreach (string linkanh in _linhkien.mListAnh)
                         {
                             string localFile = Path + @"\" + _linhkien.SKU + "_" + i + ".jpg";
@@ -1014,5 +1017,214 @@ namespace Chinh_Sua_Bai_Viet_Website
                 }
             }
         }
+
+        private void btnDangLazada_Click(object sender, EventArgs e)
+        {
+            mListKetQua = new List<LinhKien>();
+
+            foreach (string line in tbxInputSKU.Lines)
+            {
+                string text = line.Trim();
+                if (text == "")
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    _linhkien.AnhDaiDien = "chưa có ảnh";
+                    _linhkien.SKU = "Lỗi SKU";
+                    mListKetQua.Add(_linhkien);
+                }
+                else
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    int stt = mList_Goc.FindIndex(v => v.SKU == text);
+                    if (stt < 0)
+                    {
+                        _linhkien.SKU = "Lỗi SKU không tồn tại";
+                        mListKetQua.Add(_linhkien);
+                    }
+                    else
+                    {
+                        _linhkien = mList.FirstOrDefault(v => v.ID == mList_Goc[stt].ID);
+                        
+                        foreach (LinhKien phanloai in _linhkien.mListPhanLoai)
+                        {
+                            HtmlToText _HtmlToText = new HtmlToText();
+
+                            if (!(phanloai.NoiDung == null))
+                            {
+                                string noidung = _HtmlToText.HTMLToText(phanloai.NoiDung);
+                                var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
+                                if (listNoiDung.Count > 5)
+                                {
+                                    phanloai.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
+                                    phanloai.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
+                                    phanloai.MoTaNgan = NoiDungSanPhamLazada(phanloai.ThongSo, phanloai.CongDung, phanloai);
+                                }
+                            }
+                            mListKetQua.Add(phanloai);
+                        }
+                    }
+                }
+            }
+
+            ShowdataGridViewDangSPLazada(mListKetQua);
+        }
+
+        string NoiDungSanPhamLazada (string thongso, string congdung, LinhKien mLinhKien)
+        {
+            StringBuilder DB = new StringBuilder();
+            DB.Append("<p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span style=\"font-family:none\"></span></p><h1 style=\"margin:0;padding:8.0px 0;white-space:pre-wrap;text-align:center;display:inline-block;width:100.0% \"><div style=\"font-weight:bold;margin:0;padding:8.0px 0;white-space:pre-wrap\"><strong style=\"font-weight:bold\">");
+            DB.Append(mLinhKien.TenSanPham);
+            DB.Append("</strong></div></h1><h2><strong style=\"font-weight:bold\"></strong><strong style=\"font-weight:bold\">Thông Số Kỹ Thuật:</strong></h2><p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span>");
+
+            thongso = thongso.Replace("\n\n", "</span></p><p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span>");
+            DB.Append(thongso);
+
+            DB.Append("</span></p><div style=\"width:100.0%;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%; display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block\"><img class=\"\" src=\"");
+            DB.Append(mLinhKien.mListAnh[0]);
+            DB.Append("\" style=\"width:100.0%;display:block\"/></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span></span></p><h2><strong style=\"font-weight:bold\">Công Dụng:</strong></h2><p style=\"margin:0;padding:8.0px 0;white-space:pre- wrap\"><span>");
+
+            congdung = congdung.Replace("\n\n", "</span></p><p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span>");
+            DB.Append(congdung);
+             
+            DB.Append("</span></p><p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span></span></p><div style=\"width:100.0%;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0 %;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block\"><img class=\"\" src=\"");
+
+            for(int i = 1; i < mLinhKien.mListAnh.Count; i++)
+            {
+                DB.Append(mLinhKien.mListAnh[i]);
+                if(i == mLinhKien.mListAnh.Count - 1)
+                { 
+                    break;
+                }
+                DB.Append("\" style=\"width:100%;display:block\"/></div></div></div></div></div></div></div><div style=\"width:100%;margin:0\"><div style=\"width:100%;display:block;margin:0\"><div style=\"width:100%;display:block;margin:0\"><div style=\"width:100%;display:block;margin:0\"><div style=\"width:100%;display:block;margin:0\"><div style=\"width:100%;display:block;margin:0\"><div style=\"width:100%;display:block\"><img class=\"\" src=\"");
+            }
+            DB.Append("\"style=\"width:100%;display:block\"/></div></div></div></div></div></div><div style=\"width:100.0%;margin:0;padding:8.0px 0;white-space:pre-wrap\"><span></span></div>");
+            
+            return DB.ToString();
+        }
+
+        void ShowdataGridViewDangSPLazada(List<LinhKien> mListKetQua)
+        {
+            dataGridViewDangSPLazada.Rows.Clear();
+            foreach (LinhKien sp in mListKetQua)
+            {
+                int n = dataGridViewDangSPLazada.Rows.Add();
+                dataGridViewDangSPLazada.Rows[n].Cells[0].Value = sp.ID;
+                dataGridViewDangSPLazada.Rows[n].Cells[2].Value = "ngành hàng";
+                dataGridViewDangSPLazada.Rows[n].Cells[3].Value = sp.TenSanPham;
+                int i = 0;
+                foreach (string anh in sp.mListAnh)
+                {
+                    dataGridViewDangSPLazada.Rows[n].Cells[i + 4].Value = sp.mListAnh[i];
+                    i++;
+                    if (i > 7)
+                    {
+                        break;
+                    }
+                }
+                dataGridViewDangSPLazada.Rows[n].Cells[12].Value = "No Brand";
+                dataGridViewDangSPLazada.Rows[n].Cells[13].Value = sp.MoTaNgan;
+                dataGridViewDangSPLazada.Rows[n].Cells[14].Value = "Không";
+                dataGridViewDangSPLazada.Rows[n].Cells[15].Value = sp.ThuocTinh;
+                dataGridViewDangSPLazada.Rows[n].Cells[16].Value = sp.GiaTriThuocTinh;
+                dataGridViewDangSPLazada.Rows[n].Cells[17].Value = sp.AnhPhienBan;
+                dataGridViewDangSPLazada.Rows[n].Cells[20].Value = sp.Gia;
+                dataGridViewDangSPLazada.Rows[n].Cells[21].Value = sp.SKU;
+                dataGridViewDangSPLazada.Rows[n].Cells[22].Value = sp.SoLuong;
+                if(sp.CanNang != null)
+                {
+                    dataGridViewDangSPLazada.Rows[n].Cells[23].Value = (Int32.Parse(sp.CanNang) / 1000).ToString();
+                }                    
+                dataGridViewDangSPLazada.Rows[n].Cells[24].Value = "rộng";
+                dataGridViewDangSPLazada.Rows[n].Cells[25].Value = "dài";
+                dataGridViewDangSPLazada.Rows[n].Cells[26].Value = "cao";
+            }
+        }
+
+        private void btnXuatFileLazada_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.Sheets["Trang_tính1"];
+            worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.ActiveSheet;
+            worksheet.Name = "Uyên";
+
+            for (int i = 1; i < dataGridViewDangSPLazada.Columns.Count + 1; i++)
+            {
+                worksheet.Cells[1, i] = dataGridViewDangSPLazada.Columns[i - 1].HeaderText;
+            }
+
+            for (int i = 0; i < dataGridViewDangSPLazada.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < dataGridViewDangSPLazada.Columns.Count; j++)
+                {
+                    if (dataGridViewDangSPLazada.Rows[i].Cells[j].Value == null)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = "";
+                    }
+                    else
+                        worksheet.Cells[i + 2, j + 1] = dataGridViewDangSPLazada.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+
+            var saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = "Ket Qua File Up Lazada";
+            saveFileDialog.DefaultExt = ".xlsx";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                workbook.SaveAs(saveFileDialog.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            }
+            app.Quit();
+        }
+
+        private void btnTaobaivietLazada_Click(object sender, EventArgs e)
+        {
+            mListKetQua = new List<LinhKien>();
+
+            foreach (string line in tbxInputSKU.Lines)
+            {
+                string text = line.Trim();
+                if (text == "")
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    _linhkien.AnhDaiDien = "chưa có ảnh";
+                    _linhkien.SKU = "Lỗi SKU";
+                    mListKetQua.Add(_linhkien);
+                }
+                else
+                {
+                    LinhKien _linhkien = new LinhKien();
+                    int stt = mList_Goc.FindIndex(v => v.SKU == text);
+                    if (stt < 0)
+                    {
+                        _linhkien.SKU = "Lỗi SKU không tồn tại";
+                        mListKetQua.Add(_linhkien);
+                    }
+                    else
+                    {
+                        _linhkien = mList.FirstOrDefault(v => v.ID == mList_Goc[stt].ID);
+                        HtmlToText _HtmlToText = new HtmlToText();
+
+                        if (!(_linhkien.NoiDung == null))
+                        {
+                            string noidung = _HtmlToText.HTMLToText(_linhkien.NoiDung);
+                            var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
+                            if (listNoiDung.Count > 5)
+                            {
+                                _linhkien.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
+                                _linhkien.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
+                                _linhkien.MoTaNgan = NoiDungSanPhamLazada(_linhkien.ThongSo, _linhkien.CongDung, _linhkien);
+                            }
+                        }
+                        mListKetQua.Add(_linhkien);
+                    }
+                }
+            }
+            ShowdataGridViewDangSPLazada(mListKetQua);
+        }
+
+
+
+
     }
 }

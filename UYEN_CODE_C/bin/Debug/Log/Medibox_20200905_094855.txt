@@ -1,3 +1,0 @@
-[15532] 09:48:55.452 D/Program: Name:MediboxAssistant
-[15532] 09:48:55.489 D/Program: Description:Build: 24/04/2019
-[15532] 09:48:55.505 D/Program: Version:1.0.0.1
