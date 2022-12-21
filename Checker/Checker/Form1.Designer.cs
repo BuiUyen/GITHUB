@@ -50,14 +50,22 @@
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(25, 50);
+            this.btnRun.Location = new System.Drawing.Point(19, 41);
+            this.btnRun.Margin = new System.Windows.Forms.Padding(2);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(75, 23);
+            this.btnRun.Size = new System.Drawing.Size(56, 19);
             this.btnRun.TabIndex = 0;
             this.btnRun.Text = "button1";
             this.btnRun.UseVisualStyleBackColor = true;
@@ -65,9 +73,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(638, 30);
+            this.button1.Location = new System.Drawing.Point(478, 24);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 42);
+            this.button1.Size = new System.Drawing.Size(61, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,25 +84,26 @@
             // 
             // tbxMin
             // 
-            this.tbxMin.Location = new System.Drawing.Point(106, 50);
-            this.tbxMin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxMin.Location = new System.Drawing.Point(80, 41);
+            this.tbxMin.Margin = new System.Windows.Forms.Padding(2);
             this.tbxMin.Name = "tbxMin";
-            this.tbxMin.Size = new System.Drawing.Size(89, 22);
+            this.tbxMin.Size = new System.Drawing.Size(68, 20);
             this.tbxMin.TabIndex = 3;
             // 
             // tbxMax
             // 
-            this.tbxMax.Location = new System.Drawing.Point(224, 51);
-            this.tbxMax.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxMax.Location = new System.Drawing.Point(168, 41);
+            this.tbxMax.Margin = new System.Windows.Forms.Padding(2);
             this.tbxMax.Name = "tbxMax";
-            this.tbxMax.Size = new System.Drawing.Size(89, 22);
+            this.tbxMax.Size = new System.Drawing.Size(68, 20);
             this.tbxMax.TabIndex = 4;
             // 
             // txbFile
             // 
-            this.txbFile.Location = new System.Drawing.Point(741, 40);
+            this.txbFile.Location = new System.Drawing.Point(556, 32);
+            this.txbFile.Margin = new System.Windows.Forms.Padding(2);
             this.txbFile.Name = "txbFile";
-            this.txbFile.Size = new System.Drawing.Size(323, 22);
+            this.txbFile.Size = new System.Drawing.Size(243, 20);
             this.txbFile.TabIndex = 5;
             // 
             // dataGridViewKetQua
@@ -117,11 +127,10 @@
             this.Column15,
             this.Column16});
             this.dataGridViewKetQua.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridViewKetQua.Location = new System.Drawing.Point(0, 100);
-            this.dataGridViewKetQua.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewKetQua.Location = new System.Drawing.Point(0, 845);
             this.dataGridViewKetQua.Name = "dataGridViewKetQua";
             this.dataGridViewKetQua.RowHeadersWidth = 62;
-            this.dataGridViewKetQua.Size = new System.Drawing.Size(1543, 1409);
+            this.dataGridViewKetQua.Size = new System.Drawing.Size(1930, 512);
             this.dataGridViewKetQua.TabIndex = 16;
             // 
             // Column1
@@ -236,20 +245,71 @@
             this.Column16.Name = "Column16";
             this.Column16.Width = 125;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column17,
+            this.Column18,
+            this.Column19});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 127);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1894, 624);
+            this.dataGridView1.TabIndex = 17;
+            // 
+            // Column17
+            // 
+            this.Column17.HeaderText = "STT";
+            this.Column17.Name = "Column17";
+            // 
+            // Column18
+            // 
+            this.Column18.HeaderText = "Link Ảnh";
+            this.Column18.Name = "Column18";
+            // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "Tên ảnh";
+            this.Column19.Name = "Column19";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(937, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(238, 85);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1352, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(238, 85);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1543, 1509);
+            this.ClientSize = new System.Drawing.Size(1930, 1357);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridViewKetQua);
             this.Controls.Add(this.txbFile);
             this.Controls.Add(this.tbxMax);
             this.Controls.Add(this.tbxMin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRun);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +339,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.Button button3;
     }
 }
 

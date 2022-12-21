@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.ComponentModel;
 using OpenDialogWindowHandler;
+using OpenQA.Selenium.Interactions;
 
 namespace Checker
 {
@@ -65,7 +66,7 @@ namespace Checker
                 }
             }
             Show_Ket_Qua();
-            //bw.RunWorkerAsync();
+            bw.RunWorkerAsync();
         }
 
         private void Khoi_Tao_Chrome()
@@ -87,27 +88,53 @@ namespace Checker
 
         private void Chay_Chuong_Trinh(SanPham _sanpham)
         {
+            if(checkBoxBaiViet.Checked == true)
+            {
+                driver.Navigate().GoToUrl(@"file:///D:/FileNoiDung.html.htm");
+                Thread.Sleep(3000);
+                Actions action1 = new Actions(driver);
+                action1.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("a").KeyUp(OpenQA.Selenium.Keys.Control).Perform();
+                action1.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("c").KeyUp(OpenQA.Selenium.Keys.Control).Perform(); Thread.Sleep(1000);
+            }
+
             driver.Navigate().GoToUrl("https://ban.sendo.vn/san-pham/" + _sanpham.ID);
             Thread.Sleep(5000);
 
-            //Chỉnh sửa tên sản phẩm
-            //driver.FindElementById("field-name").Clear();
-            //driver.FindElementById("field-name").SendKeys(_sanpham.TenSanPham);
-            //Thread.Sleep(3000);
-
+            if (checkBoxBaiViet.Checked == true)
+            {
+                driver.FindElements(By.ClassName("iconWrap_JcTv"))[0].Click();
+                Actions action2 = new Actions(driver);
+                action2.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("a").KeyUp(OpenQA.Selenium.Keys.Control).Perform();
+                action2.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("v").KeyUp(OpenQA.Selenium.Keys.Control).Perform(); Thread.Sleep(1000);
+                driver.FindElements(By.ClassName("iconWrap_JcTv"))[0].Click();
+            }
+            //Chỉnh sửa Tên sản phẩm
+            if (checkBoxTenSanPham.Checked == true)
+            {
+                driver.FindElementById("field-name").Clear();
+                driver.FindElementById("field-name").SendKeys(_sanpham.TenSanPham);
+                Thread.Sleep(3000);
+            }
             //Chỉnh sửa SKU sản phẩm
-            //driver.FindElementById("field-store_sku").Clear();
-            //driver.FindElementById("field-store_sku").SendKeys(_sanpham.SKU);
-            //Thread.Sleep(3000);
+            if (checkBoxSKU.Checked == true)
+            {
+                driver.FindElementById("field-store_sku").Clear();
+                driver.FindElementById("field-store_sku").SendKeys(_sanpham.SKU);
+                Thread.Sleep(3000);
+            }
 
-            driver.FindElements(By.ClassName("editIcon_2i-f"))[0].Click();
-            Thread.Sleep(1000);
-            var upfileAnh = driver.FindElements(By.ClassName("d7e-cd3660"));
-            upfileAnh[1].Click();
-            Thread.Sleep(3000);
-            System.Windows.Forms.SendKeys.SendWait(_sanpham.TenSanPham);
-            System.Windows.Forms.SendKeys.SendWait(@"{Enter}");
-            Thread.Sleep(8000);
+            //Chỉnh sửa Ảnh đại diện sản phẩm
+            if (checkBoxSKU.Checked == true)
+            {
+                driver.FindElements(By.ClassName("editIcon_2i-f"))[0].Click();
+                Thread.Sleep(1000);
+                var upfileAnh = driver.FindElements(By.ClassName("d7e-cd3660"));
+                upfileAnh[1].Click();
+                Thread.Sleep(3000);
+                System.Windows.Forms.SendKeys.SendWait(_sanpham.TenSanPham);
+                System.Windows.Forms.SendKeys.SendWait(@"{Enter}");
+                Thread.Sleep(8000);
+            }
 
             var element = driver.FindElements(By.ClassName("d7e-aa34b6"));
             element[element.Count() - 1].Click();
@@ -142,7 +169,7 @@ namespace Checker
             {
                 mListInput[stt].TinhTrang = "Thành công!";
             }
-            
+
             Thread.Sleep(6000);
         }
 
@@ -251,6 +278,24 @@ namespace Checker
                 // bao cao tien do
                 bw.ReportProgress(i, i);                
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //if (File.Exists("file code.txt"))
+            //{
+            //    File.Delete("file code.txt");
+            //}
+
+            //using (StreamWriter fs = File.CreateText("file code.txt"))
+            //{
+            using (StreamReader sr = File.OpenText("file code.txt"))
+                {
+                    File.WriteAllText(@"D:\FileNoiDung.html", sr.ReadToEnd());
+                }
+            //}
+
+            
         }
     }
 }

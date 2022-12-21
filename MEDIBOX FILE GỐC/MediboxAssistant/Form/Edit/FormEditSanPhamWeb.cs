@@ -60,6 +60,8 @@ namespace Medibox
                 checkBoxHienThi.Checked = false;
                 checkBoxHienThi.Checked = true;
             }
+            txtThongSo.Text = mSanPhamWeb.ThongSo;
+            txtCongDung.Text = mSanPhamWeb.CongDung;
             UtilityListView.ListViewRefresh(mListViewData, mListSanPhamWeb);
         }
 

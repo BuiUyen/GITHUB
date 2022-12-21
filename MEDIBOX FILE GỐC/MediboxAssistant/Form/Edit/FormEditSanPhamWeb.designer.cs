@@ -35,8 +35,8 @@
             this.txtPassword = new DevComponents.DotNetBar.LabelX();
             this.txtLoai = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
-            this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtCongDung = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtThongSo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
             this.mListViewData = new Sanita.Utility.UI.ObjectListView();
             this.olvColumn2 = ((Sanita.Utility.UI.OLVColumn)(new Sanita.Utility.UI.OLVColumn()));
@@ -89,10 +89,10 @@
             this.txtUserName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtUserName.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtUserName.FocusHighlightEnabled = true;
-            this.txtUserName.Location = new System.Drawing.Point(1032, 1359);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUserName.Location = new System.Drawing.Point(803, 1144);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(420, 27);
+            this.txtUserName.Size = new System.Drawing.Size(327, 23);
             this.txtUserName.TabIndex = 1;
             this.txtUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -103,10 +103,10 @@
             // 
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Location = new System.Drawing.Point(1179, 1284);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX3.Location = new System.Drawing.Point(917, 1081);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(130, 27);
+            this.labelX3.Size = new System.Drawing.Size(101, 23);
             this.labelX3.TabIndex = 20;
             this.labelX3.Text = "Tên người dùng";
             // 
@@ -117,10 +117,10 @@
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(12, 170);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX2.Location = new System.Drawing.Point(9, 143);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(143, 27);
+            this.labelX2.Size = new System.Drawing.Size(111, 23);
             this.labelX2.TabIndex = 19;
             this.labelX2.Text = "Trạng thái hiển thị";
             // 
@@ -133,10 +133,10 @@
             this.txtAPIKey.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtAPIKey.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtAPIKey.FocusHighlightEnabled = true;
-            this.txtAPIKey.Location = new System.Drawing.Point(35, 1284);
-            this.txtAPIKey.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAPIKey.Location = new System.Drawing.Point(27, 1081);
+            this.txtAPIKey.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAPIKey.Name = "txtAPIKey";
-            this.txtAPIKey.Size = new System.Drawing.Size(420, 27);
+            this.txtAPIKey.Size = new System.Drawing.Size(327, 23);
             this.txtAPIKey.TabIndex = 3;
             this.txtAPIKey.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -147,10 +147,10 @@
             // 
             // 
             this.txtPassword.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtPassword.Location = new System.Drawing.Point(712, 93);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtPassword.Location = new System.Drawing.Point(554, 78);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(130, 27);
+            this.txtPassword.Size = new System.Drawing.Size(101, 23);
             this.txtPassword.TabIndex = 19;
             this.txtPassword.Text = "Loại";
             // 
@@ -163,10 +163,10 @@
             this.txtLoai.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtLoai.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtLoai.FocusHighlightEnabled = true;
-            this.txtLoai.Location = new System.Drawing.Point(889, 95);
-            this.txtLoai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLoai.Location = new System.Drawing.Point(691, 80);
+            this.txtLoai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLoai.Name = "txtLoai";
-            this.txtLoai.Size = new System.Drawing.Size(420, 27);
+            this.txtLoai.Size = new System.Drawing.Size(327, 23);
             this.txtLoai.TabIndex = 5;
             this.txtLoai.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -174,8 +174,8 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.panelEx1.Controls.Add(this.textBoxX2);
-            this.panelEx1.Controls.Add(this.textBoxX1);
+            this.panelEx1.Controls.Add(this.txtCongDung);
+            this.panelEx1.Controls.Add(this.txtThongSo);
             this.panelEx1.Controls.Add(this.labelX9);
             this.panelEx1.Controls.Add(this.mListViewData);
             this.panelEx1.Controls.Add(this.checkBoxAn);
@@ -202,9 +202,9 @@
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
-            this.panelEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelEx1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(2019, 1461);
+            this.panelEx1.Size = new System.Drawing.Size(1570, 1230);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.panelEx1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -213,39 +213,39 @@
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 32;
             // 
-            // textBoxX2
+            // txtCongDung
             // 
             // 
             // 
             // 
-            this.textBoxX2.Border.Class = "TextBoxBorder";
-            this.textBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX2.FocusHighlightColor = System.Drawing.Color.LightYellow;
-            this.textBoxX2.FocusHighlightEnabled = true;
-            this.textBoxX2.Location = new System.Drawing.Point(1081, 247);
-            this.textBoxX2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxX2.Multiline = true;
-            this.textBoxX2.Name = "textBoxX2";
-            this.textBoxX2.Size = new System.Drawing.Size(869, 226);
-            this.textBoxX2.TabIndex = 226;
-            this.textBoxX2.UseSystemPasswordChar = true;
+            this.txtCongDung.Border.Class = "TextBoxBorder";
+            this.txtCongDung.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtCongDung.FocusHighlightColor = System.Drawing.Color.LightYellow;
+            this.txtCongDung.FocusHighlightEnabled = true;
+            this.txtCongDung.Location = new System.Drawing.Point(841, 208);
+            this.txtCongDung.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCongDung.Multiline = true;
+            this.txtCongDung.Name = "txtCongDung";
+            this.txtCongDung.Size = new System.Drawing.Size(676, 190);
+            this.txtCongDung.TabIndex = 226;
+            this.txtCongDung.UseSystemPasswordChar = true;
             // 
-            // textBoxX1
-            // 
-            // 
+            // txtThongSo
             // 
             // 
-            this.textBoxX1.Border.Class = "TextBoxBorder";
-            this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX1.FocusHighlightColor = System.Drawing.Color.LightYellow;
-            this.textBoxX1.FocusHighlightEnabled = true;
-            this.textBoxX1.Location = new System.Drawing.Point(190, 247);
-            this.textBoxX1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxX1.Multiline = true;
-            this.textBoxX1.Name = "textBoxX1";
-            this.textBoxX1.Size = new System.Drawing.Size(869, 226);
-            this.textBoxX1.TabIndex = 225;
-            this.textBoxX1.UseSystemPasswordChar = true;
+            // 
+            // 
+            this.txtThongSo.Border.Class = "TextBoxBorder";
+            this.txtThongSo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtThongSo.FocusHighlightColor = System.Drawing.Color.LightYellow;
+            this.txtThongSo.FocusHighlightEnabled = true;
+            this.txtThongSo.Location = new System.Drawing.Point(148, 208);
+            this.txtThongSo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtThongSo.Multiline = true;
+            this.txtThongSo.Name = "txtThongSo";
+            this.txtThongSo.Size = new System.Drawing.Size(676, 190);
+            this.txtThongSo.TabIndex = 225;
+            this.txtThongSo.UseSystemPasswordChar = true;
             // 
             // labelX9
             // 
@@ -254,10 +254,10 @@
             // 
             // 
             this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX9.Location = new System.Drawing.Point(1458, 209);
-            this.labelX9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX9.Location = new System.Drawing.Point(1134, 176);
+            this.labelX9.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(183, 27);
+            this.labelX9.Size = new System.Drawing.Size(142, 23);
             this.labelX9.TabIndex = 224;
             this.labelX9.Text = "CÔNG DỤNG";
             // 
@@ -311,13 +311,12 @@
             this.mListViewData.FullRowSelect = true;
             this.mListViewData.GridLines = true;
             this.mListViewData.HideSelection = false;
-            this.mListViewData.Location = new System.Drawing.Point(13, 539);
-            this.mListViewData.Margin = new System.Windows.Forms.Padding(4);
+            this.mListViewData.Location = new System.Drawing.Point(10, 454);
             this.mListViewData.MenuLabelSortAscending = "Sắp xếp tăng dần theo \'{0}\'";
             this.mListViewData.MultiSelect = false;
             this.mListViewData.Name = "mListViewData";
             this.mListViewData.ShowGroups = false;
-            this.mListViewData.Size = new System.Drawing.Size(1993, 716);
+            this.mListViewData.Size = new System.Drawing.Size(1550, 603);
             this.mListViewData.SortGroupItemsByPrimaryColumn = false;
             this.mListViewData.TabIndex = 223;
             this.mListViewData.UnfocusedHighlightBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
@@ -452,9 +451,10 @@
             // checkBoxAn
             // 
             this.checkBoxAn.AutoSize = true;
-            this.checkBoxAn.Location = new System.Drawing.Point(333, 176);
+            this.checkBoxAn.Location = new System.Drawing.Point(259, 148);
+            this.checkBoxAn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBoxAn.Name = "checkBoxAn";
-            this.checkBoxAn.Size = new System.Drawing.Size(52, 25);
+            this.checkBoxAn.Size = new System.Drawing.Size(41, 20);
             this.checkBoxAn.TabIndex = 75;
             this.checkBoxAn.Text = "Ẩn";
             this.checkBoxAn.UseVisualStyleBackColor = true;
@@ -462,9 +462,10 @@
             // checkBoxHienThi
             // 
             this.checkBoxHienThi.AutoSize = true;
-            this.checkBoxHienThi.Location = new System.Drawing.Point(189, 176);
+            this.checkBoxHienThi.Location = new System.Drawing.Point(147, 148);
+            this.checkBoxHienThi.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBoxHienThi.Name = "checkBoxHienThi";
-            this.checkBoxHienThi.Size = new System.Drawing.Size(89, 25);
+            this.checkBoxHienThi.Size = new System.Drawing.Size(69, 20);
             this.checkBoxHienThi.TabIndex = 74;
             this.checkBoxHienThi.Text = "Hiển thị";
             this.checkBoxHienThi.UseVisualStyleBackColor = true;
@@ -478,10 +479,10 @@
             this.txtHassIO_KEY.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtHassIO_KEY.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtHassIO_KEY.FocusHighlightEnabled = true;
-            this.txtHassIO_KEY.Location = new System.Drawing.Point(556, 1319);
-            this.txtHassIO_KEY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtHassIO_KEY.Location = new System.Drawing.Point(432, 1111);
+            this.txtHassIO_KEY.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHassIO_KEY.Name = "txtHassIO_KEY";
-            this.txtHassIO_KEY.Size = new System.Drawing.Size(420, 27);
+            this.txtHassIO_KEY.Size = new System.Drawing.Size(327, 23);
             this.txtHassIO_KEY.TabIndex = 9;
             this.txtHassIO_KEY.UseSystemPasswordChar = true;
             this.txtHassIO_KEY.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
@@ -493,10 +494,10 @@
             // 
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Location = new System.Drawing.Point(503, 209);
-            this.labelX8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX8.Location = new System.Drawing.Point(391, 176);
+            this.labelX8.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(183, 27);
+            this.labelX8.Size = new System.Drawing.Size(142, 23);
             this.labelX8.TabIndex = 70;
             this.labelX8.Text = "THÔNG SỐ KĨ THUẬT";
             // 
@@ -509,10 +510,10 @@
             this.txtTag.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTag.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtTag.FocusHighlightEnabled = true;
-            this.txtTag.Location = new System.Drawing.Point(190, 133);
-            this.txtTag.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTag.Location = new System.Drawing.Point(148, 112);
+            this.txtTag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTag.Name = "txtTag";
-            this.txtTag.Size = new System.Drawing.Size(1276, 27);
+            this.txtTag.Size = new System.Drawing.Size(992, 23);
             this.txtTag.TabIndex = 7;
             this.txtTag.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -523,10 +524,10 @@
             // 
             // 
             this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Location = new System.Drawing.Point(12, 131);
-            this.labelX7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX7.Location = new System.Drawing.Point(9, 110);
+            this.labelX7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(130, 27);
+            this.labelX7.Size = new System.Drawing.Size(101, 23);
             this.labelX7.TabIndex = 65;
             this.labelX7.Text = "Tags";
             // 
@@ -539,10 +540,10 @@
             this.txtTenSanPham.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTenSanPham.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtTenSanPham.FocusHighlightEnabled = true;
-            this.txtTenSanPham.Location = new System.Drawing.Point(190, 56);
-            this.txtTenSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTenSanPham.Location = new System.Drawing.Point(148, 47);
+            this.txtTenSanPham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenSanPham.Name = "txtTenSanPham";
-            this.txtTenSanPham.Size = new System.Drawing.Size(1276, 27);
+            this.txtTenSanPham.Size = new System.Drawing.Size(992, 23);
             this.txtTenSanPham.TabIndex = 2;
             this.txtTenSanPham.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -555,10 +556,10 @@
             this.txtLongitude.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtLongitude.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtLongitude.FocusHighlightEnabled = true;
-            this.txtLongitude.Location = new System.Drawing.Point(35, 1333);
-            this.txtLongitude.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLongitude.Location = new System.Drawing.Point(27, 1123);
+            this.txtLongitude.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLongitude.Name = "txtLongitude";
-            this.txtLongitude.Size = new System.Drawing.Size(420, 27);
+            this.txtLongitude.Size = new System.Drawing.Size(327, 23);
             this.txtLongitude.TabIndex = 6;
             this.txtLongitude.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -571,10 +572,10 @@
             this.txtAlias.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtAlias.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtAlias.FocusHighlightEnabled = true;
-            this.txtAlias.Location = new System.Drawing.Point(190, 17);
-            this.txtAlias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAlias.Location = new System.Drawing.Point(148, 14);
+            this.txtAlias.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAlias.Name = "txtAlias";
-            this.txtAlias.Size = new System.Drawing.Size(1276, 27);
+            this.txtAlias.Size = new System.Drawing.Size(992, 23);
             this.txtAlias.TabIndex = 0;
             this.txtAlias.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -585,10 +586,10 @@
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(13, 54);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX1.Location = new System.Drawing.Point(10, 45);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(130, 27);
+            this.labelX1.Size = new System.Drawing.Size(101, 23);
             this.labelX1.TabIndex = 62;
             this.labelX1.Text = "Tên sản phẩm";
             // 
@@ -599,10 +600,10 @@
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(12, 209);
-            this.labelX4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX4.Location = new System.Drawing.Point(9, 176);
+            this.labelX4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(130, 27);
+            this.labelX4.Size = new System.Drawing.Size(101, 23);
             this.labelX4.TabIndex = 60;
             this.labelX4.Text = "Nội dung";
             // 
@@ -613,10 +614,10 @@
             // 
             // 
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.Location = new System.Drawing.Point(13, 15);
-            this.labelX5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX5.Location = new System.Drawing.Point(10, 13);
+            this.labelX5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(130, 27);
+            this.labelX5.Size = new System.Drawing.Size(101, 23);
             this.labelX5.TabIndex = 63;
             this.labelX5.Text = "Đường dẫn / Alias";
             // 
@@ -629,10 +630,10 @@
             this.txtNhaCungCap.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNhaCungCap.FocusHighlightColor = System.Drawing.Color.LightYellow;
             this.txtNhaCungCap.FocusHighlightEnabled = true;
-            this.txtNhaCungCap.Location = new System.Drawing.Point(190, 95);
-            this.txtNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNhaCungCap.Location = new System.Drawing.Point(148, 80);
+            this.txtNhaCungCap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNhaCungCap.Name = "txtNhaCungCap";
-            this.txtNhaCungCap.Size = new System.Drawing.Size(420, 27);
+            this.txtNhaCungCap.Size = new System.Drawing.Size(327, 23);
             this.txtNhaCungCap.TabIndex = 4;
             this.txtNhaCungCap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
@@ -643,10 +644,10 @@
             // 
             // 
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Location = new System.Drawing.Point(13, 93);
-            this.labelX6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.labelX6.Location = new System.Drawing.Point(10, 78);
+            this.labelX6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(130, 27);
+            this.labelX6.Size = new System.Drawing.Size(101, 23);
             this.labelX6.TabIndex = 61;
             this.labelX6.Text = "Nhà cung cấp";
             // 
@@ -657,11 +658,10 @@
             this.panelEx2.Controls.Add(this.btnSave);
             this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelEx2.Location = new System.Drawing.Point(0, 1413);
-            this.panelEx2.Margin = new System.Windows.Forms.Padding(4);
+            this.panelEx2.Location = new System.Drawing.Point(0, 1190);
             this.panelEx2.Name = "panelEx2";
             this.panelEx2.Padding = new System.Windows.Forms.Padding(1);
-            this.panelEx2.Size = new System.Drawing.Size(2019, 48);
+            this.panelEx2.Size = new System.Drawing.Size(1570, 40);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.panelEx2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -679,22 +679,20 @@
             this.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSave.Image = global::MediboxAssistant.Properties.Resources.Save_32x32;
-            this.btnSave.Location = new System.Drawing.Point(1870, 1);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(1454, 1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Shortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlS);
-            this.btnSave.Size = new System.Drawing.Size(148, 46);
+            this.btnSave.Size = new System.Drawing.Size(115, 38);
             this.btnSave.TabIndex = 100;
             this.btnSave.Text = "Lưu";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormEditSanPhamWeb
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2019, 1461);
+            this.ClientSize = new System.Drawing.Size(1570, 1230);
             this.Controls.Add(this.panelEx1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormEditSanPhamWeb";
             this.Text = "Cập Nhật Sản Phẩm Web";
             this.Load += new System.EventHandler(this.Database_Load);
@@ -752,8 +750,8 @@
         private Sanita.Utility.UI.OLVColumn olvColumn39;
         private Sanita.Utility.UI.OLVColumn olvColumn41;
         private Sanita.Utility.UI.OLVColumn olvColumn42;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtThongSo;
         private DevComponents.DotNetBar.LabelX labelX9;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCongDung;
     }
 }

@@ -46,3 +46,4 @@ C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Webs
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.pdb
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.xml
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.FormLogin.resources
+C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\WebDriver.dll

@@ -10,6 +10,11 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using System.Threading;
 
 namespace Chinh_Sua_Bai_Viet_Website
 {
@@ -80,6 +85,13 @@ namespace Chinh_Sua_Bai_Viet_Website
             public string MaNganh { get; set; }
 
         }
+        public class SanPhamSendo
+        {
+            public string ID { get; set; }
+            public string TenSanPham { get; set; }
+            public string SKU { get; set; }
+            public string TinhTrang { get; set; }
+        }
 
         public List<LinhKien> mList_Goc = new List<LinhKien>();
         public List<LinhKien> mList = new List<LinhKien>();
@@ -128,7 +140,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                     tbxFile.Text = openFileDialog.FileName;
                     using (var steam = File.Open(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
                     {
-                        using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(steam))
+                        using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(steam)) 
                         {
                             DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
                             {
@@ -150,7 +162,7 @@ namespace Chinh_Sua_Bai_Viet_Website
         {
             Nganhhang();
 
-            try
+            //try
             {
                 System.Data.DataTable dt = tableCollection[cbxSheet.SelectedItem.ToString()];
                 dataGridViewData.DataSource = dt;
@@ -240,11 +252,11 @@ namespace Chinh_Sua_Bai_Viet_Website
                     }    
                 }
             }
-            catch(Exception Ex)
-            {
-                MessageBox.Show("Bảng Excel đang được sử dụng bởi một ứng dụng khác", "Thông Báo");
-                MessageBox.Show(Ex.ToString());
-            }
+            //catch(Exception Ex)
+            //{
+            //    MessageBox.Show("Bảng Excel đang được sử dụng bởi một ứng dụng khác", "Thông Báo");
+            //    MessageBox.Show(Ex.ToString());
+            //}
         }
 
         private void tbxTimTags_TextChanged(object sender, EventArgs e)
@@ -307,7 +319,7 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         private void tbxGiaBan_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == System.Windows.Forms.Keys.Enter)
             {
                 
             }
@@ -321,7 +333,7 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         private void tbxGiaSoSanh_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == System.Windows.Forms.Keys.Enter)
             {
                 
             }
@@ -335,7 +347,7 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         private void tbxCanNang_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == System.Windows.Forms.Keys.Enter)
             {
                 
             }
@@ -650,7 +662,10 @@ namespace Chinh_Sua_Bai_Viet_Website
                 dataGridViewKetQua.Rows[n].Cells[6].Value = sp.Gia;
                 dataGridViewKetQua.Rows[n].Cells[7].Value = sp.CanNang;
                 dataGridViewKetQua.Rows[n].Cells[8].Value = sp.AnhDaiDien;
-                
+                dataGridViewKetQua.Rows[n].Cells[11].Value = sp.TenSanPham;
+                dataGridViewKetQua.Rows[n].Cells[12].Value = sp.GiaTriThuocTinh;
+
+
             }
         }
 
@@ -705,22 +720,22 @@ namespace Chinh_Sua_Bai_Viet_Website
         {
             mListXepAnh = new List<LinhKien>();
             mListKetQua = new List<LinhKien>();
-            for (int x = 0; x < mList_Goc.Count; x++)
-            {
-                LinhKien _linhkien = new LinhKien();
+            //for (int x = 0; x < mList_Goc.Count; x++)
+            //{
+            //    LinhKien _linhkien = new LinhKien();
 
-                if (mListXepAnh.FirstOrDefault(v => v.ID == mList_Goc[x].ID) == null)
-                {
-                    _linhkien = mList_Goc[x];
-                    _linhkien.mListLinhKien.Add(mList_Goc[x]);
-                    mListXepAnh.Add(_linhkien);
-                }
-                else
-                {
-                    int stt = mListXepAnh.FindIndex(v => v.ID == mList_Goc[x].ID);                    
-                    mListXepAnh[stt].mListLinhKien.Add(mList_Goc[x]);
-                }
-            }
+            //    if (mListXepAnh.FirstOrDefault(v => v.ID == mList_Goc[x].ID) == null)
+            //    {
+            //        _linhkien = mList_Goc[x];
+            //        _linhkien.mListLinhKien.Add(mList_Goc[x]);
+            //        mListXepAnh.Add(_linhkien);
+            //    }
+            //    else
+            //    {
+            //        int stt = mListXepAnh.FindIndex(v => v.ID == mList_Goc[x].ID);                    
+            //        mListXepAnh[stt].mListLinhKien.Add(mList_Goc[x]);
+            //    }
+            //}
 
             foreach (string line in tbxInputSKU.Lines)
             {
@@ -735,7 +750,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                 else
                 {
                     LinhKien _linhkien = new LinhKien();
-                    int stt = mListXepAnh.FindIndex(v => v.SKU == text);
+                    int stt = mList.FindIndex(v => v.SKU == text);
                     if (stt < 0)
                     {
                         _linhkien.SKU = "Lỗi SKU không tồn tại";
@@ -743,10 +758,10 @@ namespace Chinh_Sua_Bai_Viet_Website
                     }
                     else
                     {
-                        _linhkien = mListXepAnh[stt];
-                        if(_linhkien.mListLinhKien.Count > 1)
+                        _linhkien = mList[stt];
+                        if(_linhkien.mListPhanLoai.Count > 1)
                         {
-                            foreach(LinhKien lk in _linhkien.mListLinhKien)
+                            foreach(LinhKien lk in _linhkien.mListPhanLoai)
                             {
                                 mListKetQua.Add(lk);
                             }
@@ -1044,24 +1059,33 @@ namespace Chinh_Sua_Bai_Viet_Website
                     else
                     {
                         _linhkien = mList.FirstOrDefault(v => v.ID == mList_Goc[stt].ID);
-                        
-                        foreach (LinhKien phanloai in _linhkien.mListPhanLoai)
+                        if(_linhkien.mListAnh.Count == 0)
                         {
-                            HtmlToText _HtmlToText = new HtmlToText();
-
-                            if (!(phanloai.NoiDung == null))
-                            {
-                                string noidung = _HtmlToText.HTMLToText(phanloai.NoiDung);
-                                var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
-                                if (listNoiDung.Count > 5)
-                                {
-                                    phanloai.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
-                                    phanloai.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
-                                    phanloai.MoTaNgan = NoiDungSanPhamLazada(phanloai.ThongSo, phanloai.CongDung, phanloai);
-                                }
-                            }
-                            mListKetQua.Add(phanloai);
+                            _linhkien.SKU = "Sản phẩm chưa có ảnh";
+                            mListKetQua.Add(_linhkien);
                         }
+                        else
+                        {
+                            foreach (LinhKien phanloai in _linhkien.mListPhanLoai)
+                            {
+                                HtmlToText _HtmlToText = new HtmlToText();
+
+                                if (!(phanloai.NoiDung == null))
+                                {
+                                    string noidung = _HtmlToText.HTMLToText(phanloai.NoiDung);
+                                    var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
+                                    if (listNoiDung.Count > 5)
+                                    {
+                                        phanloai.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
+                                        phanloai.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
+                                        phanloai.MoTaNgan = NoiDungSanPhamLazada(phanloai.ThongSo, phanloai.CongDung, phanloai);
+                                    }
+                                }
+                                mListKetQua.Add(phanloai);
+                            }
+                        }
+
+
                     }
                 }
             }
@@ -1081,6 +1105,7 @@ namespace Chinh_Sua_Bai_Viet_Website
 
             DB.Append("</span></p><div style=\"width:100.0%;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0;padding:8.0px 0;white-space:pre-wrap\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%; display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block;margin:0\"><div style=\"width:100.0%;display:block\"><img class=\"\" src=\"");
             DB.Append(mLinhKien.mListAnh[0]);
+
             DB.Append("\" style=\"width:100.0%;display:block\"/></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span></span></p><h2><strong style=\"font-weight:bold\">Công Dụng:</strong></h2><p style=\"margin:0;padding:8.0px 0;white-space:pre- wrap\"><span>");
 
             congdung = congdung.Replace("\n\n", "</span></p><p style=\"margin:0;padding:8.0px 0;white-space:pre-wrap\"><span>");
@@ -1195,7 +1220,7 @@ namespace Chinh_Sua_Bai_Viet_Website
                 {
                     LinhKien _linhkien = new LinhKien();
                     int stt = mList_Goc.FindIndex(v => v.SKU == text);
-                    if (stt < 0)
+                    if ( stt < 0)
                     {
                         _linhkien.SKU = "Lỗi SKU không tồn tại";
                         mListKetQua.Add(_linhkien);
@@ -1204,26 +1229,221 @@ namespace Chinh_Sua_Bai_Viet_Website
                     {
                         _linhkien = mList.FirstOrDefault(v => v.ID == mList_Goc[stt].ID);
                         HtmlToText _HtmlToText = new HtmlToText();
-
-                        if (!(_linhkien.NoiDung == null))
+                        if (_linhkien.mListAnh.Count == 0)
                         {
-                            string noidung = _HtmlToText.HTMLToText(_linhkien.NoiDung);
-                            var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
-                            if (listNoiDung.Count > 5)
-                            {
-                                _linhkien.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
-                                _linhkien.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
-                                _linhkien.MoTaNgan = NoiDungSanPhamLazada(_linhkien.ThongSo, _linhkien.CongDung, _linhkien);
-                            }
+                            _linhkien.SKU = "Sản phẩm chưa có ảnh";
+                            mListKetQua.Add(_linhkien);
                         }
-                        mListKetQua.Add(_linhkien);
+                        else
+                        {
+                            if (!(_linhkien.NoiDung == null))
+                            {
+                                string noidung = _HtmlToText.HTMLToText(_linhkien.NoiDung);
+                                var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
+                                if (listNoiDung.Count > 5)
+                                {
+                                    _linhkien.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
+                                    _linhkien.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
+                                    _linhkien.MoTaNgan = NoiDungSanPhamLazada(_linhkien.ThongSo, _linhkien.CongDung, _linhkien);
+                                }
+                            }
+                            mListKetQua.Add(_linhkien);
+                        }                        
                     }
                 }
             }
             ShowdataGridViewDangSPLazada(mListKetQua);
         }
 
+        SanPhamSendo sanphamDangChay = new SanPhamSendo();
+        public List<SanPhamSendo> mListInput = new List<SanPhamSendo>();
+        int stt = 0;
+        private void btnRunSendo_Click(object sender, EventArgs e)
+        {
+            dataGridViewSendo.Rows.Clear();
+            Khoi_Tao_Chrome();
+            
+            foreach (SanPhamSendo sp in mListInput)
+            {
+                sanphamDangChay = sp;
+                stt = mListInput.FindIndex(n => n.ID == sp.ID);
+                try
+                {
+                    Chay_Chuong_Trinh(sp);
+                }
+                catch
+                {
+                    mListInput[stt].TinhTrang = "lỗi";
+                }
+            }
+            Show_Ket_Qua();
+        }
 
+        ChromeDriver driver;
+        private void Khoi_Tao_Chrome()
+        {
+            var driverService = ChromeDriverService.CreateDefaultService();
+            driverService.HideCommandPromptWindow = true;
+            var options = new ChromeOptions();
+            //options.AddArgument("--window-position=-32000,-32000"); //an chorme
+
+            driver = new ChromeDriver(driverService, options);
+            driver.Navigate().GoToUrl("https://ban.sendo.vn/");
+            driver.FindElement(By.Id("field-username")).SendKeys(tbxTaiKhoanSendo.Text);
+            driver.FindElement(By.Id("field-password")).SendKeys(tbxMatKhauSendo.Text);
+            driver.FindElement(By.Name("password")).SendKeys(OpenQA.Selenium.Keys.Return);//Đăng nhập tài khoản
+            System.Threading.Thread.Sleep(10000);
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
+            driver.SwitchTo().Window(driver.WindowHandles.Last());            
+        }
+
+        private void Chay_Chuong_Trinh(SanPhamSendo _sanpham)
+        {
+            if (checkBoxBaiViet.Checked == true)
+            {
+                driver.Navigate().GoToUrl(@"file:///D:/FileNoiDung.html.htm");
+                Thread.Sleep(3000);
+                Actions action1 = new Actions(driver);
+                action1.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("a").KeyUp(OpenQA.Selenium.Keys.Control).Perform();
+                action1.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("c").KeyUp(OpenQA.Selenium.Keys.Control).Perform(); Thread.Sleep(1000);
+            }
+
+            driver.Navigate().GoToUrl("https://ban.sendo.vn/san-pham/" + _sanpham.ID);
+            Thread.Sleep(5000);
+
+            if (checkBoxBaiViet.Checked == true)
+            {
+                driver.FindElements(By.ClassName("iconWrap_JcTv"))[0].Click();
+                Actions action2 = new Actions(driver);
+                action2.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("a").KeyUp(OpenQA.Selenium.Keys.Control).Perform();
+                action2.KeyDown(OpenQA.Selenium.Keys.Control).SendKeys("v").KeyUp(OpenQA.Selenium.Keys.Control).Perform(); Thread.Sleep(1000);
+                driver.FindElements(By.ClassName("iconWrap_JcTv"))[0].Click();
+            }
+            //Chỉnh sửa Tên sản phẩm
+            if (checkBoxTenSanPham.Checked == true)
+            {
+                driver.FindElement(By.Id("field-name")).Clear();
+                driver.FindElement(By.Id("field-name")).SendKeys(_sanpham.TenSanPham);
+                Thread.Sleep(3000);
+            }
+            //Chỉnh sửa SKU sản phẩm
+            if (checkBoxSKU.Checked == true)
+            {
+                driver.FindElement(By.Id("field-store_sku")).Clear();
+                driver.FindElement(By.Id("field-store_sku")).SendKeys(_sanpham.SKU);
+                Thread.Sleep(3000);
+            }
+
+            //Chỉnh sửa Ảnh đại diện sản phẩm
+            if (checkBoxSKU.Checked == true)
+            {
+                driver.FindElements(By.ClassName("editIcon_2i-f"))[0].Click();
+                Thread.Sleep(1000);
+                var upfileAnh = driver.FindElements(By.ClassName("d7e-cd3660"));
+                upfileAnh[1].Click();
+                Thread.Sleep(3000);
+                System.Windows.Forms.SendKeys.SendWait(_sanpham.TenSanPham);
+                System.Windows.Forms.SendKeys.SendWait(@"{Enter}");
+                Thread.Sleep(8000);
+            }
+
+            var element = driver.FindElements(By.ClassName("d7e-aa34b6"));
+            element[element.Count() - 1].Click();
+            Thread.Sleep(1000);
+            try
+            {
+                var undefined = driver.FindElement(By.ClassName("msg_1QvY"));
+                if (undefined != null)
+                {
+                    mListInput[stt].TinhTrang = undefined.Text;
+                    switch (mListInput[stt].TinhTrang)
+                    {
+                        case "Mô tả sản phẩm, tối thiểu 100 ký tự":
+                            break;
+
+                        case "Mã sản phẩm đã tồn tại":
+                            break;
+
+                        case "Gửi duyệt thành công":
+                            break;
+
+                        default:
+                            break;
+                    }
+                }
+            }
+            catch
+            {
+                mListInput[stt].TinhTrang = "Thành công!";
+            }
+
+            Thread.Sleep(6000);
+        }
+
+        private void Show_Ket_Qua()
+        {
+            foreach (SanPhamSendo sp in mListInput)
+            {
+                int n = dataGridViewSendo.Rows.Add();
+                dataGridViewSendo.Rows[n].Cells[0].Value = sp.ID;
+                dataGridViewSendo.Rows[n].Cells[1].Value = sp.TenSanPham;
+                dataGridViewSendo.Rows[n].Cells[2].Value = sp.SKU;
+                dataGridViewSendo.Rows[n].Cells[3].Value = sp.TinhTrang;
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dataGridViewInput.Rows.Clear();
+            try
+            {
+                string s = Clipboard.GetText();
+                string[] lines = s.Replace("\n", "").Split('\r');
+                dataGridViewInput.Rows.Add(lines.Length - 1);
+                string[] fields;
+                int row = 0;
+                int col = 0;
+
+                if (lines[0].Split('\t').Count() > 3)
+                {
+                    MessageBox.Show("Dữ liệu không phù hợp!!!", "Thông Báo");
+                }
+                else
+                {
+                    foreach (string item in lines)
+                    {
+                        fields = item.Split('\t');
+                        if (fields[0] != "")
+                        {
+                            SanPhamSendo sp = new SanPhamSendo();
+                            sp.ID = fields[0];
+                            sp.TenSanPham = fields[1];
+                            sp.SKU = fields[2];
+                            mListInput.Add(sp);
+                        }
+
+                        foreach (string f in fields)
+                        {
+                            Console.WriteLine(f);
+                            dataGridViewInput[col, row].Value = f;
+                            col++;
+                        }
+                        row++;
+                        col = 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            dataGridViewInput.Rows.Clear();
+            mListInput = new List<SanPhamSendo>();
+        }
 
 
     }

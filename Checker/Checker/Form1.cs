@@ -11,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Checker
 {
@@ -31,6 +33,12 @@ namespace Checker
             public List<string> ListAnh { get; set; }
         }
 
+        public class Image
+        {
+            public string Link { get; set; }
+
+            public string Alt { get; set; }
+        }
 
         public class Object
         {
@@ -44,6 +52,8 @@ namespace Checker
         public List<Object> mListData = new List<Object>();
 
         public List<Checker> mListChecker = new List<Checker>();
+
+        public List<Image>  mListKetQua = new List<Image>();
 
         private void btnRun_Click(object sender, EventArgs e)
         {
@@ -279,6 +289,70 @@ namespace Checker
                     dataGridViewKetQua.Rows[n].Cells[i+4].Value = ch.ListAnh[i];
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string fileoutput = @"D:\link.txt";
+            dataGridView1.Rows.Clear();
+
+            var driverService = ChromeDriverService.CreateDefaultService();
+            driverService.HideCommandPromptWindow = true;
+            var options = new ChromeOptions();
+            //options.AddArgument("--window-position=-32000,-32000"); //an chorme
+
+            var driver = new ChromeDriver(driverService, options);
+            driver.Navigate().GoToUrl("https://www.google.com/");
+            System.Threading.Thread.Sleep(300);
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
+
+            mListKetQua = new List<Image>();          
+
+            //string linktest = @"https://upload69.pro/user/anhyeuem/?list=images&sort=date_desc&page=1&seek=MzEeET";
+
+            string linktest = @"https://upload69.pro/user/hoanggia01/?page=1&peek=M6e0Ex";
+            try
+            {
+                driver.Navigate().GoToUrl(linktest);
+            }
+            catch (Exception ex)
+            {
+                Actions actions = new Actions(driver);
+                actions.SendKeys(OpenQA.Selenium.Keys.Escape);
+            }
+
+            
+            for( int n = 0; n<600;n++)
+            {
+                var element = driver.FindElements(By.TagName("img"));
+
+                for (int i = 1; i < 25; i++)
+                {
+                    Image image = new Image();
+                    image.Link = element[i].GetAttribute("src");
+                    image.Alt = element[i].GetAttribute("alt");
+                    mListKetQua.Add(image);
+
+                    string readText = File.ReadAllText(fileoutput);
+                    using (StreamWriter writer = new StreamWriter(fileoutput))
+                    {
+                        writer.WriteLine(readText + image.Link.ToString());
+                    }
+                }
+                
+                driver.FindElements(By.ClassName("icon-arrow-right7"))[0].Click();
+                Thread.Sleep(3000);
+            }
+
+            foreach (Image image in mListKetQua)
+            {
+                int n = dataGridView1.Rows.Add();
+                dataGridView1.Rows[n].Cells[0].Value = n.ToString();
+                dataGridView1.Rows[n].Cells[1].Value = image.Link;
+                dataGridView1.Rows[n].Cells[2].Value = image.Alt;
+            }
+
         }
     }
 }

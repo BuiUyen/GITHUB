@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tbxFile = new System.Windows.Forms.TextBox();
             this.btnOpenFileExcel = new System.Windows.Forms.Button();
             this.cbxSheet = new System.Windows.Forms.ComboBox();
@@ -52,17 +53,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.dataGridViewKetQua = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDTuyChon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaSoSanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CanNang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AnhDaiDien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbxTimTags = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridViewTagsGoiY = new System.Windows.Forms.DataGridView();
@@ -130,6 +120,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tbxSKU = new System.Windows.Forms.TextBox();
             this.btnThongSoCongDung = new System.Windows.Forms.Button();
@@ -151,17 +142,12 @@
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tbxBaiVietTren = new System.Windows.Forms.TextBox();
-            this.tbxBaiVietDuoi = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label21 = new System.Windows.Forms.Label();
-            this.tbxBaiVietGiua = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.btnTaobaivietLazada = new System.Windows.Forms.Button();
+            this.btnXuatFileLazada = new System.Windows.Forms.Button();
+            this.btnDangLazada = new System.Windows.Forms.Button();
             this.dataGridViewDangSPLazada = new System.Windows.Forms.DataGridView();
             this.Column38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -190,11 +176,50 @@
             this.Column62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnDangLazada = new System.Windows.Forms.Button();
-            this.btnXuatFileLazada = new System.Windows.Forms.Button();
-            this.btnTaobaivietLazada = new System.Windows.Forms.Button();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tbxMatKhauSendo = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.tbxTaiKhoanSendo = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.btnRunSendo = new System.Windows.Forms.Button();
+            this.checkBoxBaiViet = new System.Windows.Forms.CheckBox();
+            this.checkBoxAnh = new System.Windows.Forms.CheckBox();
+            this.checkBoxTenSanPham = new System.Windows.Forms.CheckBox();
+            this.checkBoxSKU = new System.Windows.Forms.CheckBox();
+            this.dataGridViewSendo = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewInput = new System.Windows.Forms.DataGridView();
+            this.Link = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbxBaiVietTren = new System.Windows.Forms.TextBox();
+            this.tbxBaiVietDuoi = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbxBaiVietGiua = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDTuyChon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaSoSanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CanNang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AnhDaiDien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTagsGoiY)).BeginInit();
@@ -203,13 +228,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNganhHang)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnhShopee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDangSPLazada)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSendo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInput)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbxFile
@@ -320,7 +349,7 @@
             // btnBack
             // 
             this.btnBack.Location = new System.Drawing.Point(1015, 403);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(56, 24);
             this.btnBack.TabIndex = 12;
@@ -331,7 +360,7 @@
             // btnNext
             // 
             this.btnNext.Location = new System.Drawing.Point(1109, 403);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(56, 24);
             this.btnNext.TabIndex = 13;
@@ -383,7 +412,7 @@
             // 
             this.tbxTenSanPham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxTenSanPham.Location = new System.Drawing.Point(122, 80);
-            this.tbxTenSanPham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxTenSanPham.Margin = new System.Windows.Forms.Padding(2);
             this.tbxTenSanPham.Name = "tbxTenSanPham";
             this.tbxTenSanPham.Size = new System.Drawing.Size(642, 29);
             this.tbxTenSanPham.TabIndex = 18;
@@ -392,7 +421,7 @@
             // 
             this.tbxGiaBan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxGiaBan.Location = new System.Drawing.Point(122, 145);
-            this.tbxGiaBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxGiaBan.Margin = new System.Windows.Forms.Padding(2);
             this.tbxGiaBan.Name = "tbxGiaBan";
             this.tbxGiaBan.Size = new System.Drawing.Size(319, 29);
             this.tbxGiaBan.TabIndex = 19;
@@ -403,7 +432,7 @@
             // 
             this.tbxGiaSoSanh.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxGiaSoSanh.Location = new System.Drawing.Point(122, 180);
-            this.tbxGiaSoSanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxGiaSoSanh.Margin = new System.Windows.Forms.Padding(2);
             this.tbxGiaSoSanh.Name = "tbxGiaSoSanh";
             this.tbxGiaSoSanh.Size = new System.Drawing.Size(319, 29);
             this.tbxGiaSoSanh.TabIndex = 20;
@@ -414,7 +443,7 @@
             // 
             this.tbxCanNang.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxCanNang.Location = new System.Drawing.Point(122, 217);
-            this.tbxCanNang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxCanNang.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCanNang.Name = "tbxCanNang";
             this.tbxCanNang.Size = new System.Drawing.Size(116, 29);
             this.tbxCanNang.TabIndex = 21;
@@ -434,7 +463,7 @@
             // btnOK
             // 
             this.btnOK.Location = new System.Drawing.Point(955, 444);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(178, 54);
             this.btnOK.TabIndex = 23;
@@ -457,93 +486,20 @@
             this.AnhDaiDien,
             this.Column35,
             this.Column36,
-            this.Column37});
+            this.Column37,
+            this.Column65,
+            this.Column66});
             this.dataGridViewKetQua.Location = new System.Drawing.Point(6, 29);
             this.dataGridViewKetQua.Name = "dataGridViewKetQua";
             this.dataGridViewKetQua.RowHeadersWidth = 51;
             this.dataGridViewKetQua.Size = new System.Drawing.Size(1251, 728);
             this.dataGridViewKetQua.TabIndex = 24;
             // 
-            // ID
-            // 
-            this.ID.FillWeight = 61.56355F;
-            this.ID.HeaderText = "ID Sản phẩm";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            // 
-            // IDTuyChon
-            // 
-            this.IDTuyChon.FillWeight = 65.39382F;
-            this.IDTuyChon.HeaderText = "ID Tùy Chọn";
-            this.IDTuyChon.MinimumWidth = 6;
-            this.IDTuyChon.Name = "IDTuyChon";
-            // 
-            // TenSanPham
-            // 
-            this.TenSanPham.FillWeight = 258.8092F;
-            this.TenSanPham.HeaderText = "Tên Sản Phẩm";
-            this.TenSanPham.MinimumWidth = 6;
-            this.TenSanPham.Name = "TenSanPham";
-            // 
-            // SKU
-            // 
-            this.SKU.FillWeight = 62.11891F;
-            this.SKU.HeaderText = "SKU";
-            this.SKU.MinimumWidth = 6;
-            this.SKU.Name = "SKU";
-            // 
-            // GiaBan
-            // 
-            this.GiaBan.FillWeight = 65.91901F;
-            this.GiaBan.HeaderText = "Đường dẫn ảnh";
-            this.GiaBan.MinimumWidth = 6;
-            this.GiaBan.Name = "GiaBan";
-            // 
-            // GiaSoSanh
-            // 
-            this.GiaSoSanh.FillWeight = 69.5124F;
-            this.GiaSoSanh.HeaderText = "Mô tả sản phẩm";
-            this.GiaSoSanh.MinimumWidth = 6;
-            this.GiaSoSanh.Name = "GiaSoSanh";
-            // 
-            // CanNang
-            // 
-            this.CanNang.FillWeight = 72.91039F;
-            this.CanNang.HeaderText = "Giá bán";
-            this.CanNang.MinimumWidth = 6;
-            this.CanNang.Name = "CanNang";
-            // 
-            // AnhDaiDien
-            // 
-            this.AnhDaiDien.FillWeight = 102.2727F;
-            this.AnhDaiDien.HeaderText = "Cân nặng";
-            this.AnhDaiDien.MinimumWidth = 6;
-            this.AnhDaiDien.Name = "AnhDaiDien";
-            // 
-            // Column35
-            // 
-            this.Column35.FillWeight = 141.5F;
-            this.Column35.HeaderText = "Ảnh đại diện";
-            this.Column35.MinimumWidth = 8;
-            this.Column35.Name = "Column35";
-            // 
-            // Column36
-            // 
-            this.Column36.HeaderText = "Thông số";
-            this.Column36.MinimumWidth = 8;
-            this.Column36.Name = "Column36";
-            // 
-            // Column37
-            // 
-            this.Column37.HeaderText = "Công dụng";
-            this.Column37.MinimumWidth = 8;
-            this.Column37.Name = "Column37";
-            // 
             // tbxTimTags
             // 
             this.tbxTimTags.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxTimTags.Location = new System.Drawing.Point(51, 275);
-            this.tbxTimTags.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxTimTags.Margin = new System.Windows.Forms.Padding(2);
             this.tbxTimTags.Name = "tbxTimTags";
             this.tbxTimTags.Size = new System.Drawing.Size(200, 29);
             this.tbxTimTags.TabIndex = 25;
@@ -610,7 +566,7 @@
             // btnTiep
             // 
             this.btnTiep.Location = new System.Drawing.Point(51, 336);
-            this.btnTiep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTiep.Margin = new System.Windows.Forms.Padding(2);
             this.btnTiep.Name = "btnTiep";
             this.btnTiep.Size = new System.Drawing.Size(130, 85);
             this.btnTiep.TabIndex = 31;
@@ -651,7 +607,7 @@
             // btnXuat
             // 
             this.btnXuat.Location = new System.Drawing.Point(1024, 761);
-            this.btnXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXuat.Margin = new System.Windows.Forms.Padding(2);
             this.btnXuat.Name = "btnXuat";
             this.btnXuat.Size = new System.Drawing.Size(178, 35);
             this.btnXuat.TabIndex = 35;
@@ -674,7 +630,7 @@
             this.Column9,
             this.Column10});
             this.dataGridViewXuat.Location = new System.Drawing.Point(10, 507);
-            this.dataGridViewXuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewXuat.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewXuat.Name = "dataGridViewXuat";
             this.dataGridViewXuat.RowHeadersWidth = 51;
             this.dataGridViewXuat.RowTemplate.Height = 24;
@@ -764,7 +720,7 @@
             // btnExcel
             // 
             this.btnExcel.Location = new System.Drawing.Point(1207, 761);
-            this.btnExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExcel.Margin = new System.Windows.Forms.Padding(2);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(40, 35);
             this.btnExcel.TabIndex = 37;
@@ -775,7 +731,7 @@
             // btnXepAnh
             // 
             this.btnXepAnh.Location = new System.Drawing.Point(6, 762);
-            this.btnXepAnh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXepAnh.Margin = new System.Windows.Forms.Padding(2);
             this.btnXepAnh.Name = "btnXepAnh";
             this.btnXepAnh.Size = new System.Drawing.Size(122, 32);
             this.btnXepAnh.TabIndex = 38;
@@ -786,7 +742,7 @@
             // tbxInputSKU
             // 
             this.tbxInputSKU.Location = new System.Drawing.Point(1282, 164);
-            this.tbxInputSKU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxInputSKU.Margin = new System.Windows.Forms.Padding(2);
             this.tbxInputSKU.Multiline = true;
             this.tbxInputSKU.Name = "tbxInputSKU";
             this.tbxInputSKU.Size = new System.Drawing.Size(166, 800);
@@ -830,7 +786,7 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
             this.dataGridViewAnhWeb.Location = new System.Drawing.Point(5, 43);
-            this.dataGridViewAnhWeb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewAnhWeb.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewAnhWeb.Name = "dataGridViewAnhWeb";
             this.dataGridViewAnhWeb.RowHeadersWidth = 51;
             this.dataGridViewAnhWeb.RowTemplate.Height = 24;
@@ -1080,7 +1036,7 @@
             // btnXulinoidung
             // 
             this.btnXulinoidung.Location = new System.Drawing.Point(446, 5);
-            this.btnXulinoidung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXulinoidung.Margin = new System.Windows.Forms.Padding(2);
             this.btnXulinoidung.Name = "btnXulinoidung";
             this.btnXulinoidung.Size = new System.Drawing.Size(183, 32);
             this.btnXulinoidung.TabIndex = 41;
@@ -1091,7 +1047,7 @@
             // btnXuatFile
             // 
             this.btnXuatFile.Location = new System.Drawing.Point(1161, 747);
-            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(2);
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(98, 49);
             this.btnXuatFile.TabIndex = 42;
@@ -1102,7 +1058,7 @@
             // btnXuat2
             // 
             this.btnXuat2.Location = new System.Drawing.Point(132, 762);
-            this.btnXuat2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXuat2.Margin = new System.Windows.Forms.Padding(2);
             this.btnXuat2.Name = "btnXuat2";
             this.btnXuat2.Size = new System.Drawing.Size(55, 32);
             this.btnXuat2.TabIndex = 43;
@@ -1126,6 +1082,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(14, 141);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1170,7 +1127,7 @@
             this.tabPage1.Controls.Add(this.btnOK);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1262, 801);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Điền Tag Web Sapo";
@@ -1186,6 +1143,15 @@
             this.label17.TabIndex = 38;
             this.label17.Text = "***Điền tags sản phẩm để phân loại danh mục sản phẩm Web";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(903, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(355, 386);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tbxSKU);
@@ -1196,7 +1162,7 @@
             this.tabPage2.Controls.Add(this.btnXuat2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1262, 801);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Lấy Link Ảnh Đại Diện";
@@ -1206,7 +1172,7 @@
             // 
             this.tbxSKU.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxSKU.Location = new System.Drawing.Point(652, 760);
-            this.tbxSKU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxSKU.Margin = new System.Windows.Forms.Padding(2);
             this.tbxSKU.Name = "tbxSKU";
             this.tbxSKU.Size = new System.Drawing.Size(120, 37);
             this.tbxSKU.TabIndex = 47;
@@ -1215,7 +1181,7 @@
             // btnThongSoCongDung
             // 
             this.btnThongSoCongDung.Location = new System.Drawing.Point(1076, 769);
-            this.btnThongSoCongDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThongSoCongDung.Margin = new System.Windows.Forms.Padding(2);
             this.btnThongSoCongDung.Name = "btnThongSoCongDung";
             this.btnThongSoCongDung.Size = new System.Drawing.Size(165, 32);
             this.btnThongSoCongDung.TabIndex = 45;
@@ -1241,7 +1207,7 @@
             this.tabPage3.Controls.Add(this.btnXulinoidung);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1262, 801);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Lọc Sản Phẩm Sapo";
@@ -1263,9 +1229,9 @@
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.dataGridViewAnhShopee);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(1262, 801);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Danh sách ảnh sản phẩm";
@@ -1274,7 +1240,7 @@
             // btnLayAnhShopee
             // 
             this.btnLayAnhShopee.Location = new System.Drawing.Point(1153, 753);
-            this.btnLayAnhShopee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLayAnhShopee.Margin = new System.Windows.Forms.Padding(2);
             this.btnLayAnhShopee.Name = "btnLayAnhShopee";
             this.btnLayAnhShopee.Size = new System.Drawing.Size(98, 49);
             this.btnLayAnhShopee.TabIndex = 43;
@@ -1308,7 +1274,7 @@
             this.dataGridViewTextBoxColumn19,
             this.dataGridViewTextBoxColumn20});
             this.dataGridViewAnhShopee.Location = new System.Drawing.Point(-3, 52);
-            this.dataGridViewAnhShopee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewAnhShopee.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewAnhShopee.Name = "dataGridViewAnhShopee";
             this.dataGridViewAnhShopee.RowHeadersWidth = 51;
             this.dataGridViewAnhShopee.RowTemplate.Height = 24;
@@ -1395,69 +1361,6 @@
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.Width = 150;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1336, 141);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(57, 13);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "Bảng SKU";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(1209, 15);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(66, 13);
-            this.label16.TabIndex = 47;
-            this.label16.Text = "Ngành hàng";
-            // 
-            // tbxBaiVietTren
-            // 
-            this.tbxBaiVietTren.Location = new System.Drawing.Point(1458, 61);
-            this.tbxBaiVietTren.Margin = new System.Windows.Forms.Padding(2);
-            this.tbxBaiVietTren.Multiline = true;
-            this.tbxBaiVietTren.Name = "tbxBaiVietTren";
-            this.tbxBaiVietTren.Size = new System.Drawing.Size(559, 331);
-            this.tbxBaiVietTren.TabIndex = 48;
-            // 
-            // tbxBaiVietDuoi
-            // 
-            this.tbxBaiVietDuoi.Location = new System.Drawing.Point(1458, 633);
-            this.tbxBaiVietDuoi.Margin = new System.Windows.Forms.Padding(2);
-            this.tbxBaiVietDuoi.Multiline = true;
-            this.tbxBaiVietDuoi.Name = "tbxBaiVietDuoi";
-            this.tbxBaiVietDuoi.Size = new System.Drawing.Size(559, 331);
-            this.tbxBaiVietDuoi.TabIndex = 49;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1706, 46);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 13);
-            this.label19.TabIndex = 50;
-            this.label19.Text = "Phần trên";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(1704, 618);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(55, 13);
-            this.label20.TabIndex = 51;
-            this.label20.Text = "Phần dưới";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(903, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 386);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.label24);
@@ -1474,32 +1377,59 @@
             this.tabPage5.Text = "Đăng sản phẩm Lazada";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // label21
+            // label24
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(1586, 18);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(309, 13);
-            this.label21.TabIndex = 52;
-            this.label21.Text = "Sử dụng thông tin bài biết mẫu tạo nội dung sản phẩm SHOPEE";
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(485, 776);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(213, 13);
+            this.label24.TabIndex = 59;
+            this.label24.Text = "**Tạo danh sách đăng sản phẩm theo SKU";
             // 
-            // tbxBaiVietGiua
+            // label23
             // 
-            this.tbxBaiVietGiua.Location = new System.Drawing.Point(1458, 420);
-            this.tbxBaiVietGiua.Margin = new System.Windows.Forms.Padding(2);
-            this.tbxBaiVietGiua.Multiline = true;
-            this.tbxBaiVietGiua.Name = "tbxBaiVietGiua";
-            this.tbxBaiVietGiua.Size = new System.Drawing.Size(559, 186);
-            this.tbxBaiVietGiua.TabIndex = 53;
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(485, 756);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(265, 13);
+            this.label23.TabIndex = 58;
+            this.label23.Text = "*Tạo list bài viết thông tin sản phẩm từ danh sách SKU";
             // 
-            // label22
+            // btnTaobaivietLazada
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(1704, 405);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(55, 13);
-            this.label22.TabIndex = 54;
-            this.label22.Text = "Phần giữa";
+            this.btnTaobaivietLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaobaivietLazada.Location = new System.Drawing.Point(185, 747);
+            this.btnTaobaivietLazada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTaobaivietLazada.Name = "btnTaobaivietLazada";
+            this.btnTaobaivietLazada.Size = new System.Drawing.Size(286, 49);
+            this.btnTaobaivietLazada.TabIndex = 57;
+            this.btnTaobaivietLazada.Text = "Tạo bài viết sản phẩm Lazada*";
+            this.btnTaobaivietLazada.UseVisualStyleBackColor = true;
+            this.btnTaobaivietLazada.Click += new System.EventHandler(this.btnTaobaivietLazada_Click);
+            // 
+            // btnXuatFileLazada
+            // 
+            this.btnXuatFileLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatFileLazada.Location = new System.Drawing.Point(5, 747);
+            this.btnXuatFileLazada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXuatFileLazada.Name = "btnXuatFileLazada";
+            this.btnXuatFileLazada.Size = new System.Drawing.Size(120, 49);
+            this.btnXuatFileLazada.TabIndex = 56;
+            this.btnXuatFileLazada.Text = "Xuất Excel";
+            this.btnXuatFileLazada.UseVisualStyleBackColor = true;
+            this.btnXuatFileLazada.Click += new System.EventHandler(this.btnXuatFileLazada_Click);
+            // 
+            // btnDangLazada
+            // 
+            this.btnDangLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangLazada.Location = new System.Drawing.Point(1004, 747);
+            this.btnDangLazada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDangLazada.Name = "btnDangLazada";
+            this.btnDangLazada.Size = new System.Drawing.Size(251, 49);
+            this.btnDangLazada.TabIndex = 55;
+            this.btnDangLazada.Text = "Đăng sản phẩm Lazada**";
+            this.btnDangLazada.UseVisualStyleBackColor = true;
+            this.btnDangLazada.Click += new System.EventHandler(this.btnDangLazada_Click);
             // 
             // dataGridViewDangSPLazada
             // 
@@ -1675,65 +1605,391 @@
             this.Column64.HeaderText = "Chiều cao gói hàng (cm)";
             this.Column64.Name = "Column64";
             // 
-            // btnDangLazada
+            // tabPage6
             // 
-            this.btnDangLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangLazada.Location = new System.Drawing.Point(1004, 747);
-            this.btnDangLazada.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDangLazada.Name = "btnDangLazada";
-            this.btnDangLazada.Size = new System.Drawing.Size(251, 49);
-            this.btnDangLazada.TabIndex = 55;
-            this.btnDangLazada.Text = "Đăng sản phẩm Lazada**";
-            this.btnDangLazada.UseVisualStyleBackColor = true;
-            this.btnDangLazada.Click += new System.EventHandler(this.btnDangLazada_Click);
+            this.tabPage6.Controls.Add(this.tbxMatKhauSendo);
+            this.tabPage6.Controls.Add(this.label26);
+            this.tabPage6.Controls.Add(this.tbxTaiKhoanSendo);
+            this.tabPage6.Controls.Add(this.label25);
+            this.tabPage6.Controls.Add(this.btnRunSendo);
+            this.tabPage6.Controls.Add(this.checkBoxBaiViet);
+            this.tabPage6.Controls.Add(this.checkBoxAnh);
+            this.tabPage6.Controls.Add(this.checkBoxTenSanPham);
+            this.tabPage6.Controls.Add(this.checkBoxSKU);
+            this.tabPage6.Controls.Add(this.dataGridViewSendo);
+            this.tabPage6.Controls.Add(this.dataGridViewInput);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1262, 801);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Chỉnh sửa sản phẩm Sendo";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // btnXuatFileLazada
+            // tbxMatKhauSendo
             // 
-            this.btnXuatFileLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatFileLazada.Location = new System.Drawing.Point(5, 747);
-            this.btnXuatFileLazada.Margin = new System.Windows.Forms.Padding(2);
-            this.btnXuatFileLazada.Name = "btnXuatFileLazada";
-            this.btnXuatFileLazada.Size = new System.Drawing.Size(120, 49);
-            this.btnXuatFileLazada.TabIndex = 56;
-            this.btnXuatFileLazada.Text = "Xuất Excel";
-            this.btnXuatFileLazada.UseVisualStyleBackColor = true;
-            this.btnXuatFileLazada.Click += new System.EventHandler(this.btnXuatFileLazada_Click);
+            this.tbxMatKhauSendo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxMatKhauSendo.Location = new System.Drawing.Point(486, 610);
+            this.tbxMatKhauSendo.Name = "tbxMatKhauSendo";
+            this.tbxMatKhauSendo.Size = new System.Drawing.Size(240, 26);
+            this.tbxMatKhauSendo.TabIndex = 60;
             // 
-            // btnTaobaivietLazada
+            // label26
             // 
-            this.btnTaobaivietLazada.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaobaivietLazada.Location = new System.Drawing.Point(185, 747);
-            this.btnTaobaivietLazada.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTaobaivietLazada.Name = "btnTaobaivietLazada";
-            this.btnTaobaivietLazada.Size = new System.Drawing.Size(286, 49);
-            this.btnTaobaivietLazada.TabIndex = 57;
-            this.btnTaobaivietLazada.Text = "Tạo bài viết sản phẩm Lazada*";
-            this.btnTaobaivietLazada.UseVisualStyleBackColor = true;
-            this.btnTaobaivietLazada.Click += new System.EventHandler(this.btnTaobaivietLazada_Click);
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(401, 610);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(79, 20);
+            this.label26.TabIndex = 59;
+            this.label26.Text = "Mật khẩu:";
             // 
-            // label23
+            // tbxTaiKhoanSendo
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(485, 756);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(265, 13);
-            this.label23.TabIndex = 58;
-            this.label23.Text = "*Tạo list bài viết thông tin sản phẩm từ danh sách SKU";
+            this.tbxTaiKhoanSendo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxTaiKhoanSendo.Location = new System.Drawing.Point(486, 560);
+            this.tbxTaiKhoanSendo.Name = "tbxTaiKhoanSendo";
+            this.tbxTaiKhoanSendo.Size = new System.Drawing.Size(240, 26);
+            this.tbxTaiKhoanSendo.TabIndex = 58;
             // 
-            // label24
+            // label25
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(485, 776);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(213, 13);
-            this.label24.TabIndex = 59;
-            this.label24.Text = "**Tạo danh sách đăng sản phẩm theo SKU";
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(398, 563);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(82, 20);
+            this.label25.TabIndex = 57;
+            this.label25.Text = "Tài khoản:";
+            // 
+            // btnRunSendo
+            // 
+            this.btnRunSendo.Location = new System.Drawing.Point(557, 698);
+            this.btnRunSendo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRunSendo.Name = "btnRunSendo";
+            this.btnRunSendo.Size = new System.Drawing.Size(130, 79);
+            this.btnRunSendo.TabIndex = 56;
+            this.btnRunSendo.Text = "Chạy tool";
+            this.btnRunSendo.UseVisualStyleBackColor = true;
+            this.btnRunSendo.Click += new System.EventHandler(this.btnRunSendo_Click);
+            // 
+            // checkBoxBaiViet
+            // 
+            this.checkBoxBaiViet.AutoSize = true;
+            this.checkBoxBaiViet.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBaiViet.Location = new System.Drawing.Point(20, 722);
+            this.checkBoxBaiViet.Name = "checkBoxBaiViet";
+            this.checkBoxBaiViet.Size = new System.Drawing.Size(152, 28);
+            this.checkBoxBaiViet.TabIndex = 55;
+            this.checkBoxBaiViet.Text = "Sửa Bài Viết";
+            this.checkBoxBaiViet.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAnh
+            // 
+            this.checkBoxAnh.AutoSize = true;
+            this.checkBoxAnh.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAnh.Location = new System.Drawing.Point(20, 660);
+            this.checkBoxAnh.Name = "checkBoxAnh";
+            this.checkBoxAnh.Size = new System.Drawing.Size(117, 28);
+            this.checkBoxAnh.TabIndex = 54;
+            this.checkBoxAnh.Text = "Sửa Ảnh";
+            this.checkBoxAnh.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTenSanPham
+            // 
+            this.checkBoxTenSanPham.AutoSize = true;
+            this.checkBoxTenSanPham.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTenSanPham.Location = new System.Drawing.Point(20, 602);
+            this.checkBoxTenSanPham.Name = "checkBoxTenSanPham";
+            this.checkBoxTenSanPham.Size = new System.Drawing.Size(224, 28);
+            this.checkBoxTenSanPham.TabIndex = 53;
+            this.checkBoxTenSanPham.Text = "Sửa Tên Sản Phẩm";
+            this.checkBoxTenSanPham.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSKU
+            // 
+            this.checkBoxSKU.AutoSize = true;
+            this.checkBoxSKU.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSKU.Location = new System.Drawing.Point(20, 548);
+            this.checkBoxSKU.Name = "checkBoxSKU";
+            this.checkBoxSKU.Size = new System.Drawing.Size(120, 28);
+            this.checkBoxSKU.TabIndex = 52;
+            this.checkBoxSKU.Text = "Sửa SKU";
+            this.checkBoxSKU.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewSendo
+            // 
+            this.dataGridViewSendo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSendo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25});
+            this.dataGridViewSendo.Location = new System.Drawing.Point(4, 5);
+            this.dataGridViewSendo.Margin = new System.Windows.Forms.Padding(1);
+            this.dataGridViewSendo.Name = "dataGridViewSendo";
+            this.dataGridViewSendo.RowHeadersWidth = 51;
+            this.dataGridViewSendo.RowTemplate.Height = 24;
+            this.dataGridViewSendo.Size = new System.Drawing.Size(722, 514);
+            this.dataGridViewSendo.TabIndex = 43;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.HeaderText = "ID sản phẩm";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.HeaderText = "Tên sản phẩm";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.HeaderText = "SKU";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.HeaderText = "Đã đăng";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.Width = 150;
+            // 
+            // dataGridViewInput
+            // 
+            this.dataGridViewInput.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInput.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Link,
+            this.dataGridViewTextBoxColumn21,
+            this.MaSanPham});
+            this.dataGridViewInput.ContextMenuStrip = this.contextMenuStrip1;
+            this.dataGridViewInput.Location = new System.Drawing.Point(834, 5);
+            this.dataGridViewInput.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewInput.Name = "dataGridViewInput";
+            this.dataGridViewInput.RowHeadersWidth = 51;
+            this.dataGridViewInput.Size = new System.Drawing.Size(423, 791);
+            this.dataGridViewInput.TabIndex = 10;
+            // 
+            // Link
+            // 
+            this.Link.HeaderText = "Link*";
+            this.Link.MinimumWidth = 8;
+            this.Link.Name = "Link";
+            this.Link.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.HeaderText = "Tên sản phẩm";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.Width = 150;
+            // 
+            // MaSanPham
+            // 
+            this.MaSanPham.HeaderText = "Mã SKU";
+            this.MaSanPham.MinimumWidth = 8;
+            this.MaSanPham.Name = "MaSanPham";
+            this.MaSanPham.Width = 150;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(135, 48);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
+            this.toolStripMenuItem1.Text = "Dán dữ liệu";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(134, 22);
+            this.toolStripMenuItem2.Text = "Xóa tất cả";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(1336, 141);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(57, 13);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "Bảng SKU";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(1209, 15);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(66, 13);
+            this.label16.TabIndex = 47;
+            this.label16.Text = "Ngành hàng";
+            // 
+            // tbxBaiVietTren
+            // 
+            this.tbxBaiVietTren.Location = new System.Drawing.Point(1458, 61);
+            this.tbxBaiVietTren.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxBaiVietTren.Multiline = true;
+            this.tbxBaiVietTren.Name = "tbxBaiVietTren";
+            this.tbxBaiVietTren.Size = new System.Drawing.Size(559, 331);
+            this.tbxBaiVietTren.TabIndex = 48;
+            // 
+            // tbxBaiVietDuoi
+            // 
+            this.tbxBaiVietDuoi.Location = new System.Drawing.Point(1458, 633);
+            this.tbxBaiVietDuoi.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxBaiVietDuoi.Multiline = true;
+            this.tbxBaiVietDuoi.Name = "tbxBaiVietDuoi";
+            this.tbxBaiVietDuoi.Size = new System.Drawing.Size(559, 331);
+            this.tbxBaiVietDuoi.TabIndex = 49;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1706, 46);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(53, 13);
+            this.label19.TabIndex = 50;
+            this.label19.Text = "Phần trên";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(1704, 618);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(55, 13);
+            this.label20.TabIndex = 51;
+            this.label20.Text = "Phần dưới";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(1586, 18);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(309, 13);
+            this.label21.TabIndex = 52;
+            this.label21.Text = "Sử dụng thông tin bài biết mẫu tạo nội dung sản phẩm SHOPEE";
+            // 
+            // tbxBaiVietGiua
+            // 
+            this.tbxBaiVietGiua.Location = new System.Drawing.Point(1458, 420);
+            this.tbxBaiVietGiua.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxBaiVietGiua.Multiline = true;
+            this.tbxBaiVietGiua.Name = "tbxBaiVietGiua";
+            this.tbxBaiVietGiua.Size = new System.Drawing.Size(559, 186);
+            this.tbxBaiVietGiua.TabIndex = 53;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(1704, 405);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(55, 13);
+            this.label22.TabIndex = 54;
+            this.label22.Text = "Phần giữa";
+            // 
+            // ID
+            // 
+            this.ID.FillWeight = 61.56355F;
+            this.ID.HeaderText = "ID Sản phẩm";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // IDTuyChon
+            // 
+            this.IDTuyChon.FillWeight = 65.39382F;
+            this.IDTuyChon.HeaderText = "ID Tùy Chọn";
+            this.IDTuyChon.MinimumWidth = 6;
+            this.IDTuyChon.Name = "IDTuyChon";
+            // 
+            // TenSanPham
+            // 
+            this.TenSanPham.FillWeight = 258.8092F;
+            this.TenSanPham.HeaderText = "Tên Sản Phẩm";
+            this.TenSanPham.MinimumWidth = 6;
+            this.TenSanPham.Name = "TenSanPham";
+            // 
+            // SKU
+            // 
+            this.SKU.FillWeight = 62.11891F;
+            this.SKU.HeaderText = "SKU";
+            this.SKU.MinimumWidth = 6;
+            this.SKU.Name = "SKU";
+            // 
+            // GiaBan
+            // 
+            this.GiaBan.FillWeight = 65.91901F;
+            this.GiaBan.HeaderText = "Đường dẫn ảnh";
+            this.GiaBan.MinimumWidth = 6;
+            this.GiaBan.Name = "GiaBan";
+            // 
+            // GiaSoSanh
+            // 
+            this.GiaSoSanh.FillWeight = 69.5124F;
+            this.GiaSoSanh.HeaderText = "Mô tả sản phẩm";
+            this.GiaSoSanh.MinimumWidth = 6;
+            this.GiaSoSanh.Name = "GiaSoSanh";
+            // 
+            // CanNang
+            // 
+            this.CanNang.FillWeight = 72.91039F;
+            this.CanNang.HeaderText = "Giá bán";
+            this.CanNang.MinimumWidth = 6;
+            this.CanNang.Name = "CanNang";
+            // 
+            // AnhDaiDien
+            // 
+            this.AnhDaiDien.FillWeight = 102.2727F;
+            this.AnhDaiDien.HeaderText = "Cân nặng";
+            this.AnhDaiDien.MinimumWidth = 6;
+            this.AnhDaiDien.Name = "AnhDaiDien";
+            // 
+            // Column35
+            // 
+            this.Column35.FillWeight = 141.5F;
+            this.Column35.HeaderText = "Ảnh đại diện";
+            this.Column35.MinimumWidth = 8;
+            this.Column35.Name = "Column35";
+            // 
+            // Column36
+            // 
+            this.Column36.HeaderText = "Thông số";
+            this.Column36.MinimumWidth = 8;
+            this.Column36.Name = "Column36";
+            // 
+            // Column37
+            // 
+            this.Column37.HeaderText = "Công dụng";
+            this.Column37.MinimumWidth = 8;
+            this.Column37.Name = "Column37";
+            // 
+            // Column65
+            // 
+            this.Column65.HeaderText = "TÊN SP";
+            this.Column65.Name = "Column65";
+            // 
+            // Column66
+            // 
+            this.Column66.HeaderText = "TÊN PHÂN LOẠI";
+            this.Column66.Name = "Column66";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2028, 1005);
+            this.ClientSize = new System.Drawing.Size(2043, 993);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.tbxBaiVietGiua);
             this.Controls.Add(this.label21);
@@ -1762,6 +2018,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1769,10 +2026,14 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnhShopee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDangSPLazada)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSendo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInput)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1867,15 +2128,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.Button btnXulinoidung;
         private System.Windows.Forms.Button btnXuatFile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDTuyChon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaSoSanh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CanNang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AnhDaiDien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column35;
         private System.Windows.Forms.Button btnXuat2;
         private System.Windows.Forms.DataGridView dataGridViewNganhHang;
         private System.Windows.Forms.TabControl tabControl1;
@@ -1888,8 +2140,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnThongSoCongDung;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column37;
         private System.Windows.Forms.TextBox tbxSKU;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button btnLayAnhShopee;
@@ -1947,6 +2197,41 @@
         private System.Windows.Forms.Button btnTaobaivietLazada;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.DataGridView dataGridViewInput;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Link;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSanPham;
+        private System.Windows.Forms.Button btnRunSendo;
+        private System.Windows.Forms.CheckBox checkBoxBaiViet;
+        private System.Windows.Forms.CheckBox checkBoxAnh;
+        private System.Windows.Forms.CheckBox checkBoxTenSanPham;
+        private System.Windows.Forms.CheckBox checkBoxSKU;
+        private System.Windows.Forms.DataGridView dataGridViewSendo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.TextBox tbxTaiKhoanSendo;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox tbxMatKhauSendo;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDTuyChon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaSoSanh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CanNang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AnhDaiDien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column65;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column66;
     }
 }
 
