@@ -35,6 +35,8 @@ namespace Checker
 
         public class Image
         {
+            public string Page { get; set; }
+
             public string Link { get; set; }
 
             public string Alt { get; set; }
@@ -353,6 +355,62 @@ namespace Checker
                 dataGridView1.Rows[n].Cells[2].Value = image.Alt;
             }
 
+        }
+
+        private void btnx6o_Click(object sender, EventArgs e)
+        {
+            string fileoutput = @"D:\link.txt";
+            dataGridView1.Rows.Clear();
+
+            var driverService = ChromeDriverService.CreateDefaultService();
+            driverService.HideCommandPromptWindow = true;
+            var options = new ChromeOptions();
+            //options.AddArgument("--window-position=-32000,-32000"); //an chorme
+            var driver = new ChromeDriver(driverService, options);
+            driver.Navigate().GoToUrl("https://www.google.com/");
+            System.Threading.Thread.Sleep(300);
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
+
+            mListKetQua = new List<Image>();
+
+            for(int stt = 9180; stt < 9999; stt++)
+            {
+                string link = @"https://www.x6o.com/articles/" + stt.ToString("0000");
+
+                try
+                {
+                    driver.Navigate().GoToUrl(link);
+                    if (!driver.PageSource.Contains("404 Not Found"))
+                    {
+                        System.Threading.Thread.Sleep(3000);
+                        var element = driver.FindElement(By.ClassName("mdui-typo")).FindElements(By.TagName("img"));
+                        
+                        foreach (var ele in element)
+                        {
+                            Image image = new Image();
+                            image.Page = stt.ToString("0000");
+                            image.Link = ele.GetAttribute("src");
+                            image.Alt = ele.GetAttribute("alt");
+                            mListKetQua.Add(image);
+
+                            //điền vào file
+                            string readText = File.ReadAllText(fileoutput);
+                            using (StreamWriter writer = new StreamWriter(fileoutput))
+                            {
+                                writer.WriteLine(readText + image.Page.ToString() + "," + image.Link.ToString() + "," + image.Alt.ToString());
+                            }
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Actions actions = new Actions(driver);
+                    actions.SendKeys(OpenQA.Selenium.Keys.Escape);
+                }
+                
+            }
         }
     }
 }

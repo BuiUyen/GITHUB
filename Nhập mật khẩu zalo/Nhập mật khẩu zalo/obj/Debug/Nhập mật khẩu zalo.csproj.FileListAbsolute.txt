@@ -1,0 +1,15 @@
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\bin\Debug\Nhập mật khẩu zalo.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\bin\Debug\Nhập mật khẩu zalo.exe
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\bin\Debug\Nhập mật khẩu zalo.pdb
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\bin\Debug\WindowsInput.dll
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\bin\Debug\WindowsInput.pdb
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\bin\Debug\WindowsInput.xml
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập mật khẩu zalo.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập mật khẩu zalo.csproj.SuggestedBindingRedirects.cache
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập_mật_khẩu_zalo.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập_mật_khẩu_zalo.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập mật khẩu zalo.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập mật khẩu zalo.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập mật khẩu zalo.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập mật khẩu zalo.exe
+C:\Users\huuuy\Desktop\GITHUB\Nhập mật khẩu zalo\Nhập mật khẩu zalo\obj\Debug\Nhập mật khẩu zalo.pdb

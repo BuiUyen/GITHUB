@@ -1,0 +1,13 @@
+[19380] 21:38:12.950 D/Program: Name:MediboxAssistant
+[19380] 21:38:12.951 D/Program: Description:Build: 24/04/2019
+[19380] 21:38:12.951 D/Program: Version:1.0.0.1
+[19380] 21:38:14.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--START
+[19380] 21:38:14.000 D/SoftUpdatePresenter: Database sql = 20
+[19380] 21:38:14.000 D/SoftUpdatePresenter: Software sql = 20
+[19380] 21:38:14.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--END
+[19380] 21:38:14.000 E/UtilityWebServer: StartWebServer error !
+System.Security.Cryptography.CryptographicException: Access is denied.
+
+   at System.Security.Cryptography.X509Certificates.X509Store.Open(OpenFlags flags)
+   at Medibox.Service.Net.WebHost.Start() in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Service\Net\WebHost.cs:line 124
+   at Medibox.UtilityWebServer.<StartWebServer>b__11_0() in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\UtilityWebServer.cs:line 69

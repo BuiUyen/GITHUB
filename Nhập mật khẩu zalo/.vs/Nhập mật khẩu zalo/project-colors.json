@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8ed81cad-aebd-4a41-b3f2-8ffff2cdeee0": {
+      "ProjectGuid": "8ed81cad-aebd-4a41-b3f2-8ffff2cdeee0",
+      "DisplayName": "Nhập mật khẩu zalo",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KXtb2XAVXjcNYzUfN2V6fb8MlEQkbcdpTrvK8kvp/n+eoBtHnx7qOnNy5vfgRfOgFD8mH/VKcFGDNyqS1wLdag==",
+  "dgSpecHash": "P+FgAjdTvFoKGZgHa3Rv+cRUqri1RatM2wRpYwQlTb0ENf4Dkh2DIBQ5jYFT2RxPn8+oZ0RN4WRNvJJF7aNPcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\huuuy\\Desktop\\GITHUB\\Xoay ảnh sản phẩm\\Xoay ảnh sản phẩm\\Xoay ảnh sản phẩm.csproj",
+  "projectFilePath": "C:\\Users\\huuuy\\Desktop\\GITHUB\\Xoay Ảnh Sản Phẩm\\Xoay ảnh sản phẩm\\Xoay ảnh sản phẩm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huuuy\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\huuuy\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",

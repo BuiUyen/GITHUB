@@ -55,7 +55,8 @@
             this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnx6o = new System.Windows.Forms.Button();
+            this.tbxInputSKU = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -130,7 +131,7 @@
             this.dataGridViewKetQua.Location = new System.Drawing.Point(0, 845);
             this.dataGridViewKetQua.Name = "dataGridViewKetQua";
             this.dataGridViewKetQua.RowHeadersWidth = 62;
-            this.dataGridViewKetQua.Size = new System.Drawing.Size(1930, 512);
+            this.dataGridViewKetQua.Size = new System.Drawing.Size(2120, 512);
             this.dataGridViewKetQua.TabIndex = 16;
             // 
             // Column1
@@ -274,7 +275,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(937, 8);
+            this.button2.Location = new System.Drawing.Point(846, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(238, 85);
             this.button2.TabIndex = 18;
@@ -282,21 +283,31 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnx6o
             // 
-            this.button3.Location = new System.Drawing.Point(1352, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(238, 85);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnx6o.Location = new System.Drawing.Point(1125, 12);
+            this.btnx6o.Name = "btnx6o";
+            this.btnx6o.Size = new System.Drawing.Size(238, 85);
+            this.btnx6o.TabIndex = 19;
+            this.btnx6o.Text = "x6o";
+            this.btnx6o.UseVisualStyleBackColor = true;
+            this.btnx6o.Click += new System.EventHandler(this.btnx6o_Click);
+            // 
+            // tbxInputSKU
+            // 
+            this.tbxInputSKU.Location = new System.Drawing.Point(1948, 127);
+            this.tbxInputSKU.Multiline = true;
+            this.tbxInputSKU.Name = "tbxInputSKU";
+            this.tbxInputSKU.Size = new System.Drawing.Size(160, 624);
+            this.tbxInputSKU.TabIndex = 20;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1930, 1357);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(2120, 1357);
+            this.Controls.Add(this.tbxInputSKU);
+            this.Controls.Add(this.btnx6o);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridViewKetQua);
@@ -344,7 +355,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnx6o;
+        private System.Windows.Forms.TextBox tbxInputSKU;
     }
 }
 
