@@ -1,0 +1,148 @@
+[48580] 22:16:30.849 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[48580] 22:16:36.778 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[48580] 22:16:37.760 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[48580] 22:16:38.535 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[48580] 22:16:39.642 D/NpgsqlDatabaseUtility: [SynchDatabase] Database = [Checker]
+[48580] 22:16:39.677 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_room'
+[48580] 22:16:39.712 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_home'
+[48580] 22:16:39.726 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_user'
+[48580] 22:16:39.738 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_softupdate'
+[48580] 22:16:39.751 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_dm_entity_type'
+[48580] 22:16:39.762 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_dm_intent_type'
+[48580] 22:16:39.774 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_intent_response'
+[48580] 22:16:39.797 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_intent'
+[48580] 22:16:39.807 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_device'
+[48580] 22:16:39.820 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_intent_request'
+[48580] 22:16:39.850 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_sanphamweb'
+[48580] 22:16:42.810 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[48580] 22:17:34.262 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[48580] 22:17:37.010 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[48580] 22:17:39.196 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789

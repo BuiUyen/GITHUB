@@ -66,3 +66,11 @@ C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\Medibox
 C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\Medibox CHECKER.csproj.CopyComplete
 C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\MediboxAssistant.exe
 C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\MediboxAssistant.pdb
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\Medibox.FormEditChecker.resources
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\Medibox.FormViewChecker.resources
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\Medibox.FormEditImageChecker.resources
+C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\obj\Debug\Medibox.FormViewImage.resources

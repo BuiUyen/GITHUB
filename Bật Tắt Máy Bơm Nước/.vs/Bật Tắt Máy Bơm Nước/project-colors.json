@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5a585cc1-2699-4559-a0ff-6d88c01c7ac5": {
+      "ProjectGuid": "5a585cc1-2699-4559-a0ff-6d88c01c7ac5",
+      "DisplayName": "Bật Tắt Máy Bơm Nước",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

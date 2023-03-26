@@ -1,0 +1,616 @@
+[32472] 22:13:37.690 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to 'localhost'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[32472] 22:14:05.709 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:05.710 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:05.755 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:05.756 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:05.806 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:05.807 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:05.854 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:05.855 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:05.903 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:05.904 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:05.954 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:05.955 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:05.956 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:05.956 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[32472] 22:14:08.874 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:08.875 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:08.914 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:08.915 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:08.957 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:08.957 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:08.996 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:08.997 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:09.036 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:09.037 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:09.079 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:09.080 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:14:09.080 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:14:09.080 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[32472] 22:15:18.278 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:18.279 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:18.319 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:18.320 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:18.361 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:18.362 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:18.402 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:18.403 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:18.442 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:18.443 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:18.482 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:18.483 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:18.483 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:18.483 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[32472] 22:15:22.135 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:22.136 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:22.177 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:22.178 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:22.225 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:22.226 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:22.272 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:22.273 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:22.317 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:22.318 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:22.360 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:22.361 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:22.361 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:22.362 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[32472] 22:15:54.719 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:54.720 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:54.766 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:54.767 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:54.813 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:54.813 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:54.854 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:54.855 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:54.899 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:54.899 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:54.941 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:54.941 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:54.942 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:54.942 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[32472] 22:15:57.654 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[32472] 22:15:59.442 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:59.443 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:59.485 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:59.485 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:59.525 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:59.525 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:59.565 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:59.566 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:59.606 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:59.607 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:59.647 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:59.648 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "checker" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[32472] 22:15:59.648 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[32472] 22:15:59.648 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[32472] 22:16:18.509 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[32472] 22:16:22.810 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+database "uyen" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789

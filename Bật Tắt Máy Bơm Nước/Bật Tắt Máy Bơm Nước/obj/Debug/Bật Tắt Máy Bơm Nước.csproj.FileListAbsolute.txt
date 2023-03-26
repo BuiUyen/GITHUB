@@ -1,0 +1,11 @@
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\bin\Debug\Bật Tắt Máy Bơm Nước.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\bin\Debug\Bật Tắt Máy Bơm Nước.exe
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\bin\Debug\Bật Tắt Máy Bơm Nước.pdb
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật Tắt Máy Bơm Nước.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật Tắt Máy Bơm Nước.csproj.SuggestedBindingRedirects.cache
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật_Tắt_Máy_Bơm_Nước.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật_Tắt_Máy_Bơm_Nước.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật Tắt Máy Bơm Nước.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật Tắt Máy Bơm Nước.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật Tắt Máy Bơm Nước.exe
+C:\Users\huuuy\Desktop\GITHUB\Bật Tắt Máy Bơm Nước\Bật Tắt Máy Bơm Nước\obj\Debug\Bật Tắt Máy Bơm Nước.pdb

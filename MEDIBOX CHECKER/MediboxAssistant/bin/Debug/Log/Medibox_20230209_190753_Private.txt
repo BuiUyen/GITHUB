@@ -1,0 +1,596 @@
+[40416] 19:07:53.965 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[40416] 19:08:29.986 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:29.986 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+the database system is starting up
+Severity: FATAL
+Code: 57P03
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:30.061 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:30.062 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:30.113 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:30.115 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:30.170 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:30.171 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:30.228 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:30.229 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:30.285 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:30.285 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:30.285 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:30.285 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[40416] 19:08:34.619 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:34.620 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:34.666 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:34.667 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:34.716 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:34.716 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:34.765 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:34.765 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:34.809 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:34.809 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:34.858 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:34.859 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+password authentication failed for user "postgress"
+Severity: FATAL
+Code: 28P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:34.860 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:34.860 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[40416] 19:08:47.138 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:47.139 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:47.187 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:47.188 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:47.240 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:47.240 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:47.292 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:47.292 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:47.341 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:47.342 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:47.390 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:47.391 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:08:47.391 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:08:47.392 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[40416] 19:09:06.855 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:09:06.856 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:09:06.913 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:09:06.914 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:09:06.982 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:09:06.982 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:09:07.041 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:09:07.042 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:09:07.098 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:09:07.099 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:09:07.148 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:09:07.150 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+database "postgress" does not exist
+Severity: FATAL
+Code: 3D000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[40416] 19:09:07.150 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[40416] 19:09:07.150 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[40416] 19:10:20.034 D/UtilityCache: Start database cache...
+[40416] 19:10:20.000 D/UtilityCache: End database cache...
+[40416] 19:10:20.000 E/UtilityUpdateTime: Start get timer...
+[40416] 19:10:22.230 E/NpgsqlBaseDao:  SELECT *  FROM tb_checker 
+[40416] 19:10:22.230 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_checker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:22.230 E/NpgsqlBaseDao:  SELECT *  FROM tb_checker 
+[40416] 19:10:22.230 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_checker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:22.230 E/NpgsqlBaseDao:  SELECT *  FROM tb_checker 
+[40416] 19:10:22.230 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_checker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:22.230 E/NpgsqlBaseDao:  SELECT *  FROM tb_checker 
+[40416] 19:10:22.230 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_checker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:22.230 E/NpgsqlBaseDao:  SELECT *  FROM tb_checker 
+[40416] 19:10:22.230 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_checker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:22.230 E/NpgsqlBaseDao:  SELECT *  FROM tb_checker 
+[40416] 19:10:22.230 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_checker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:22.230 E/NpgsqlBaseDao:  SELECT *  FROM tb_checker 
+[40416] 19:10:22.230 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[40416] 19:10:32.760 E/NpgsqlBaseDao:  SELECT *  FROM tb_imagechecker 
+[40416] 19:10:32.760 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_imagechecker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:32.760 E/NpgsqlBaseDao:  SELECT *  FROM tb_imagechecker 
+[40416] 19:10:32.760 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_imagechecker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:32.760 E/NpgsqlBaseDao:  SELECT *  FROM tb_imagechecker 
+[40416] 19:10:32.760 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_imagechecker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:32.760 E/NpgsqlBaseDao:  SELECT *  FROM tb_imagechecker 
+[40416] 19:10:32.760 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_imagechecker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:32.760 E/NpgsqlBaseDao:  SELECT *  FROM tb_imagechecker 
+[40416] 19:10:32.760 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_imagechecker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:32.760 E/NpgsqlBaseDao:  SELECT *  FROM tb_imagechecker 
+[40416] 19:10:32.760 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+relation "tb_imagechecker" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1587
+[40416] 19:10:32.760 E/NpgsqlBaseDao:  SELECT *  FROM tb_imagechecker 
+[40416] 19:10:32.760 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5

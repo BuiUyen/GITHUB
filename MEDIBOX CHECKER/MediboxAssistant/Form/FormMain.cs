@@ -121,7 +121,18 @@ namespace Medibox
 
         private void btnCheckerView_Click(object sender, EventArgs e)
         {
+            using (FormViewChecker form = new FormViewChecker())
+            {
+                form.ShowDialog();
+            }
+        }
 
+        private void btnListAnh_Click(object sender, EventArgs e)
+        {
+            using (FormViewImage form = new FormViewImage())
+            {
+                form.ShowDialog();
+            }
         }
     }
 }

@@ -1,0 +1,214 @@
+[22800] 19:07:00.017 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to 'localhost'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[22800] 19:07:32.344 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:32.345 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:32.481 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:32.482 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:32.630 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:32.631 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:32.767 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:32.767 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:32.903 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:32.903 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:33.047 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:33.048 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:33.048 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:33.048 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[22800] 19:07:36.957 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:36.958 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:37.101 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:37.102 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:37.246 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:37.246 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:37.395 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:37.396 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:37.533 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:37.534 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:37.682 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:37.683 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[22800] 19:07:37.683 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[22800] 19:07:37.684 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[22800] 19:07:44.725 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+connection is insecure (try using `sslmode=require`)
+Severity: ERROR
+Code: XX000
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789

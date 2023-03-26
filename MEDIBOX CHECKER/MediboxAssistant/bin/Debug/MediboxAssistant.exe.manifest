@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MediboxAssistant.exe" size="1937408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MediboxAssistant.exe" size="1997312">
       <assemblyIdentity name="MediboxAssistant" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HemWIuRYhdWYJPiEkAXSaCEGxeoG80Tr0TeCkFpf+fM=</dsig:DigestValue>
+        <dsig:DigestValue>nw78nM+/6u2vpl+IrdBMqhP5rRSr48CNqHwyt2bBOEc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -135,6 +135,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>Tg55pXrpGwbuQGzpmG1ITazjiFre7wfVCqdH+vfInkg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" size="8935936">
+      <assemblyIdentity name="WebDriver" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yQNtaD8kr6NNLZySm3o0xhv13UIUA+hIRbHhW1sD/bs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -1,0 +1,7 @@
+[40416] 19:07:52.703 D/Program: Name:MediboxAssistant
+[40416] 19:07:52.705 D/Program: Description:Build: 24/04/2019
+[40416] 19:07:52.705 D/Program: Version:1.0.0.1
+[40416] 19:10:20.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--START
+[40416] 19:10:20.000 D/SoftUpdatePresenter: Database sql = 20
+[40416] 19:10:20.000 D/SoftUpdatePresenter: Software sql = 20
+[40416] 19:10:20.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--END

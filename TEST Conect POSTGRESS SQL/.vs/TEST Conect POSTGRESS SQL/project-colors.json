@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2ffa1ac8-a39a-4ed4-b771-6781b849dfc9": {
+      "ProjectGuid": "2ffa1ac8-a39a-4ed4-b771-6781b849dfc9",
+      "DisplayName": "TEST Conect POSTGRESS SQL",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

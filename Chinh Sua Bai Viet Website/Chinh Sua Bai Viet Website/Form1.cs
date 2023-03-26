@@ -94,7 +94,7 @@ namespace Chinh_Sua_Bai_Viet_Website
         }
 
         public List<LinhKien> mList_Goc = new List<LinhKien>();
-        public List<LinhKien> mList = new List<LinhKien>();
+        public List<LinhKien> mList = new List<LinhKien>();// list đã xử lý phân loại
         public List<Tags> mListTags = new List<Tags>();
         public List<Tags> mListTagsKetQua = new List<Tags>();
         public List<LinhKien> mListXepAnh = new List<LinhKien>();
@@ -1036,6 +1036,7 @@ namespace Chinh_Sua_Bai_Viet_Website
         private void btnDangLazada_Click(object sender, EventArgs e)
         {
             mListKetQua = new List<LinhKien>();
+            string ID = "";
 
             foreach (string line in tbxInputSKU.Lines)
             {
@@ -1058,34 +1059,37 @@ namespace Chinh_Sua_Bai_Viet_Website
                     }
                     else
                     {
-                        _linhkien = mList.FirstOrDefault(v => v.ID == mList_Goc[stt].ID);
-                        if(_linhkien.mListAnh.Count == 0)
-                        {
-                            _linhkien.SKU = "Sản phẩm chưa có ảnh";
-                            mListKetQua.Add(_linhkien);
-                        }
-                        else
-                        {
-                            foreach (LinhKien phanloai in _linhkien.mListPhanLoai)
-                            {
-                                HtmlToText _HtmlToText = new HtmlToText();
+                        ID = mList_Goc[stt].ID;
 
-                                if (!(phanloai.NoiDung == null))
+                        if (mListKetQua.FirstOrDefault(v => v.ID == ID) == null)  //kiểm tra xem đã có phân loại đó hay chưa
+                        {
+                            _linhkien = mList.FirstOrDefault(v => v.ID == ID);
+                            if (_linhkien.mListAnh.Count == 0)
+                            {
+                                _linhkien.SKU = "Sản phẩm chưa có ảnh";
+                                mListKetQua.Add(_linhkien);
+                            }
+                            else
+                            {
+                                foreach (LinhKien phanloai in _linhkien.mListPhanLoai)
                                 {
-                                    string noidung = _HtmlToText.HTMLToText(phanloai.NoiDung);
-                                    var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
-                                    if (listNoiDung.Count > 5)
+                                    HtmlToText _HtmlToText = new HtmlToText();
+
+                                    if (!(phanloai.NoiDung == null))
                                     {
-                                        phanloai.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
-                                        phanloai.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
-                                        phanloai.MoTaNgan = NoiDungSanPhamLazada(phanloai.ThongSo, phanloai.CongDung, phanloai);
+                                        string noidung = _HtmlToText.HTMLToText(phanloai.NoiDung);
+                                        var listNoiDung = noidung.Split(new[] { "\n\n" }, StringSplitOptions.None).ToList();
+                                        if (listNoiDung.Count > 5)
+                                        {
+                                            phanloai.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");
+                                            phanloai.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
+                                            phanloai.MoTaNgan = NoiDungSanPhamLazada(phanloai.ThongSo, phanloai.CongDung, phanloai);
+                                        }
                                     }
+                                    mListKetQua.Add(phanloai);
                                 }
-                                mListKetQua.Add(phanloai);
                             }
                         }
-
-
                     }
                 }
             }
@@ -1157,7 +1161,14 @@ namespace Chinh_Sua_Bai_Viet_Website
                 dataGridViewDangSPLazada.Rows[n].Cells[22].Value = sp.SoLuong;
                 if(sp.CanNang != null)
                 {
-                    dataGridViewDangSPLazada.Rows[n].Cells[23].Value = (Int32.Parse(sp.CanNang) / 1000).ToString();
+                    try
+                    {
+                        dataGridViewDangSPLazada.Rows[n].Cells[23].Value = (Int32.Parse(sp.CanNang) / 1000).ToString();
+                    }
+                    catch
+                    {
+                        dataGridViewDangSPLazada.Rows[n].Cells[23].Value = sp.CanNang;
+                    }
                 }                    
                 dataGridViewDangSPLazada.Rows[n].Cells[24].Value = "rộng";
                 dataGridViewDangSPLazada.Rows[n].Cells[25].Value = "dài";

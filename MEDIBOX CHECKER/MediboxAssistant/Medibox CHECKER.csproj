@@ -36,6 +36,8 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -138,8 +140,13 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.WebDriver.4.7.0\lib\net48\WebDriver.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Database\ImageCheckerDB.cs" />
+    <Compile Include="Core\Database\CheckerDB.cs" />
     <Compile Include="Core\Database\BaseDB.cs" />
     <Compile Include="Core\Database\SanPhamWebDB.cs" />
     <Compile Include="Core\Database\SoftUpdateDB.cs" />
@@ -152,6 +159,8 @@
     <Compile Include="Core\Integration\Spotify\UtilitySpotify.cs" />
     <Compile Include="Core\Model\BaseModel.cs" />
     <Compile Include="Core\Model\DataTypeModel.cs" />
+    <Compile Include="Core\Model\Data\ImageChecker.cs" />
+    <Compile Include="Core\Model\Data\Checker.cs" />
     <Compile Include="Core\Model\Data\SanPhamWeb.cs" />
     <Compile Include="Core\Model\Data\User.cs" />
     <Compile Include="Core\Model\Data\SoftUpdate.cs" />
@@ -159,6 +168,8 @@
     <Compile Include="Core\Model\MediboxSetting.cs" />
     <Compile Include="Core\Model\MyVar.cs" />
     <Compile Include="Core\Model\UI\ThongTinDanhSachDevice.cs" />
+    <Compile Include="Core\Presenter\ImageCheckerPresenter.cs" />
+    <Compile Include="Core\Presenter\CheckerPresenter.cs" />
     <Compile Include="Core\Presenter\SanPhamWebPresenter.cs" />
     <Compile Include="Core\Presenter\UserPresenter.cs" />
     <Compile Include="Core\Presenter\DevicePresenter.cs" />
@@ -385,6 +396,18 @@
     <Compile Include="Core\Utility\UtilityListView.cs" />
     <Compile Include="Core\Utility\UtilityUpdateTime.cs" />
     <Compile Include="Core\Utility\UtilityWeb.cs" />
+    <Compile Include="Form\Edit\FormEditImageChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditImageChecker.designer.cs">
+      <DependentUpon>FormEditImageChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Edit\FormEditChecker.designer.cs">
+      <DependentUpon>FormEditChecker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Edit\FormEditSanPhamWeb.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -439,6 +462,18 @@
     </Compile>
     <Compile Include="Form\Select\FormSelectDevice.designer.cs">
       <DependentUpon>FormSelectDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewImage.designer.cs">
+      <DependentUpon>FormViewImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\View\FormViewChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\View\FormViewChecker.designer.cs">
+      <DependentUpon>FormViewChecker.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\View\FormViewSanPhamWeb.cs">
       <SubType>Form</SubType>
@@ -503,6 +538,12 @@
     <EmbeddedResource Include="Core\Utility\UI\SplashScreen\FormSplashScreen.resx">
       <DependentUpon>FormSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditImageChecker.resx">
+      <DependentUpon>FormEditImageChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Edit\FormEditChecker.resx">
+      <DependentUpon>FormEditChecker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Edit\FormEditSanPhamWeb.resx">
       <DependentUpon>FormEditSanPhamWeb.cs</DependentUpon>
     </EmbeddedResource>
@@ -523,6 +564,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Select\FormSelectDevice.resx">
       <DependentUpon>FormSelectDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewImage.resx">
+      <DependentUpon>FormViewImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\View\FormViewChecker.resx">
+      <DependentUpon>FormViewChecker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\View\FormViewSanPhamWeb.resx">
       <DependentUpon>FormViewSanPhamWeb.cs</DependentUpon>
@@ -736,6 +783,13 @@ if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)
     <PostBuildEvent>call "$(DevEnvDir)..\..\vc\vcvarsall.bat" x86
 "$(DevEnvDir)..\..\vc\bin\EditBin.exe"  /LARGEADDRESSAWARE "$(TargetPath)"</PostBuildEvent>
   </PropertyGroup>
+  <Import Project="packages\Selenium.WebDriver.4.7.0\build\Selenium.WebDriver.targets" Condition="Exists('packages\Selenium.WebDriver.4.7.0\build\Selenium.WebDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Selenium.WebDriver.4.7.0\build\Selenium.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.WebDriver.4.7.0\build\Selenium.WebDriver.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

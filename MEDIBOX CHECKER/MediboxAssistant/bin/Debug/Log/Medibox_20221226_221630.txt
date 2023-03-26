@@ -1,0 +1,3 @@
+[48580] 22:16:30.358 D/Program: Name:MediboxAssistant
+[48580] 22:16:30.359 D/Program: Description:Build: 24/04/2019
+[48580] 22:16:30.360 D/Program: Version:1.0.0.1

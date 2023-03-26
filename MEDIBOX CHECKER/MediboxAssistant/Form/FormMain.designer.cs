@@ -44,6 +44,8 @@
             this.NOW_Timer = new System.Windows.Forms.Timer(this.components);
             this.MainMenu = new DevComponents.DotNetBar.Bar();
             this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnChecker = new DevComponents.DotNetBar.ButtonItem();
+            this.btnCheckerView = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem4 = new DevComponents.DotNetBar.ButtonItem();
@@ -51,8 +53,7 @@
             this.btnFileCanLamSangGroup_Import = new DevComponents.DotNetBar.ButtonItem();
             this.btnFile_MaiKetQua_DanhSach = new DevComponents.DotNetBar.ButtonItem();
             this.styleManager = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.btnChecker = new DevComponents.DotNetBar.ButtonItem();
-            this.btnCheckerView = new DevComponents.DotNetBar.ButtonItem();
+            this.btnListAnh = new DevComponents.DotNetBar.ButtonItem();
             btnSanPhamWEB = new DevComponents.DotNetBar.ButtonItem();
             this.mPanelWelcome.SuspendLayout();
             this.panelEx9.SuspendLayout();
@@ -279,6 +280,20 @@
             btnSanPhamWEB});
             this.buttonItem5.Text = "SẢN PHẨM WEB";
             // 
+            // btnChecker
+            // 
+            this.btnChecker.Name = "btnChecker";
+            this.btnChecker.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnCheckerView,
+            this.btnListAnh});
+            this.btnChecker.Text = "CHECKER VIỆT";
+            // 
+            // btnCheckerView
+            // 
+            this.btnCheckerView.Name = "btnCheckerView";
+            this.btnCheckerView.Text = "TRANG CHÍNH";
+            this.btnCheckerView.Click += new System.EventHandler(this.btnCheckerView_Click);
+            // 
             // buttonItem2
             // 
             this.buttonItem2.BeginGroup = true;
@@ -321,18 +336,11 @@
             this.styleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Silver;
             this.styleManager.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60))))));
             // 
-            // btnChecker
+            // btnListAnh
             // 
-            this.btnChecker.Name = "btnChecker";
-            this.btnChecker.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnCheckerView});
-            this.btnChecker.Text = "CHECKER VIỆT";
-            // 
-            // btnCheckerView
-            // 
-            this.btnCheckerView.Name = "btnCheckerView";
-            this.btnCheckerView.Text = "Trang chính";
-            this.btnCheckerView.Click += new System.EventHandler(this.btnCheckerView_Click);
+            this.btnListAnh.Name = "btnListAnh";
+            this.btnListAnh.Text = "DANH SÁCH ẢNH";
+            this.btnListAnh.Click += new System.EventHandler(this.btnListAnh_Click);
             // 
             // FormMain
             // 
@@ -379,5 +387,6 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem5;
         private DevComponents.DotNetBar.ButtonItem btnChecker;
         private DevComponents.DotNetBar.ButtonItem btnCheckerView;
+        private DevComponents.DotNetBar.ButtonItem btnListAnh;
     }
 }

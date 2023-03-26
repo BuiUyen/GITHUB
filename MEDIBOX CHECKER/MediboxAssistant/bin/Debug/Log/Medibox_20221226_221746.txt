@@ -1,0 +1,3 @@
+[50148] 22:17:46.532 D/Program: Name:MediboxAssistant
+[50148] 22:17:46.534 D/Program: Description:Build: 24/04/2019
+[50148] 22:17:46.535 D/Program: Version:1.0.0.1

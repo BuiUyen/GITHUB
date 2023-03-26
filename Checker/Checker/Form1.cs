@@ -55,7 +55,7 @@ namespace Checker
 
         public List<Checker> mListChecker = new List<Checker>();
 
-        public List<Image>  mListKetQua = new List<Image>();
+        public List<Image> mListKetQua = new List<Image>();
 
         private void btnRun_Click(object sender, EventArgs e)
         {
@@ -65,7 +65,7 @@ namespace Checker
             //options.AddArgument("--window-position=-32000,-32000"); //an chorme
 
             var driver = new ChromeDriver(driverService, options);
-            driver.Navigate().GoToUrl("https://www.google.com/");            
+            driver.Navigate().GoToUrl("https://www.google.com/");
             System.Threading.Thread.Sleep(300);
             ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
             driver.SwitchTo().Window(driver.WindowHandles.Last());
@@ -82,8 +82,8 @@ namespace Checker
             //    mListData.Add(_object);
             //}
 
-            
-            
+
+
             string fileoutput = @"link.txt";
             List<int> List_cod = new List<int>();
             if (File.Exists(fileoutput))
@@ -92,7 +92,7 @@ namespace Checker
             }
             using (StreamWriter fs = File.CreateText(fileoutput))
             {
-                
+
             }
             int.TryParse(tbxMin.Text, out int Min);
             int.TryParse(tbxMax.Text, out int Max);
@@ -116,12 +116,12 @@ namespace Checker
                         {
                             writer.WriteLine(readText + test.ToString());
                         }
-                    }                
+                    }
                 }
                 catch (Exception ex)
                 {
 
-                }                
+                }
             }
         }
 
@@ -153,11 +153,11 @@ namespace Checker
                         }
 
                         if (s.Contains("lbContainer-zoomer"))
-                        {                            
-                            string[] arr = s.Split('"');                           
+                        {
+                            string[] arr = s.Split('"');
                             List_String.Add(arr[3]);
                         }
-                        
+
                         if (s.Contains("js-selectToQuoteEnd"))
                         {
                             break;
@@ -222,7 +222,7 @@ namespace Checker
                     {
                         Actions actions = new Actions(driver);
                         actions.SendKeys(OpenQA.Selenium.Keys.Escape);
-                    }                    
+                    }
 
                     _checker.ID = s;
 
@@ -278,7 +278,7 @@ namespace Checker
         public void ShowKetQua()
         {
             dataGridViewKetQua.Rows.Clear();
-            foreach(Checker ch in mListChecker)
+            foreach (Checker ch in mListChecker)
             {
                 int n = dataGridViewKetQua.Rows.Add();
                 dataGridViewKetQua.Rows[n].Cells[0].Value = ch.ID;
@@ -286,9 +286,9 @@ namespace Checker
                 dataGridViewKetQua.Rows[n].Cells[2].Value = ch.Ten;
                 dataGridViewKetQua.Rows[n].Cells[3].Value = ch.SDT;
 
-                for(int i = 0; i < ch.ListAnh.Count - 1 & i < 11 ; i++)
+                for (int i = 0; i < ch.ListAnh.Count - 1 & i < 11; i++)
                 {
-                    dataGridViewKetQua.Rows[n].Cells[i+4].Value = ch.ListAnh[i];
+                    dataGridViewKetQua.Rows[n].Cells[i + 4].Value = ch.ListAnh[i];
                 }
             }
         }
@@ -309,7 +309,7 @@ namespace Checker
             ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
             driver.SwitchTo().Window(driver.WindowHandles.Last());
 
-            mListKetQua = new List<Image>();          
+            mListKetQua = new List<Image>();
 
             //string linktest = @"https://upload69.pro/user/anhyeuem/?list=images&sort=date_desc&page=1&seek=MzEeET";
 
@@ -324,8 +324,8 @@ namespace Checker
                 actions.SendKeys(OpenQA.Selenium.Keys.Escape);
             }
 
-            
-            for( int n = 0; n<600;n++)
+
+            for (int n = 0; n < 600; n++)
             {
                 var element = driver.FindElements(By.TagName("img"));
 
@@ -342,7 +342,7 @@ namespace Checker
                         writer.WriteLine(readText + image.Link.ToString());
                     }
                 }
-                
+
                 driver.FindElements(By.ClassName("icon-arrow-right7"))[0].Click();
                 Thread.Sleep(3000);
             }
@@ -374,7 +374,7 @@ namespace Checker
 
             mListKetQua = new List<Image>();
 
-            for(int stt = 9180; stt < 9999; stt++)
+            for (int stt = 9180; stt < 9999; stt++)
             {
                 string link = @"https://www.x6o.com/articles/" + stt.ToString("0000");
 
@@ -385,7 +385,7 @@ namespace Checker
                     {
                         System.Threading.Thread.Sleep(3000);
                         var element = driver.FindElement(By.ClassName("mdui-typo")).FindElements(By.TagName("img"));
-                        
+
                         foreach (var ele in element)
                         {
                             Image image = new Image();
@@ -409,7 +409,60 @@ namespace Checker
                     Actions actions = new Actions(driver);
                     actions.SendKeys(OpenQA.Selenium.Keys.Escape);
                 }
-                
+
+            }
+        }
+
+        private void btnChecker_Click(object sender, EventArgs e)
+        {
+            var driverService = ChromeDriverService.CreateDefaultService();
+            driverService.HideCommandPromptWindow = true;
+            var options = new ChromeOptions();
+            //options.AddArgument("--window-position=-32000,-32000"); //an chorme
+            var driver = new ChromeDriver(driverService, options);
+            driver.Navigate().GoToUrl("https://www.google.com/");
+            System.Threading.Thread.Sleep(300);
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
+
+            foreach (string line in tbxInputSKU.Lines)
+            {
+                //mImage = new Image();
+                //mListImage = ImagePresenter.GetImages();
+
+                string link = @"https://checkerviet.bid/threads/" + line + @"/";
+                try
+                {
+                    driver.Navigate().GoToUrl(link);
+                    System.Threading.Thread.Sleep(3000);
+
+                    var elements = driver.FindElements(By.ClassName("bbWrapper"))[0].FindElements(By.TagName("img"));
+
+                    var gia = driver.FindElements(By.ClassName("label--orange"))[0].Text;
+
+                    var adwwf = driver.FindElements(By.ClassName("p-title-value"));
+
+                    var diachi = driver.FindElements(By.ClassName("label--skyBlue"))[0].Text;
+
+                    var sdt = driver.FindElements(By.ClassName("tel"))[0].Text;                    
+
+                    foreach (var ele in elements)
+                    {
+                        Image image = new Image();
+                        //image.Page = stt.ToString("0000");
+                        image.Link = ele.GetAttribute("src");
+                        image.Alt = ele.GetAttribute("alt");
+                        mListKetQua.Add(image);
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Actions actions = new Actions(driver);
+                    actions.SendKeys(OpenQA.Selenium.Keys.Escape);
+                }
+
             }
         }
     }
