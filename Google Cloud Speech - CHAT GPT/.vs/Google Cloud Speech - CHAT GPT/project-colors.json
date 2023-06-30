@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c6eca123-84ba-4b39-a480-5c617e9dc804": {
+      "ProjectGuid": "c6eca123-84ba-4b39-a480-5c617e9dc804",
+      "DisplayName": "Google Cloud Speech - CHAT GPT",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

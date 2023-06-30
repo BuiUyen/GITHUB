@@ -5,6 +5,11 @@
       "ProjectGuid": "5a47cf77-8caf-4edd-8be5-e118fc39c0cd",
       "DisplayName": "Medibox CHECKER",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

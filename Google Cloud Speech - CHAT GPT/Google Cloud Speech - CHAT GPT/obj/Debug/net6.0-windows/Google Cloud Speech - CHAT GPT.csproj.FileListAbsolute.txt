@@ -1,0 +1,36 @@
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.exe
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.deps.json
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.runtimeconfig.json
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\ref\Google Cloud Speech - CHAT GPT.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.pdb
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Api.CommonProtos.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Api.Gax.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Api.Gax.Grpc.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Apis.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Apis.Auth.PlatformServices.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Apis.Auth.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Apis.Core.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Cloud.Speech.V1.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.LongRunning.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Grpc.Auth.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Grpc.Core.Api.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Grpc.Net.Client.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Grpc.Net.Common.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google_Cloud_Speech___CHAT_GPT.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.AssemblyInfoInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.AssemblyInfo.cs
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\ref\Google Cloud Speech - CHAT GPT.dll
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.pdb
+C:\Users\huuuy\Desktop\GITHUB\Google Cloud Speech - CHAT GPT\Google Cloud Speech - CHAT GPT\obj\Debug\net6.0-windows\Google Cloud Speech - CHAT GPT.genruntimeconfig.cache

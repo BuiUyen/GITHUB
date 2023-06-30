@@ -1,0 +1,11 @@
+[15524] 22:41:46.420 D/Program: Name:MediboxAssistant
+[15524] 22:41:46.422 D/Program: Description:Build: 24/04/2019
+[15524] 22:41:46.422 D/Program: Version:1.0.0.1
+[15524] 22:41:51.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--START
+[15524] 22:41:51.000 D/SoftUpdatePresenter: Database sql = 
+[15524] 22:41:51.000 D/SoftUpdatePresenter: Software sql = 20
+[15524] 22:41:51.000 D/SoftUpdatePresenter: BEGIN UPDATE SQL
+[15524] 22:41:51.000 D/SoftUpdatePresenter: END UPDATE SQL
+[15524] 22:41:51.000 E/SoftUpdatePresenter: System.InvalidOperationException: No transaction in progress.
+   at Npgsql.NpgsqlTransaction.Commit()
+   at Medibox.Presenter.SoftUpdatePresenter.DoUpdateDatabaseSQL() in C:\Users\huuuy\Desktop\GITHUB\MEDIBOX CHECKER\MediboxAssistant\Core\Presenter\SoftUpdatePresenter.cs:line 139

@@ -22,7 +22,7 @@ namespace TEST_Conect_POSTGRESS_SQL
         {
             // Connection information
             string connInfo = string.Format("Server={0};Port={1};User Id={2};Password={3};Database={4};",
-                                            "localhost", 5432, "postgres", "12345678", "sample_db");
+                                            tbxDiaChiMayChu.Text, 5432, tbxTenDangNhap.Text, tbxMatKhau.Text, tbxTenCoSoDuLieu.Text);
 
             // Connection
             NpgsqlConnection conn = null;

@@ -1,0 +1,16 @@
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.SuggestedBindingRedirects.cache
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy_Dữ_Liệu_KOOL.FormMAIN.resources
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy_Dữ_Liệu_KOOL.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\Lấy Dữ Liệu KOOL.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\Lấy Dữ Liệu KOOL.exe
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\Lấy Dữ Liệu KOOL.pdb
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\WebDriver.dll
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.exe
+C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.pdb

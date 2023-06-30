@@ -96,7 +96,7 @@ namespace Medibox
             {
                 case ProcessingType.LoadData:
                     {
-                        UtilityListView.ListViewRefresh(mListViewData, mListImage);
+                        //UtilityListView.ListViewRefresh(mListViewData, mListImage);
                     }
                     break;
                 default:

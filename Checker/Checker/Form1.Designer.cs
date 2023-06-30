@@ -58,16 +58,18 @@
             this.btnx6o = new System.Windows.Forms.Button();
             this.tbxInputSKU = new System.Windows.Forms.TextBox();
             this.btnChecker = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(19, 41);
-            this.btnRun.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRun.Location = new System.Drawing.Point(25, 50);
+            this.btnRun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(56, 19);
+            this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 0;
             this.btnRun.Text = "button1";
             this.btnRun.UseVisualStyleBackColor = true;
@@ -75,10 +77,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(478, 24);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(637, 30);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 34);
+            this.button1.Size = new System.Drawing.Size(81, 42);
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -86,26 +88,26 @@
             // 
             // tbxMin
             // 
-            this.tbxMin.Location = new System.Drawing.Point(80, 41);
-            this.tbxMin.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxMin.Location = new System.Drawing.Point(107, 50);
+            this.tbxMin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxMin.Name = "tbxMin";
-            this.tbxMin.Size = new System.Drawing.Size(68, 20);
+            this.tbxMin.Size = new System.Drawing.Size(89, 22);
             this.tbxMin.TabIndex = 3;
             // 
             // tbxMax
             // 
-            this.tbxMax.Location = new System.Drawing.Point(168, 41);
-            this.tbxMax.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxMax.Location = new System.Drawing.Point(224, 50);
+            this.tbxMax.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxMax.Name = "tbxMax";
-            this.tbxMax.Size = new System.Drawing.Size(68, 20);
+            this.tbxMax.Size = new System.Drawing.Size(89, 22);
             this.tbxMax.TabIndex = 4;
             // 
             // txbFile
             // 
-            this.txbFile.Location = new System.Drawing.Point(556, 32);
-            this.txbFile.Margin = new System.Windows.Forms.Padding(2);
+            this.txbFile.Location = new System.Drawing.Point(741, 39);
+            this.txbFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbFile.Name = "txbFile";
-            this.txbFile.Size = new System.Drawing.Size(243, 20);
+            this.txbFile.Size = new System.Drawing.Size(323, 22);
             this.txbFile.TabIndex = 5;
             // 
             // dataGridViewKetQua
@@ -129,10 +131,11 @@
             this.Column15,
             this.Column16});
             this.dataGridViewKetQua.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridViewKetQua.Location = new System.Drawing.Point(0, 845);
+            this.dataGridViewKetQua.Location = new System.Drawing.Point(0, 1040);
+            this.dataGridViewKetQua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewKetQua.Name = "dataGridViewKetQua";
             this.dataGridViewKetQua.RowHeadersWidth = 62;
-            this.dataGridViewKetQua.Size = new System.Drawing.Size(2120, 512);
+            this.dataGridViewKetQua.Size = new System.Drawing.Size(2827, 630);
             this.dataGridViewKetQua.TabIndex = 16;
             // 
             // Column1
@@ -254,31 +257,40 @@
             this.Column17,
             this.Column18,
             this.Column19});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 127);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 156);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1894, 624);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(2525, 768);
             this.dataGridView1.TabIndex = 17;
             // 
             // Column17
             // 
             this.Column17.HeaderText = "STT";
+            this.Column17.MinimumWidth = 6;
             this.Column17.Name = "Column17";
+            this.Column17.Width = 125;
             // 
             // Column18
             // 
             this.Column18.HeaderText = "Link Ảnh";
+            this.Column18.MinimumWidth = 6;
             this.Column18.Name = "Column18";
+            this.Column18.Width = 125;
             // 
             // Column19
             // 
             this.Column19.HeaderText = "Tên ảnh";
+            this.Column19.MinimumWidth = 6;
             this.Column19.Name = "Column19";
+            this.Column19.Width = 125;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(846, 12);
+            this.button2.Location = new System.Drawing.Point(1071, 15);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(238, 85);
+            this.button2.Size = new System.Drawing.Size(317, 105);
             this.button2.TabIndex = 18;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -286,9 +298,10 @@
             // 
             // btnx6o
             // 
-            this.btnx6o.Location = new System.Drawing.Point(1125, 12);
+            this.btnx6o.Location = new System.Drawing.Point(1396, 15);
+            this.btnx6o.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnx6o.Name = "btnx6o";
-            this.btnx6o.Size = new System.Drawing.Size(238, 85);
+            this.btnx6o.Size = new System.Drawing.Size(317, 105);
             this.btnx6o.TabIndex = 19;
             this.btnx6o.Text = "x6o";
             this.btnx6o.UseVisualStyleBackColor = true;
@@ -296,27 +309,52 @@
             // 
             // tbxInputSKU
             // 
-            this.tbxInputSKU.Location = new System.Drawing.Point(1948, 127);
+            this.tbxInputSKU.Location = new System.Drawing.Point(2597, 156);
+            this.tbxInputSKU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbxInputSKU.Multiline = true;
             this.tbxInputSKU.Name = "tbxInputSKU";
-            this.tbxInputSKU.Size = new System.Drawing.Size(160, 624);
+            this.tbxInputSKU.Size = new System.Drawing.Size(212, 767);
             this.tbxInputSKU.TabIndex = 20;
             // 
             // btnChecker
             // 
-            this.btnChecker.Location = new System.Drawing.Point(1446, 12);
+            this.btnChecker.Location = new System.Drawing.Point(1928, 15);
+            this.btnChecker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChecker.Name = "btnChecker";
-            this.btnChecker.Size = new System.Drawing.Size(238, 85);
+            this.btnChecker.Size = new System.Drawing.Size(317, 105);
             this.btnChecker.TabIndex = 21;
             this.btnChecker.Text = "Checker Việt";
             this.btnChecker.UseVisualStyleBackColor = true;
             this.btnChecker.Click += new System.EventHandler(this.btnChecker_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(2297, 15);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(317, 105);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "x6o";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(405, 66);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 63);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2120, 1357);
+            this.ClientSize = new System.Drawing.Size(2827, 1670);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnChecker);
             this.Controls.Add(this.tbxInputSKU);
             this.Controls.Add(this.btnx6o);
@@ -328,7 +366,7 @@
             this.Controls.Add(this.tbxMin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRun);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKetQua)).EndInit();
@@ -370,6 +408,8 @@
         private System.Windows.Forms.Button btnx6o;
         private System.Windows.Forms.TextBox tbxInputSKU;
         private System.Windows.Forms.Button btnChecker;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

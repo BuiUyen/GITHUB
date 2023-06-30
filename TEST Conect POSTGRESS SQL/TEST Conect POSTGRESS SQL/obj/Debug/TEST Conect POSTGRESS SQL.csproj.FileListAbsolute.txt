@@ -1,0 +1,42 @@
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\TEST Conect POSTGRESS SQL.exe.config
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\TEST Conect POSTGRESS SQL.exe
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\TEST Conect POSTGRESS SQL.pdb
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Npgsql.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Buffers.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Collections.Immutable.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Memory.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Text.Json.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Threading.Channels.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.ValueTuple.dll
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\Npgsql.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Buffers.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Collections.Immutable.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Memory.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Text.Json.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Threading.Channels.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\bin\Debug\System.ValueTuple.xml
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST Conect POSTGRESS SQL.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST Conect POSTGRESS SQL.csproj.SuggestedBindingRedirects.cache
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST_Conect_POSTGRESS_SQL.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST_Conect_POSTGRESS_SQL.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST Conect POSTGRESS SQL.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST Conect POSTGRESS SQL.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST Conect POSTGRESS SQL.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST Conect POSTGRESS SQL.exe
+C:\Users\huuuy\Desktop\GITHUB\TEST Conect POSTGRESS SQL\TEST Conect POSTGRESS SQL\obj\Debug\TEST Conect POSTGRESS SQL.pdb

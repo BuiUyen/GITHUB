@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MediboxAssistant.exe" size="1997312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MediboxAssistant.exe" size="1997824">
       <assemblyIdentity name="MediboxAssistant" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nw78nM+/6u2vpl+IrdBMqhP5rRSr48CNqHwyt2bBOEc=</dsig:DigestValue>
+        <dsig:DigestValue>m60TOWZFQ5/Ph7/Ad4+k4E3wCV1m/zZkD9eHeTS9gYo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -237,7 +237,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>CNMtRxpU0bYMn7DhLnlo1ckntNz1Gd9/R2sCsNIxDNk=</dsig:DigestValue>
+      <dsig:DigestValue>Fum+V7eEzk6uPgLLWOYkEEMH7Qx8bfZeTIrMqiRhsJI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

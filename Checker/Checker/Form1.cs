@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace Checker
 {
@@ -444,7 +445,7 @@ namespace Checker
 
                     var diachi = driver.FindElements(By.ClassName("label--skyBlue"))[0].Text;
 
-                    var sdt = driver.FindElements(By.ClassName("tel"))[0].Text;                    
+                    var sdt = driver.FindElements(By.ClassName("tel"))[0].Text;
 
                     foreach (var ele in elements)
                     {
@@ -455,6 +456,101 @@ namespace Checker
                         mListKetQua.Add(image);
 
 
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Actions actions = new Actions(driver);
+                    actions.SendKeys(OpenQA.Selenium.Keys.Escape);
+                }
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var driverService = ChromeDriverService.CreateDefaultService();
+            driverService.HideCommandPromptWindow = true;
+            var options = new ChromeOptions();
+            //options.AddArgument("--window-position=-32000,-32000"); //an chorme
+            var driver = new ChromeDriver(driverService, options);
+            driver.Navigate().GoToUrl("https://www.google.com/");
+            System.Threading.Thread.Sleep(300);
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.open();");
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
+
+            //foreach (string line in txtCheckerCode.Lines)
+            for (int stt = 10000; stt <= 20000; stt++)
+            {
+                string line = stt.ToString();
+                string link = @"https://titis.org/" + line + @"-.html";
+                try
+                {
+                    driver.Navigate().GoToUrl(link);
+                    System.Threading.Thread.Sleep(3000);
+
+                    Checker _checker = new Checker();
+
+                    var title = driver.FindElements(By.ClassName("pg"))[0];
+
+                    if (!title.Text.Contains("Warning! An error was detected"))
+                    {
+                        var elements = driver.FindElements(By.ClassName("fotocontext"));
+                        if (elements.Count > 0)
+                        {
+                            string folderPath = @"D:\titis";
+                            string Path = folderPath + @"\" + line;
+                            try
+                            {
+                                // Kiểm tra nếu thư mục không tồn tại, thì tạo mới
+                                if (!Directory.Exists(Path))
+                                {
+                                    Directory.CreateDirectory(Path);
+                                }
+                                else
+                                {
+                                    //Console.WriteLine("Thư mục đã tồn tại.");
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                //Console.WriteLine("Lỗi khi tạo thư mục: " + ex.Message);
+                            }
+
+                            for (int i = 12; i < elements.Count; i++)
+                            {
+                                //ImageChecker _image = new ImageChecker();
+                                //_image.CheckerCode = "titis_" + line;
+                                string text = elements[i].FindElements(By.TagName("img"))[0].GetAttribute("data-src");
+                                string Alt = "titis_" + line + "_" + i;
+                                // ImageCheckerPresenter.InsertImageChecker(_image);
+                                MessageBox.Show(text);
+
+                                //Tải ảnh về
+                                try
+                                {
+                                    using (WebClient client = new WebClient())
+                                    {
+                                        string savePath = Path + @"\" + Alt + ".jpg"; // Đường dẫn để lưu ảnh tải về
+                                        client.DownloadFile(text, savePath);
+                                        System.Threading.Thread.Sleep(1000);
+
+                                        driver.FindElement(By.TagName("body")).SendKeys(OpenQA.Selenium.Keys.PageDown);
+                                        elements = driver.FindElements(By.ClassName("fotocontext"));
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+
+                                }
+
+                            }
+                        }
                     }
                 }
                 catch (Exception ex)

@@ -1,0 +1,7 @@
+[32964] 22:57:26.110 D/Program: Name:MediboxAssistant
+[32964] 22:57:26.111 D/Program: Description:Build: 24/04/2019
+[32964] 22:57:26.111 D/Program: Version:1.0.0.1
+[32964] 22:57:27.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--START
+[32964] 22:57:27.000 D/SoftUpdatePresenter: Database sql = 20
+[32964] 22:57:27.000 D/SoftUpdatePresenter: Software sql = 20
+[32964] 22:57:27.000 D/SoftUpdatePresenter: DoUpdateDatabaseSQL--END
