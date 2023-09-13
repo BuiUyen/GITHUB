@@ -1,0 +1,18 @@
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao chép sản phẩm shopee sang tiktok.csproj.AssemblyReference.cache
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao chép sản phẩm shopee sang tiktok.csproj.SuggestedBindingRedirects.cache
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao_chép_sản_phẩm_shopee_sang_tiktok.Form1.resources
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao_chép_sản_phẩm_shopee_sang_tiktok.Properties.Resources.resources
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao chép sản phẩm shopee sang tiktok.csproj.GenerateResource.cache
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao chép sản phẩm shopee sang tiktok.csproj.CoreCompileInputs.cache
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\Sao chép sản phẩm shopee sang tiktok.exe.config
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\Sao chép sản phẩm shopee sang tiktok.exe
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\Sao chép sản phẩm shopee sang tiktok.pdb
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\ExcelDataReader.dll
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\ExcelDataReader.pdb
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\ExcelDataReader.xml
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao chép sản phẩm shopee sang tiktok.csproj.CopyComplete
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao chép sản phẩm shopee sang tiktok.exe
+C:\Users\huuuy\Desktop\GITHUB\Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok\obj\Debug\Sao chép sản phẩm shopee sang tiktok.pdb

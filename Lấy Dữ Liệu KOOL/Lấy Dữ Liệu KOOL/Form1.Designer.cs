@@ -42,13 +42,16 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnXuatExcel = new System.Windows.Forms.Button();
+            this.cbxSheet = new System.Windows.Forms.ComboBox();
+            this.btnOpenFileExcel = new System.Windows.Forms.Button();
+            this.tbxFile = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonRUN
             // 
-            this.buttonRUN.Location = new System.Drawing.Point(1221, 785);
+            this.buttonRUN.Location = new System.Drawing.Point(1221, 839);
             this.buttonRUN.Name = "buttonRUN";
             this.buttonRUN.Size = new System.Drawing.Size(172, 130);
             this.buttonRUN.TabIndex = 0;
@@ -72,7 +75,7 @@
             this.Column10,
             this.Column11,
             this.Column12});
-            this.dataGridViewData.Location = new System.Drawing.Point(13, 13);
+            this.dataGridViewData.Location = new System.Drawing.Point(13, 77);
             this.dataGridViewData.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewData.Name = "dataGridViewData";
             this.dataGridViewData.RowHeadersWidth = 51;
@@ -163,27 +166,61 @@
             this.Column12.Name = "Column12";
             this.Column12.Width = 125;
             // 
-            // button1
+            // btnXuatExcel
             // 
-            this.button1.Location = new System.Drawing.Point(52, 785);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 130);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Chạy Chương Trình";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnXuatExcel.Location = new System.Drawing.Point(52, 839);
+            this.btnXuatExcel.Name = "btnXuatExcel";
+            this.btnXuatExcel.Size = new System.Drawing.Size(172, 130);
+            this.btnXuatExcel.TabIndex = 19;
+            this.btnXuatExcel.Text = "Xuất File Excel";
+            this.btnXuatExcel.UseVisualStyleBackColor = true;
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
+            // 
+            // cbxSheet
+            // 
+            this.cbxSheet.FormattingEnabled = true;
+            this.cbxSheet.Location = new System.Drawing.Point(715, 15);
+            this.cbxSheet.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxSheet.Name = "cbxSheet";
+            this.cbxSheet.Size = new System.Drawing.Size(160, 24);
+            this.cbxSheet.TabIndex = 22;
+            this.cbxSheet.SelectedIndexChanged += new System.EventHandler(this.cbxSheet_SelectedIndexChanged);
+            // 
+            // btnOpenFileExcel
+            // 
+            this.btnOpenFileExcel.Location = new System.Drawing.Point(607, 15);
+            this.btnOpenFileExcel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOpenFileExcel.Name = "btnOpenFileExcel";
+            this.btnOpenFileExcel.Size = new System.Drawing.Size(100, 25);
+            this.btnOpenFileExcel.TabIndex = 21;
+            this.btnOpenFileExcel.Text = "Open";
+            this.btnOpenFileExcel.UseVisualStyleBackColor = true;
+            this.btnOpenFileExcel.Click += new System.EventHandler(this.btnOpenFileExcel_Click);
+            // 
+            // tbxFile
+            // 
+            this.tbxFile.Location = new System.Drawing.Point(13, 13);
+            this.tbxFile.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxFile.Name = "tbxFile";
+            this.tbxFile.Size = new System.Drawing.Size(585, 22);
+            this.tbxFile.TabIndex = 20;
             // 
             // FormMAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1438, 933);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1435, 983);
+            this.Controls.Add(this.cbxSheet);
+            this.Controls.Add(this.btnOpenFileExcel);
+            this.Controls.Add(this.tbxFile);
+            this.Controls.Add(this.btnXuatExcel);
             this.Controls.Add(this.dataGridViewData);
             this.Controls.Add(this.buttonRUN);
             this.Name = "FormMAIN";
             this.Text = "Lấy dữ liệu website KOOL";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -203,7 +240,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnXuatExcel;
+        private System.Windows.Forms.ComboBox cbxSheet;
+        private System.Windows.Forms.Button btnOpenFileExcel;
+        private System.Windows.Forms.TextBox tbxFile;
     }
 }
 

@@ -93,6 +93,14 @@ namespace Chinh_Sua_Bai_Viet_Website
             public string TinhTrang { get; set; }
         }
 
+        public class FormShopee
+        {
+            public string PhanDau { get; set; }
+            public string PhanGiua { get; set; }
+            public string PhanCuoi { get; set; }
+
+        }
+
         public List<LinhKien> mList_Goc = new List<LinhKien>();
         public List<LinhKien> mList = new List<LinhKien>();// list đã xử lý phân loại
         public List<Tags> mListTags = new List<Tags>();
@@ -101,9 +109,13 @@ namespace Chinh_Sua_Bai_Viet_Website
 
         public List<NganhHang> mListNganh = new List<NganhHang>();
 
+        public List<FormShopee> mListFormShopee = new List<FormShopee>();
+
         public Form1()
-        {            
+        {
+            Layformbaivietshopee();
             InitializeComponent();
+
         }
         
         private void Form1_Load(object sender, EventArgs e)
@@ -682,10 +694,11 @@ namespace Chinh_Sua_Bai_Viet_Website
                     {
                         sp.ThongSo = listNoiDung[2].Trim('\n').Replace("\n", "\n\n");  
                         sp.CongDung = listNoiDung[4].Trim('\n').Replace("\n", "\n\n");
-                        sp.MoTaNgan = tbxBaiVietTren.Text + sp.ThongSo + tbxBaiVietGiua.Text + sp.CongDung + tbxBaiVietDuoi.Text;
+                        sp.MoTaNgan = mListFormShopee[0].PhanDau + "\n"  + sp.ThongSo + "\n" + mListFormShopee[0].PhanGiua + "\n" + sp.CongDung + "\n" + mListFormShopee[0].PhanCuoi;
                     }
-                }                
+                }
             }
+
 
             dataGridViewKetQua.Rows.Clear();
             foreach (LinhKien sp in mListKetQua)
@@ -713,6 +726,44 @@ namespace Chinh_Sua_Bai_Viet_Website
                 dataGridViewKetQua.Rows[n].Cells[8].Value = sp.AnhDaiDien;
                 dataGridViewKetQua.Rows[n].Cells[9].Value = sp.ThongSo;
                 dataGridViewKetQua.Rows[n].Cells[10].Value = sp.CongDung;
+            }
+        }
+
+        private void Layformbaivietshopee()
+        {
+            List <String> _liststring = new List<String>();
+            
+            using (var steam = File.Open("Form bài viết shopee.xlsx", FileMode.Open, FileAccess.Read))
+            {
+                using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(steam))
+                {
+                    DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                    {
+                        ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
+
+                    });
+
+                    tableCollection = result.Tables;                    
+                    foreach (System.Data.DataTable table in tableCollection)
+                        _liststring.Add(table.TableName);
+                }
+            }
+
+            try
+            {
+                System.Data.DataTable dt = tableCollection[_liststring[0]];
+                mListFormShopee = (from DataRow dr in dt.Rows
+                                   select new FormShopee()
+                {
+                    PhanDau = dr["Phần đầu"].ToString(),
+                    PhanGiua = dr["Phần giữa"].ToString(),
+                    PhanCuoi = dr["Phần cuối"].ToString()
+                }).ToList();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Bảng Excel Form bài viết shopee đang được mở. Vui lòng đóng lại!", "Thông Báo");
+                MessageBox.Show(Ex.ToString());
             }
         }
 

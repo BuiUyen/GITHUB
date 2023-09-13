@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sao chép sản phẩm shopee sang tiktok", "Sao chép sản phẩm shopee sang tiktok\Sao chép sản phẩm shopee sang tiktok.csproj", "{C1D1612F-9E2B-4B52-A3C8-3BB4D2A9215E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1D1612F-9E2B-4B52-A3C8-3BB4D2A9215E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D1612F-9E2B-4B52-A3C8-3BB4D2A9215E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D1612F-9E2B-4B52-A3C8-3BB4D2A9215E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D1612F-9E2B-4B52-A3C8-3BB4D2A9215E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72EC8038-68B2-4BB8-A651-0825D9DD33E9}
+	EndGlobalSection
+EndGlobal

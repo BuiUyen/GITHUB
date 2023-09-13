@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c1d1612f-9e2b-4b52-a3c8-3bb4d2a9215e": {
+      "ProjectGuid": "c1d1612f-9e2b-4b52-a3c8-3bb4d2a9215e",
+      "DisplayName": "Sao chép sản phẩm shopee sang tiktok",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

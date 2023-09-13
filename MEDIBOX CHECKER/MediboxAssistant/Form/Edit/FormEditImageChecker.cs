@@ -246,7 +246,7 @@ namespace Medibox
 
 
             //foreach (string line in txtCheckerCode.Lines)
-            for (int stt = Int32.Parse(tbxSodauvao.Text); stt <= 90000; stt++)
+            for (int stt = Int32.Parse(tbxSodauvao.Text); stt <= 50000; stt++)
             {
                 string line = stt.ToString();
                 string link = @"https://titis.org/" + line + @"-.html";
