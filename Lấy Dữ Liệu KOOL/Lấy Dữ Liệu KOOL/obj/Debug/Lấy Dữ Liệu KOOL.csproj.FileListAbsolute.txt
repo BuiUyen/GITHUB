@@ -20,3 +20,24 @@ C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\
 C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.xml
 C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.DataSet.pdb
 C:\Users\huuuy\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\Lấy Dữ Liệu KOOL.exe.config
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\Lấy Dữ Liệu KOOL.exe
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\Lấy Dữ Liệu KOOL.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\WebDriver.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.AssemblyReference.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy_Dữ_Liệu_KOOL.FormMAIN.resources
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy_Dữ_Liệu_KOOL.Properties.Resources.resources
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.GenerateResource.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.CoreCompileInputs.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.csproj.CopyComplete
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.exe
+C:\Users\UYEN_PC\Desktop\GITHUB\Lấy Dữ Liệu KOOL\Lấy Dữ Liệu KOOL\obj\Debug\Lấy Dữ Liệu KOOL.pdb

@@ -15,6 +15,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Net;
 using ExcelDataReader;
+using static Lấy_Dữ_Liệu_KOOL.FormMAIN;
 
 namespace Lấy_Dữ_Liệu_KOOL
 {    
@@ -57,8 +58,16 @@ namespace Lấy_Dữ_Liệu_KOOL
 
         public List<LinkSP> mListGoc = new List<LinkSP>();
 
+        string filename = @"code.txt";
+
         private void buttonRUN_Click(object sender, EventArgs e)
         {
+                        
+            if (File.Exists(filename))
+            {
+                File.Delete(filename);
+            }
+
             var driverService = ChromeDriverService.CreateDefaultService();
             driverService.HideCommandPromptWindow = true;
             var options = new ChromeOptions();
@@ -88,6 +97,12 @@ namespace Lấy_Dữ_Liệu_KOOL
                     driver.Navigate().GoToUrl(link);
                     System.Threading.Thread.Sleep(1000);
 
+                    //tao file code txt
+                    using (StreamWriter fs = File.CreateText(filename))
+                    {
+                        fs.WriteLine(driver.PageSource);
+                    }
+
                     SanPham _sanpham = new SanPham();
                     _sanpham.ID = line;
 
@@ -105,42 +120,44 @@ namespace Lấy_Dữ_Liệu_KOOL
                     _sanpham.GiaBan = driver.FindElements(By.ClassName("special-price"))[0].Text;
                     _sanpham.GiaCu = driver.FindElements(By.ClassName("old-price"))[0].Text;
 
-                    //Lấy tên biến thể
-                    _sanpham.BienThe = driver.FindElements(By.ClassName("active"))[0].Text;
+                    ////Lấy tên biến thể
+                    //_sanpham.BienThe = driver.FindElements(By.ClassName("active"))[0].Text;
 
-                    var listbienthe = driver.FindElements(By.ClassName("bk_product-variation--disabled"));
-                    _sanpham.ListMaPhanLoai = new List<string>();
-                    _sanpham.ListPhanLoai = new List<string>();
-                    _sanpham.ListAnh = new List<string>();
-                    //Lấy mã biến thể
-                    foreach (var item in listbienthe)
-                    {
-                        string bienthe = item.GetAttribute("href").Split('=')[1];
-                        _sanpham.ListMaPhanLoai.Add(bienthe);
-                        _sanpham.ListPhanLoai.Add(item.Text);
-                    }
+                    //var listbienthe = driver.FindElements(By.ClassName("bk_product-variation--disabled"));
+                    //_sanpham.ListMaPhanLoai = new List<string>();
+                    //_sanpham.ListPhanLoai = new List<string>();
+                    //_sanpham.ListAnh = new List<string>();
+
+                    ////Lấy mã biến thể
+                    //foreach (var item in listbienthe)
+                    //{
+                    //    string bienthe = item.GetAttribute("href").Split('=')[1];
+                    //    _sanpham.ListMaPhanLoai.Add(bienthe);
+                    //    _sanpham.ListPhanLoai.Add(item.Text);
+                    //}
 
                     _sanpham.MoTaSanPham = driver.FindElements(By.ClassName("active"))[0].Text;
 
 
-                    var test = driver.FindElements(By.ClassName("attributes"))[0];
-                    var test1 = test.Text;
-                    var test2 = test.GetAttribute("href");
+
+
+                    _sanpham = MaPhanLoaiSanPham(_sanpham);
+                    
                     
 
-                    //Lấy hình ảnh
-                    var image = driver.FindElements(By.ClassName("elevatezoom-gallery"));
-                    foreach (var item in image)
-                    {
-                        string ima = item.GetAttribute("href");
-                        _sanpham.ListAnh.Add(ima);
-                    }    
+                    ////Lấy hình ảnh
+                    //var image = driver.FindElements(By.ClassName("elevatezoom-gallery"));
+                    //foreach (var item in image)
+                    //{
+                    //    string ima = item.GetAttribute("href");
+                    //    _sanpham.ListAnh.Add(ima);
+                    //}    
 
                     mListSanPham.Add(_sanpham);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    //MessageBox.Show(ex.Message);
                     Actions actions = new Actions(driver);
                     actions.SendKeys(OpenQA.Selenium.Keys.Escape);
                 }
@@ -159,17 +176,18 @@ namespace Lấy_Dữ_Liệu_KOOL
                     dataGridViewData.Rows[n].Cells[7].Value = sanpham.GiaCu;
 
                     dataGridViewData.Rows[n].Cells[10].Value = sanpham.MoTaSanPham;
-                    String anhsanpham = "";
-                    for (int i = 0; i < sanpham.ListAnh.Count; i++)
-                    {
-                        anhsanpham = anhsanpham + @";" + sanpham.ListAnh[i];
-                    }
-                    dataGridViewData.Rows[n].Cells[11].Value = anhsanpham;
+                    //String anhsanpham = "";
+                    //for (int i = 0; i < sanpham.ListAnh.Count; i++)
+                    //{
+                    //    anhsanpham = anhsanpham + @";" + sanpham.ListAnh[i];
+                    //}
+                    //dataGridViewData.Rows[n].Cells[11].Value = anhsanpham;
 
                     for (int i = 0; i < sanpham.ListMaPhanLoai.Count; i++)
                     {
+                        dataGridViewData.Rows[n].Cells[0].Value = sanpham.ID;
                         dataGridViewData.Rows[n].Cells[8].Value = sanpham.ListMaPhanLoai[i];
-                        dataGridViewData.Rows[n].Cells[9].Value = sanpham.ListPhanLoai[i];
+                        //dataGridViewData.Rows[n].Cells[9].Value = sanpham.ListPhanLoai[i];
                         if(!(i == sanpham.ListMaPhanLoai.Count - 1))
                         n = dataGridViewData.Rows.Add();
                     }
@@ -180,7 +198,36 @@ namespace Lấy_Dữ_Liệu_KOOL
             }
         }
 
-        private void btnXuatExcel_Click(object sender, EventArgs e)
+        public SanPham MaPhanLoaiSanPham(SanPham mSanPham)
+        {
+            //lay thong tin ma phan loai san pham
+            mSanPham.ListMaPhanLoai = new List<string>();
+            try
+            {
+                // LAY THONG SO KI THUAT
+                using (StreamReader sr = File.OpenText(filename))
+                {
+                    string s = "";
+                    int x = 0;
+
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                        if (s.Contains("<a href=\"?variant_id="))
+                        {
+                            string text = s.Split('"')[1];
+                            text = text.Split('=')[1];
+                            mSanPham.ListMaPhanLoai.Add(text);
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return mSanPham;
+         }
+    private void btnXuatExcel_Click(object sender, EventArgs e)
         {
             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
             Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
@@ -200,7 +247,10 @@ namespace Lấy_Dữ_Liệu_KOOL
                 {
                     try
                     {
-                        worksheet.Cells[i + 2, j + 1] = dataGridViewData.Rows[i].Cells[j].Value.ToString();
+                        if(dataGridViewData.Rows[i].Cells[j].Value != null)
+                        {
+                            worksheet.Cells[i + 2, j + 1] = dataGridViewData.Rows[i].Cells[j].Value.ToString();
+                        }
                     }
                     catch (Exception ex)
                     {
