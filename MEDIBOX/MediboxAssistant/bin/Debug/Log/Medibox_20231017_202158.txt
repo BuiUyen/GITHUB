@@ -1,0 +1,3 @@
+[18128] 20:21:58.327 D/Program: Name:MediboxAssistant
+[18128] 20:21:58.328 D/Program: Description:Build: 24/04/2019
+[18128] 20:21:58.329 D/Program: Version:1.0.0.1

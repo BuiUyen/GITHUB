@@ -44,3 +44,18 @@ C:\Users\huuuy\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checke
 C:\Users\huuuy\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.CopyComplete
 C:\Users\huuuy\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Checker.exe
 C:\Users\huuuy\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Checker.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\bin\Debug\Checker.exe.config
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\bin\Debug\Checker.exe
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\bin\Debug\Checker.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\bin\Debug\OpenDialogWindowHandler.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\bin\Debug\WebDriver.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\bin\Debug\OpenDialogWindowHandler.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\bin\Debug\WebDriver.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.AssemblyReference.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Checker.Form1.resources
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Checker.Properties.Resources.resources
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.GenerateResource.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.CoreCompileInputs.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Lọc sản phẩm shopee.csproj.CopyComplete
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Checker.exe
+C:\Users\UYEN_PC\Desktop\GITHUB\Chỉnh Sửa Thông Tin Sản Phẩm SENDO\Checker\obj\Debug\Checker.pdb

@@ -1,0 +1,142 @@
+[11408] 21:39:52.561 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to 'localhost'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[11408] 21:39:59.609 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[11408] 21:39:59.619 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Failed to establish a connection to 'localhost'.
+   at Npgsql.NpgsqlClosedState.Open(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[11408] 21:40:14.293 D/NpgsqlDatabaseUtility: [SynchDatabase] Database = [hocsinh]
+[11408] 21:40:14.355 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_room'
+[11408] 21:40:14.434 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:14.442 E/NpgsqlBaseDao: Try Update N = 1
+[11408] 21:40:14.476 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:14.485 E/NpgsqlBaseDao: Try Update N = 2
+[11408] 21:40:14.520 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:14.530 E/NpgsqlBaseDao: Try Update N = 3
+[11408] 21:40:14.566 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:14.574 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+[11408] 21:40:14.583 E/NpgsqlDatabaseUtility: [SynchDatabase] Create table lỗi
+[11408] 21:40:17.756 D/NpgsqlDatabaseUtility: [SynchDatabase] Database = [hocsinh]
+[11408] 21:40:17.781 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_room'
+[11408] 21:40:17.815 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:17.825 E/NpgsqlBaseDao: Try Update N = 1
+[11408] 21:40:17.855 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:17.864 E/NpgsqlBaseDao: Try Update N = 2
+[11408] 21:40:17.895 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:17.904 E/NpgsqlBaseDao: Try Update N = 3
+[11408] 21:40:17.935 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+Npgsql.NpgsqlException:
+syntax error at or near "OIDS"
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.Update(String _sql) in D:\Backup\BaiTap C#\MediboxAssistant\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 863
+[11408] 21:40:17.944 E/NpgsqlBaseDao: Update(' CREATE TABLE tb_room (   RoomID  serial  PRIMARY KEY  ,  RoomName  text  ,  HomeID  INTEGER DEFAULT '0'  ,  UserID  INTEGER DEFAULT '0'  ,  Version  TIMESTAMP  ) WITH OIDS ;  ') error !
+[11408] 21:40:17.953 E/NpgsqlDatabaseUtility: [SynchDatabase] Create table lỗi

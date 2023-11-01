@@ -1,0 +1,520 @@
+[7692] 00:41:18.216 E/NpgsqlBaseDao: ShowDatabase error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.ShowDatabase(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 789
+[7692] 00:41:22.047 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:22.048 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:22.087 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:22.088 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:22.125 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:22.125 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:22.164 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:22.164 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:22.203 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:22.204 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:22.244 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:22.244 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:22.244 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:22.245 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[7692] 00:41:26.662 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:26.663 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:26.700 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:26.701 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:26.741 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:26.741 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:26.779 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:26.779 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:26.817 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:26.818 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:26.855 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:26.855 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:41:26.856 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:41:26.856 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[7692] 00:43:12.093 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:12.094 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:12.132 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:12.133 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:12.171 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:12.171 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:12.209 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:12.209 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:12.249 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:12.250 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:12.287 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:12.287 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:12.288 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:12.288 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[7692] 00:43:14.658 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:14.658 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:14.697 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:14.697 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:14.736 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:14.736 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:14.774 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:14.774 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:14.812 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:14.812 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:14.850 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:14.850 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:14.851 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:14.851 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[7692] 00:43:55.782 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:55.783 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:55.825 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:55.826 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:55.869 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:55.870 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:55.914 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:55.915 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:55.958 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:55.959 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:56.002 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:56.003 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:43:56.003 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:43:56.003 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[7692] 00:46:30.204 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:46:30.205 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:46:30.343 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:46:30.344 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:46:30.395 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:46:30.396 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:46:30.533 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:46:30.534 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:46:30.571 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:46:30.571 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:46:30.612 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:46:30.612 E/NpgsqlBaseDao: GetDataTable 1 error !
+Npgsql.NpgsqlException:
+Only AuthenticationClearTextPassword and AuthenticationMD5Password supported for now. Received: 10
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.NpgsqlState.IterateThroughAllResponses(IEnumerable`1 ienum)
+   at Npgsql.NpgsqlConnectedState.Startup(NpgsqlConnector context)
+   at Npgsql.NpgsqlConnector.Open()
+   at Npgsql.NpgsqlConnectorPool.GetPooledConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestPooledConnectorInternal(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnectorPool.RequestConnector(NpgsqlConnection Connection)
+   at Npgsql.NpgsqlConnection.Open()
+   at Sanita.Utility.Database.BaseDao.NpgsqlBaseDao.GetDataTable(String sql) in C:\Users\huuuy\Desktop\GITHUB\MediboxAssistant\MediboxAssistant\Core\Utility\Database\BaseDao\NpgsqlBaseDao.cs:line 1586
+[7692] 00:46:30.613 E/NpgsqlBaseDao:  SELECT NOW() AS TIME_NOW 
+[7692] 00:46:30.613 E/NpgsqlBaseDao: GetDataTable 2 error ! TryMax > 5
+[7692] 01:03:34.003 D/NpgsqlDatabaseUtility: [SynchDatabase] Database = [postgres]
+[7692] 01:03:34.022 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_room'
+[7692] 01:03:34.052 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_home'
+[7692] 01:03:34.064 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_user'
+[7692] 01:03:34.073 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_softupdate'
+[7692] 01:03:34.082 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_dm_entity_type'
+[7692] 01:03:34.090 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_dm_intent_type'
+[7692] 01:03:34.099 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_intent_response'
+[7692] 01:03:34.118 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_intent'
+[7692] 01:03:34.126 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_device'
+[7692] 01:03:34.135 D/NpgsqlDatabaseUtility: [SynchDatabase] Create table 'tb_intent_request'
+[7692] 01:03:38.925 D/UtilityCache: Start database cache...
+[7692] 01:03:38.000 D/NpgsqlDatabaseUtility: [SynchDatabase] Database = [postgres]
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_room'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_home'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_user'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_softupdate'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_dm_entity_type'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_dm_intent_type'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_intent_response'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_intent'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_device'
+[7692] 01:03:38.000 E/NpgsqlDatabaseUtility: [SynchDatabase] Alter table 'tb_intent_request'
+[7692] 01:03:38.000 D/UtilityCache: End database cache...
+[7692] 01:03:38.000 E/UtilityUpdateTime: Start get timer...

@@ -1507,6 +1507,9 @@ namespace Chinh_Sua_Bai_Viet_Website
             mListInput = new List<SanPhamSendo>();
         }
 
+        private void tbxFile_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

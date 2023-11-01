@@ -47,3 +47,33 @@ C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Webs
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.xml
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.FormLogin.resources
 C:\Users\huuuy\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\WebDriver.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\Chinh Sua Bai Viet Website.exe.config
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\Chinh Sua Bai Viet Website.exe
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\Chinh Sua Bai Viet Website.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\HtmlAgilityPack.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\itextsharp.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\WebDriver.dll
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\HtmlAgilityPack.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\itextsharp.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.pdb
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\bin\Debug\MarkdownSharp.xml
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.AssemblyReference.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.ResolveComReference.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.Form1.resources
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.FormLogin.resources
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh_Sua_Bai_Viet_Website.Properties.Resources.resources
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.GenerateResource.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.CoreCompileInputs.cache
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.csproj.CopyComplete
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.exe
+C:\Users\UYEN_PC\Desktop\GITHUB\Chinh Sua Bai Viet Website\Chinh Sua Bai Viet Website\obj\Debug\Chinh Sua Bai Viet Website.pdb

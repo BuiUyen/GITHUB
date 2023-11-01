@@ -27,7 +27,7 @@
 				<link rel="stylesheet" type="text/css" href="/assets/frontend/theme/Lansca_Goggles/stylesheet/codezeel/bootstrap.min.css">
 				<link rel="stylesheet" type="text/css" href="/assets/frontend/theme/Lansca_Goggles/stylesheet/codezeel/lightbox.css">
 				<link rel="stylesheet" type="text/css" href="/assets/frontend/theme/Lansca_Goggles/stylesheet/codezeel/animate.css">
-				<link rel="stylesheet" type="text/css" href="/assets/frontend/style.css?time=1695128161">
+				<link rel="stylesheet" type="text/css" href="/assets/frontend/style.css?time=1697201420">
 				<link href="style.html" type="text/css" rel="style.rel" media="style.media">
 				<link href="style.html" type="text/css" rel="style.rel" media="style.media">
 				<link href="/assets/frontend/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
